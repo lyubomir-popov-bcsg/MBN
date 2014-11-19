@@ -1,0 +1,32 @@
+#shopTools {
+  background:$white;
+  article {
+    text-align: center;
+    @include container();
+    @include breakpoint($small) {
+      // @include container(33em);
+      text-align: left;
+
+    } //breakpoint
+  } //article
+
+  .headings{
+    @include span(12 at 0 of 12);
+    h1 {
+      font-family: "DINNextLTW01-UltraLight 706122";
+      font-size: 48px;
+      font-weight: normal;
+      line-height: 100%;
+      margin: 48px 0 0;
+    } //h1
+    h2 {
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 100%;
+      margin: 14px 0 0;
+    }//h2
+  }
+  .gallery {
+    @include clearfix;
+  } //gallery
+} //shopTools

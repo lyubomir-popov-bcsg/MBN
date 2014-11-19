@@ -1,0 +1,85 @@
+header #nav {
+  @include clearfix;
+  background: #333;
+  width: 100%;
+  z-index: 100;
+
+  .navbar {
+    @include container;
+    .brand {
+      @include span(4);
+      float: left;
+      font-weight: normal;
+      font-family: $headFont;
+      text-align: center;
+      text-transform: uppercase;
+      background: $navBrandBg;
+      a {
+        color: $navForeground;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+        font-size: 1em;
+
+        @include breakpoint(max-width $small) {
+          font-size: 1em;
+          span {display: none;}
+        }
+      } //a
+    } //brand
+
+    ul {
+      // @include span(12 at 0 of 12);
+      li {
+        float: left;
+        a {
+          color: $navForeground;
+          font: $mainFont;
+          font-size: 14px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 10px 10px 10px 10px;
+          text-decoration: none;
+
+          //icon styles
+          background-size: 35px;
+          background-repeat: no-repeat;
+          background-position: 2px;
+
+          // &.info { background-image: url('../images/icons/info.png');}
+          // &.rooms { background-image: url('../images/icons/rooms.png');}
+          // &.dining { background-image: url('../images/icons/dining.png');}
+          // &.events { background-image: url('../images/icons/events.png');}
+          // &.attractions { background-image: url('../images/icons/attractions.png');}
+
+          &:hover {
+            background-color: lighten($dark, 5%);
+            color: $white;
+          } //hover
+
+          @include breakpoint(0 $small) {
+            padding: 10px 18px;
+            // &::after {
+            //   content: '\000a0';
+            //   display: block;
+            // }
+            // span {display: none;
+            // } //span
+          } //breakpoint
+
+          @include breakpoint($small $medium) {
+            padding-left: 10px;
+            &.icon { background-image: none; }
+          } //breakpoint
+
+          &.active {
+            background-color: $white;
+            color: $dark;
+          }
+        } //a
+      } //li
+    } //ul
+  } //navbar
+} //header #nav
