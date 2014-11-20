@@ -28,3 +28,41 @@
     clear: both;
   } //after
 } //clearfix
+@mixin transitionAll($duration:.2s) {
+  transition: all $duration ease;
+  -webkit-transition: all $duration ease;
+  -moz-transition: all $duration ease;
+  -o-transition: all $duration ease;
+  -ms-transition: all $duration ease;
+}
+@mixin verticalCenter{
+  display: flex;//vertical centering
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin translateZ{
+   -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+} //force gpu rendering
+
+@mixin capitalise($tracking){
+  text-transform: uppercase;
+  letter-spacing: $tracking;
+}
+@mixin stretching-background{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+@mixin shadow{
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}

@@ -32,21 +32,23 @@ header #nav {
     ul {
       // @include span(12 at 0 of 12);
       li {
+        @include span(18 of 90);
         float: left;
         a {
+          @include transitionAll(0.2s);
           color: $navForeground;
-          font: $mainFont;
+          font: $headFont;
           font-size: 14px;
-          letter-spacing: 0.04em;
-          text-transform: uppercase;
-          display: inline-block;
-          padding: 10px 10px 10px 10px;
+          @include capitalise(0.04em);
+
+          display: block;
+          padding: 18px 22px 14px;
           text-decoration: none;
 
-          //icon styles
-          background-size: 35px;
-          background-repeat: no-repeat;
-          background-position: 2px;
+          // //icon styles
+          // background-size: 35px;
+          // background-repeat: no-repeat;
+          // background-position: 2px;
 
           // &.info { background-image: url('../images/icons/info.png');}
           // &.rooms { background-image: url('../images/icons/rooms.png');}
@@ -55,8 +57,8 @@ header #nav {
           // &.attractions { background-image: url('../images/icons/attractions.png');}
 
           &:hover {
-            background-color: lighten($dark, 5%);
-            color: $white;
+            background-color: darken($dark, 50%);
+            color: $light;
           } //hover
 
           @include breakpoint(0 $small) {
@@ -70,13 +72,15 @@ header #nav {
           } //breakpoint
 
           @include breakpoint($small $medium) {
-            padding-left: 10px;
-            &.icon { background-image: none; }
+            // padding-left: 10px;
+            // &.icon { background-image: none; }
           } //breakpoint
 
           &.active {
             background-color: $white;
             color: $dark;
+            font-family: "DIN Next W01 Regular";
+            letter-spacing: 0.0525em;
           }
         } //a
       } //li

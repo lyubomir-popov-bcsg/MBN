@@ -1,32 +1,143 @@
-#shopTools {
-  background:$white;
+.scene {
+  &.bundles{background: $white}
+  &.products{background: $light}
+
   article {
-    text-align: center;
+    // text-align: center;
+    text-align: left;
     @include container();
     @include breakpoint($small) {
       // @include container(33em);
-      text-align: left;
-
     } //breakpoint
+
+    .gallery {
+      @include clearfix;
+
+      .headings{
+        text-align: center;
+        border-bottom: 1px solid #efefef;
+        @include span(12 at 0 of 12);
+        
+        h1 {
+          position: relative;
+          font-family: "DINNextLTW01-UltraLight 706122";
+          font-size: 28px;
+          font-weight: normal;
+          margin: 35px 0 0;
+          // text-align: left;
+          // font-family: "DIN Next W01 Regular";
+          // font-size: 20px;
+          // text-transform: uppercase;
+          // position: relative;
+          // margin: 35px 0 0;
+        } //h1
+
+        h2 {
+          font-family: "DINNextW01-LightItalic";
+          font-size: 22px;
+          line-height: 1.2em;
+          font-weight: normal;
+          margin: 6px 0 18px;
+        } //h2
+      } //headings
+
+      .shoptools-module{
+        margin-bottom:22px;
+        // @include span(12 of 12);
+        &:hover{
+          @include single-box-shadow(0, 0, 18px, 0, #ddd, false);
+        }
+        h1{
+          text-align: left;
+          font-family: "DIN Next W01 Light";
+          font-size: 22px;
+          // text-transform: uppercase;
+          position:relative;
+          margin: 18px 0;
+          span{
+            font-family: "DINNextW01-CondensedMed";
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            span{
+              font-family: "DINNextW01-CondensedReg";
+              letter-spacing: .1em;
+              font-size: 0.65em;
+              line-height: 5em;
+              text-transform: uppercase;
+            }
+          }
+        }
+        h2{
+          font-family: "DIN Next W01 Light";
+          font-size: 18px;
+          margin: 18px 0 0;
+        }
+        h3{
+          font-size: 18px;
+          font-family: "DINNextW01-LightItalic";
+          margin-top: 10px;
+        }
+
+        a.btn{
+          @include transitionAll;
+          @include capitalise(0.02em);
+          display: block;
+          margin: 14px 0 22px;
+          padding: 10px 28px;
+          background:$dark;
+          color:$white;
+          text-decoration: none;
+          text-align: center;
+          font-family: "DIN Next W01 Light";
+          font-size: 14px;
+          
+          &:hover {
+            background-color: darken($dark, 50%);
+            color: $light;
+          } //hover
+
+          @include breakpoint($medium) {
+          text-align: left;
+          display: inline-block;
+          }//breakpoint small
+        } //a.btn
+
+        ul.logoArea{
+          @include clearfix;
+          border-top:1px solid #e4e4e4;
+          border-bottom:1px solid #e4e4e4;          
+          padding-top: 14px;
+          padding-bottom: 28px;
+
+          li{
+            text-align:center;
+            padding-top:14px;
+            // @include span(12 of 12);
+            @include breakpoint($small) {
+              // @include span(1 of 3);
+            }
+          }
+        }
+
+      }
+
+      .bundle{
+        @include breakpoint($small) {
+          @include span(6 of 12);
+          ul.logoArea>li{
+              @include span(1 of 3);
+          }//li          
+        } //span
+      } //bundle
+
+      .product{
+        @include breakpoint($small) {
+          @include span(4 of 12);
+        }//breakpoint
+      }//product
+    } //gallery
   } //article
 
-  .headings{
-    @include span(12 at 0 of 12);
-    h1 {
-      font-family: "DINNextLTW01-UltraLight 706122";
-      font-size: 48px;
-      font-weight: normal;
-      line-height: 100%;
-      margin: 48px 0 0;
-    } //h1
-    h2 {
-      font-size: 28px;
-      font-weight: normal;
-      line-height: 100%;
-      margin: 14px 0 0;
-    }//h2
-  }
-  .gallery {
-    @include clearfix;
-  } //gallery
+
 } //shopTools

@@ -1,19 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
 
 @include border-box-sizing; //uses border box sizing like the old IE
-
+$gutter-width:1em;
 $susy: (
   columns: 12,
   container: 1160px,
-  gutters: 1/4,
-  gutter-position: inside
+  gutters: .66,
+  gutter-position: inside,
+  grid-padding:$gutter-width
 );
 
 $narrow: 400px;
 $small: 650px;
 $medium: 960px;
 $wide: 1200px;
-
 
 //Add Color Palette
 $blue       : #063642;

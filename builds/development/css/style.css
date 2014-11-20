@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
-/* line 5, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -189,7 +189,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("/Fonts/din/06e964c1-d71a-48a5-b3fd-88c164e2b0fa.eot?#iefix");
   src: url("/Fonts/din/06e964c1-d71a-48a5-b3fd-88c164e2b0fa.eot?#iefix") format("eot"), url("/Fonts/din/04c0d1f1-0fdf-4866-a034-1b5d1ba44a94.woff") format("woff"), url("/Fonts/din/a840f6fc-ef1f-44cd-a5fb-f68784b9bc1e.ttf") format("truetype"), url("/Fonts/din/4032b83f-6bbc-40a1-bfb9-cafd86356a17.svg#4032b83f-6bbc-40a1-bfb9-cafd86356a17") format("svg");
 }
-/* line 14, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+/* line 14, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -197,28 +197,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../../../components/sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 5, ../../../components/sass/_base.scss */
 body {
   font: normal 1em/1.5em "DIN Next W01 Regular";
   background: #f7f7f7;
   color: #333;
 }
 
-/* line 7, ../../../components/sass/_base.scss */
+/* line 11, ../../../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font: normal 1.5em/1.5em "DIN Next W01 Light";
   color: #333;
   font-weight: normal;
 }
 
-/* line 13, ../../../components/sass/_base.scss */
+/* line 17, ../../../components/sass/_base.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 17, ../../../components/sass/_base.scss */
+/* line 21, ../../../components/sass/_base.scss */
 p {
   font-weight: normal;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 /* line 1, ../../../components/sass/_layout.scss */
@@ -234,24 +239,25 @@ body {
 }
 /* line 9, ../../../components/sass/_layout.scss */
 .scene article {
+  padding: 0 8px;
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .scene article:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (min-width: 960px) {
-  /* line 18, ../../../components/sass/_layout.scss */
+  /* line 15, ../../../components/sass/_layout.scss */
   .scene article {
     max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   .scene article:after {
     content: " ";
     display: block;
@@ -259,9 +265,14 @@ body {
   }
 }
 
-/* line 2, ../../../components/sass/modules/_intro.scss */
+/* line 1, ../../../components/sass/modules/_intro.scss */
+header {
+  padding-top: 90px;
+  background-color: #f7f7f7;
+}
+/* line 4, ../../../components/sass/modules/_intro.scss */
 header .fullheight {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/shopTools-headerBG.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/shop-tools.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   -webkit-background-size: cover;
@@ -275,11 +286,11 @@ header .fullheight {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 9, ../../../components/sass/modules/_intro.scss */
+/* line 11, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup {
   padding: 100px 0;
 }
-/* line 12, ../../../components/sass/modules/_intro.scss */
+/* line 14, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup h1 {
   color: #f7f7f7;
   font-size: 5em;
@@ -288,7 +299,7 @@ header .fullheight .hgroup h1 {
   text-shadow: #333 0 0 20px;
   text-align: center;
 }
-/* line 21, ../../../components/sass/modules/_intro.scss */
+/* line 23, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup h2 {
   display: block;
   color: #f7f7f7;
@@ -302,11 +313,11 @@ header .fullheight .hgroup h2 {
   background: rgba(51, 51, 51, 0.5);
   font-size: 1.3em;
 }
-/* line 35, ../../../components/sass/modules/_intro.scss */
+/* line 37, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p {
   text-align: center;
 }
-/* line 37, ../../../components/sass/modules/_intro.scss */
+/* line 39, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p img {
   padding-top: 50px;
   max-width: 50px;
@@ -333,7 +344,7 @@ header #nav .navbar {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 header #nav .navbar:after {
   content: " ";
   display: block;
@@ -346,8 +357,8 @@ header #nav .navbar .brand {
   box-sizing: border-box;
   width: 33.33333%;
   float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
+  padding-left: 1.65663%;
+  padding-right: 1.65663%;
   float: left;
   font-weight: normal;
   font-family: normal 1.5em/1.5em "DIN Next W01 Light";
@@ -376,105 +387,238 @@ header #nav .navbar .brand a {
 }
 /* line 34, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 20%;
+  float: left;
+  padding-left: 0.22088%;
+  padding-right: 0.22088%;
   float: left;
 }
-/* line 36, ../../../components/sass/modules/_nav.scss */
+/* line 37, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
   color: #f7f7f7;
-  font: normal 1em/1.5em "DIN Next W01 Regular";
+  font: normal 1.5em/1.5em "DIN Next W01 Light";
   font-size: 14px;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  display: inline-block;
-  padding: 10px 10px 10px 10px;
+  letter-spacing: 0.04em;
+  display: block;
+  padding: 18px 22px 14px;
   text-decoration: none;
-  background-size: 35px;
-  background-repeat: no-repeat;
-  background-position: 2px;
 }
-/* line 57, ../../../components/sass/modules/_nav.scss */
+/* line 59, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a:hover {
-  background-color: #404040;
-  color: #fff;
+  background-color: black;
+  color: #f7f7f7;
 }
 @media (min-width: 0) and (max-width: 650px) {
-  /* line 36, ../../../components/sass/modules/_nav.scss */
+  /* line 37, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a {
     padding: 10px 18px;
   }
 }
-@media (min-width: 650px) and (max-width: 960px) {
-  /* line 36, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar ul li a {
-    padding-left: 10px;
-  }
-  /* line 74, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar ul li a.icon {
-    background-image: none;
-  }
-}
-/* line 77, ../../../components/sass/modules/_nav.scss */
+/* line 79, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.active {
   background-color: #fff;
   color: #333;
+  font-family: "DIN Next W01 Regular";
+  letter-spacing: 0.0525em;
 }
 
-/* line 1, ../../../components/sass/modules/_shopTools.scss */
-#shopTools {
+/* line 2, ../../../components/sass/modules/_shopTools.scss */
+.scene.bundles {
   background: #fff;
 }
 /* line 3, ../../../components/sass/modules/_shopTools.scss */
-#shopTools article {
-  text-align: center;
+.scene.products {
+  background: #f7f7f7;
+}
+/* line 5, ../../../components/sass/modules/_shopTools.scss */
+.scene article {
+  text-align: left;
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-#shopTools article:after {
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.scene article:after {
   content: " ";
   display: block;
   clear: both;
 }
-@media (min-width: 650px) {
-  /* line 3, ../../../components/sass/modules/_shopTools.scss */
-  #shopTools article {
-    text-align: left;
-  }
+/* line 22, ../../../components/sass/_mixins.scss */
+.scene article .gallery:before, .scene article .gallery:after {
+  content: '';
+  display: table;
 }
-/* line 13, ../../../components/sass/modules/_shopTools.scss */
-#shopTools .headings {
+/* line 27, ../../../components/sass/_mixins.scss */
+.scene article .gallery:after {
+  clear: both;
+}
+/* line 16, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .headings {
+  text-align: center;
+  border-bottom: 1px solid #efefef;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
+  padding-left: 1.65663%;
+  padding-right: 1.65663%;
 }
-/* line 15, ../../../components/sass/modules/_shopTools.scss */
-#shopTools .headings h1 {
+/* line 21, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .headings h1 {
+  position: relative;
   font-family: "DINNextLTW01-UltraLight 706122";
-  font-size: 48px;
-  font-weight: normal;
-  line-height: 100%;
-  margin: 48px 0 0;
-}
-/* line 22, ../../../components/sass/modules/_shopTools.scss */
-#shopTools .headings h2 {
   font-size: 28px;
   font-weight: normal;
-  line-height: 100%;
-  margin: 14px 0 0;
+  margin: 35px 0 0;
+}
+/* line 35, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .headings h2 {
+  font-family: "DINNextW01-LightItalic";
+  font-size: 22px;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin: 6px 0 18px;
+}
+/* line 44, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module {
+  margin-bottom: 22px;
+}
+/* line 47, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module:hover {
+  -moz-box-shadow: 0 0 18px 0 #ddd;
+  -webkit-box-shadow: 0 0 18px 0 #ddd;
+  box-shadow: 0 0 18px 0 #ddd;
+}
+/* line 50, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module h1 {
+  text-align: left;
+  font-family: "DIN Next W01 Light";
+  font-size: 22px;
+  position: relative;
+  margin: 18px 0;
+}
+/* line 57, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module h1 span {
+  font-family: "DINNextW01-CondensedMed";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+/* line 62, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module h1 span span {
+  font-family: "DINNextW01-CondensedReg";
+  letter-spacing: .1em;
+  font-size: 0.65em;
+  line-height: 5em;
+  text-transform: uppercase;
+}
+/* line 71, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module h2 {
+  font-family: "DIN Next W01 Light";
+  font-size: 18px;
+  margin: 18px 0 0;
+}
+/* line 76, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module h3 {
+  font-size: 18px;
+  font-family: "DINNextW01-LightItalic";
+  margin-top: 10px;
+}
+/* line 82, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module a.btn {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  display: block;
+  margin: 14px 0 22px;
+  padding: 10px 28px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: "DIN Next W01 Light";
+  font-size: 14px;
+}
+/* line 95, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module a.btn:hover {
+  background-color: black;
+  color: #f7f7f7;
+}
+@media (min-width: 960px) {
+  /* line 82, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module a.btn {
+    text-align: left;
+    display: inline-block;
+  }
+}
+/* line 106, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module ul.logoArea {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding-top: 14px;
+  padding-bottom: 28px;
 }
 /* line 22, ../../../components/sass/_mixins.scss */
-#shopTools .gallery:before, #shopTools .gallery:after {
+.scene article .gallery .shoptools-module ul.logoArea:before, .scene article .gallery .shoptools-module ul.logoArea:after {
   content: '';
   display: table;
 }
 /* line 27, ../../../components/sass/_mixins.scss */
-#shopTools .gallery:after {
+.scene article .gallery .shoptools-module ul.logoArea:after {
   clear: both;
+}
+/* line 113, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module ul.logoArea li {
+  text-align: center;
+  padding-top: 14px;
+}
+@media (min-width: 650px) {
+  /* line 125, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .bundle {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 1.65663%;
+    padding-right: 1.65663%;
+  }
+  /* line 128, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .bundle ul.logoArea > li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 6.62651%;
+    padding-right: 6.62651%;
+  }
+}
+@media (min-width: 650px) {
+  /* line 134, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .product {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 1.65663%;
+    padding-right: 1.65663%;
+  }
 }
 
 /* line 1, ../../../components/sass/modules/_events.scss */
@@ -497,7 +641,7 @@ header #nav .navbar ul li a.active {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 #events .event:after {
   content: " ";
   display: block;
@@ -587,8 +731,8 @@ header #nav .navbar ul li a.active {
     box-sizing: border-box;
     width: 33.33333%;
     float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
+    padding-left: 1.65663%;
+    padding-right: 1.65663%;
   }
   /* line 30, ../../../components/sass/modules/_dining.scss */
   #dining section h2 {
@@ -612,8 +756,8 @@ header #nav .navbar ul li a.active {
   background-image: -moz-linear-gradient(top, #f7f7f7, #fefaf0);
   background-image: -webkit-linear-gradient(top, #f7f7f7, #fefaf0);
   background-image: linear-gradient(to bottom, #f7f7f7, #fefaf0);
-  padding-left: 9.16667%;
-  padding-right: 9.16667%;
+  padding-left: 9.98996%;
+  padding-right: 9.98996%;
   text-align: center;
   border-top: 1px solid #DF4848;
   border-bottom: 1px solid #DF4848;
@@ -655,8 +799,8 @@ header #nav .navbar ul li a.active {
     box-sizing: border-box;
     width: 33.33333%;
     float: left;
-    padding-left: 3.33333%;
-    padding-right: 3.33333%;
+    padding-left: 6.62651%;
+    padding-right: 6.62651%;
   }
 }
 @media (min-width: 450px) and (max-width: 650px) {
@@ -667,8 +811,8 @@ header #nav .navbar ul li a.active {
     box-sizing: border-box;
     width: 50%;
     float: left;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 9.93976%;
+    padding-right: 9.93976%;
   }
 }
 /* line 28, ../../../components/sass/modules/_hotelinfo.scss */
@@ -737,7 +881,7 @@ header #nav .navbar ul li a.active {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 #rooms header:after {
   content: " ";
   display: block;
@@ -749,10 +893,10 @@ header #nav .navbar ul li a.active {
     max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 9.16667%;
-    padding-right: 9.16667%;
+    padding-left: 9.98996%;
+    padding-right: 9.98996%;
   }
-  /* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   #rooms header:after {
     content: " ";
     display: block;
@@ -764,8 +908,8 @@ header #nav .navbar ul li a.active {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 9.16667%;
-  padding-right: 9.16667%;
+  padding-left: 9.98996%;
+  padding-right: 9.98996%;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -774,7 +918,7 @@ header #nav .navbar ul li a.active {
   justify-content: center;
   padding: 200px 0;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 #rooms .room:after {
   content: " ";
   display: block;
@@ -783,8 +927,8 @@ header #nav .navbar ul li a.active {
 @media (min-width: 650px) {
   /* line 11, ../../../components/sass/modules/_rooms.scss */
   #rooms .room {
-    padding-left: 59.16667%;
-    padding-right: 9.16667%;
+    padding-left: 59.98996%;
+    padding-right: 9.98996%;
   }
 }
 /* line 24, ../../../components/sass/modules/_rooms.scss */
@@ -889,7 +1033,7 @@ header #nav .navbar ul li a.active {
 #attractions:after {
   clear: both;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 #attractions:after {
   content: " ";
   display: block;
@@ -908,7 +1052,7 @@ header #nav .navbar ul li a.active {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 #attractions article:after {
   content: " ";
   display: block;
@@ -921,7 +1065,7 @@ header #nav .navbar ul li a.active {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   #attractions article:after {
     content: " ";
     display: block;
@@ -937,7 +1081,7 @@ footer {
   background: #666666;
   padding: 30px 0;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 footer:after {
   content: " ";
   display: block;
@@ -962,22 +1106,4 @@ footer #socialmedia ul li img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-}
-
-/* line 1, ../../../components/sass/modules/_product.scss */
-.product {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-  background: #f7f7f7;
-}
-/* line 4, ../../../components/sass/modules/_product.scss */
-.product .logoArea {
-  background: #f7f7f7;
-  width: 100%;
-  height: 100px;
 }

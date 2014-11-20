@@ -1,7 +1,9 @@
 header {
+  padding-top:90px;
+  background-color: $light;
   .fullheight {
-    @include backImage('../images/shopTools-headerBG.jpg');
-
+    @include backImage('../images/shop-tools.jpg');
+    // background: #666;
     @include display-flex();
     @include align-items(center);
     @include justify-content(center);

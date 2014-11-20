@@ -1,3 +1,7 @@
+img {
+     max-width: 100%;
+}
+
 body {
   font: $mainFont;
   background: $backgroundColor;
@@ -16,5 +20,5 @@ strong {
 
 p {
   font-weight: normal;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }

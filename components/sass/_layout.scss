@@ -7,17 +7,18 @@ body {
 .scene {
   position: relative;
   article {
+    padding: 0 8px; //patch
     @include container();
   } //article
-
-  @include breakpoint($wide) {
-    // padding: 40px 0;
-  } //breakpoint
 
   @include breakpoint($medium) {
     article {
       @include container;
     } //article
   } // breakpoint
+
+  @include breakpoint($wide) {
+    // padding: 40px 0;
+  } //breakpoint
 } //scene
 
