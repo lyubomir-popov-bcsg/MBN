@@ -1,15 +1,15 @@
 $(function() {
-  var topoffset = 43;
+  var topoffset = 53;
 
   var isTouch = 'ontouchstart' in document.documentElement;
 
   //window height
-  var wheight = $(window).height()/3; //get height of the window
+  var wheight = $(window).height()/2; //get height of the window
 
   $('.fullheight').css('height', wheight);
 
   $(window).resize(function() {
-    wheight = $(window).height()/3; //get height of the window
+    wheight = $(window).height()/2; //get height of the window
     $('.fullheight').css('height', wheight);
   }) //on resize
 
