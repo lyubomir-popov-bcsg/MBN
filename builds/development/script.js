@@ -77,31 +77,19 @@ $(function() {
   //     } // target.length
   //   } //location hostname
   // }); //on click
-  
-  // function updateNav(windowpos, id){
-  //   varIdWithHash = '#' + id; 
-  //   if (windowpos > $(id).offset().top) {
-  //     $('nav li a').removeClass('active');
-  //     $('a[href$='+id+']').addClass('active');
-  //   } //windowpos
-  // }
-  
+
   //highlight navigation
   $(window).scroll(function() {
     var topoffset = $('.navbar').height();
-    var windowpos = $(window).scrollTop() + topoffset;
-    // $('nav li a').removeClass('active');
+    console.log(topoffset);
 
-    // $('.scene').each(function(){ 
-      // var id = $(this).attr('id');
-      // updateNav(windowpos, '#' + $(this).attr('id'));//closure problem
-      //$('nav ul li' + id ).offset().left
-    //   }
-    // );
+    var windowpos = $(window).scrollTop() + topoffset;
+    $('nav li a').removeClass('active');
 
     if (windowpos > $('#toolBundles').offset().top) {
       $('nav li a').removeClass('active');
       $('a[href$="#toolBundles"]').addClass('active');
+
     } //windowpos
 
     if (windowpos > $('#finances').offset().top) {
@@ -109,7 +97,7 @@ $(function() {
       $('a[href$="#finances"]').addClass('active');
 
       // $('nav .abs-wrapper ul').css({
-      //   'margin-left' : -$('nav ul li' + '#finances' ).offset().left + 'px'
+      //   'margin-left' : -leftOffset + 'px'
       // }); // slide nav
 
     } //windowpos

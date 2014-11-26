@@ -4,21 +4,12 @@ body {
   height: 100%;
 }
 
-.scene {
+.scene { 
   position: relative;
-  article {
-    padding: 0 8px; //patch
-    @include container();
-  } //article
-
-  @include breakpoint($medium) {
+  // @include breakpoint($narrow) {
     article {
       @include container;
     } //article
-  } // breakpoint
-
-  @include breakpoint($wide) {
-    // padding: 40px 0;
-  } //breakpoint
+  // } // breakpoint
 } //scene
 

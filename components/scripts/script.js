@@ -1,7 +1,15 @@
 $(function() {
-  var topoffset = 53;
-
   var isTouch = 'ontouchstart' in document.documentElement;
+  
+  var ns = {};
+  ns.anchorOffsets = {};
+
+  $( "nav li" ).each(function(index) {
+    // console.log( $( this ).text() + " " + $(this).position().left );
+    ns.anchorOffsets[index] = $(this).position().left;
+  });
+//  var anchorOffsets = $('nav ul li a')).each(function);
+  // var leftOffset = $('a[href$="#finances"]').position().left;
 
   //window height
   var wheight = $(window).height()/2; //get height of the window
@@ -11,8 +19,27 @@ $(function() {
   $(window).resize(function() {
     wheight = $(window).height()/2; //get height of the window
     $('.fullheight').css('height', wheight);
+    checkWidth();
+
+
   }) //on resize
 
+  function checkWidth(){
+    if( $(window).width() < 600){
+      $('.navbar').css({
+            'overflow-y': 'hidden',
+            'overflow-x': 'scroll', 
+            '-ms-overflow-style':'-ms-autohiding-scrollbar',
+            '-webkit-overflow-scrolling': 'touch'
+      });
+    }else{
+      $('.navbar').css({
+      'overflow-y': 'hidden',
+      'overflow-x': 'hidden'
+      });
+    }
+     //make subnav scrollable
+  }
 
 // Animated Scrolling
   // $('a[href*=#]:not([href=#])').click(function() {
@@ -27,11 +54,27 @@ $(function() {
   //     } // target.length
   //   } //location hostname
   // }); //on click
-
+  
+  // function updateNav(windowpos, id){
+  //   varIdWithHash = '#' + id; 
+  //   if (windowpos > $(id).offset().top) {
+  //     $('nav li a').removeClass('active');
+  //     $('a[href$='+id+']').addClass('active');
+  //   } //windowpos
+  // }
+  
   //highlight navigation
   $(window).scroll(function() {
+    var topoffset = $('.navbar').height();
     var windowpos = $(window).scrollTop() + topoffset;
-    $('nav li a').removeClass('active');
+    // $('nav li a').removeClass('active');
+
+    // $('.scene').each(function(){ 
+      // var id = $(this).attr('id');
+      // updateNav(windowpos, '#' + $(this).attr('id'));//closure problem
+      //$('nav ul li' + id ).offset().left
+    //   }
+    // );
 
     if (windowpos > $('#toolBundles').offset().top) {
       $('nav li a').removeClass('active');
@@ -41,6 +84,11 @@ $(function() {
     if (windowpos > $('#finances').offset().top) {
       $('nav li a').removeClass('active');
       $('a[href$="#finances"]').addClass('active');
+
+      // $('nav .abs-wrapper ul').css({
+      //   'margin-left' : -$('nav ul li' + '#finances' ).offset().left + 'px'
+      // }); // slide nav
+
     } //windowpos
 
     if (windowpos > $('#marketing').offset().top) {
@@ -53,15 +101,7 @@ $(function() {
       $('a[href$="#safeguarding"]').addClass('active');
     } //windowpos
 
-    if (windowpos > $('#employees').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#employees"]').addClass('active');
-    } //windowpos
-
   }); //window scroll
-
-
-
 
   //set up ScrollMagic
   var controller = new ScrollMagic({

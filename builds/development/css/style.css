@@ -201,29 +201,27 @@ img {
   max-width: 100%;
 }
 
+/* line 4, ../../../components/sass/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
 /* line 5, ../../../components/sass/_base.scss */
 body {
-  font: normal 1em/1.5em "DIN Next W01 Regular";
+  font-family: "DIN Next W01 Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #f7f7f7;
   color: #333;
 }
 
-/* line 11, ../../../components/sass/_base.scss */
+/* line 15, ../../../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font: normal 1.5em/1.5em "DIN Next W01 Light";
   color: #333;
   font-weight: normal;
 }
 
-/* line 17, ../../../components/sass/_base.scss */
+/* line 20, ../../../components/sass/_base.scss */
 strong {
   font-weight: 600;
-}
-
-/* line 21, ../../../components/sass/_base.scss */
-p {
-  font-weight: normal;
-  padding-bottom: 14px;
 }
 
 /* line 1, ../../../components/sass/_layout.scss */
@@ -237,9 +235,8 @@ body {
 .scene {
   position: relative;
 }
-/* line 9, ../../../components/sass/_layout.scss */
+/* line 10, ../../../components/sass/_layout.scss */
 .scene article {
-  padding: 0 8px;
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
@@ -249,20 +246,6 @@ body {
   content: " ";
   display: block;
   clear: both;
-}
-@media (min-width: 960px) {
-  /* line 15, ../../../components/sass/_layout.scss */
-  .scene article {
-    max-width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-  .scene article:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
 }
 
 /* line 1, ../../../components/sass/modules/_intro.scss */
@@ -328,6 +311,7 @@ header #nav {
   background: #333;
   width: 100%;
   z-index: 100;
+  position: relative;
 }
 /* line 22, ../../../components/sass/_mixins.scss */
 header #nav:before, header #nav:after {
@@ -338,19 +322,29 @@ header #nav:before, header #nav:after {
 header #nav:after {
   clear: both;
 }
-/* line 7, ../../../components/sass/modules/_nav.scss */
+/* line 10, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar {
-  max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  background: #333;
+  left: 0;
+  right: 0;
 }
-/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-header #nav .navbar:after {
-  content: " ";
-  display: block;
-  clear: both;
+@media (min-width: 0) {
+  /* line 10, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+  }
 }
-/* line 9, ../../../components/sass/modules/_nav.scss */
+@media (min-width: 540px) {
+  /* line 10, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar {
+    overflow-x: hidden;
+  }
+}
+/* line 25, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar .brand {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -361,74 +355,107 @@ header #nav .navbar .brand {
   padding-right: 1.65663%;
   float: left;
   font-weight: normal;
-  font-family: normal 1.5em/1.5em "DIN Next W01 Light";
+  font-family: "DIN Next W01 Light";
   text-align: center;
   text-transform: uppercase;
   background: #DF4848;
 }
-/* line 17, ../../../components/sass/modules/_nav.scss */
+/* line 33, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar .brand a {
   color: #f7f7f7;
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  padding: 10px;
-  font-size: 1em;
+  padding: 9px;
+  font-size: .75em;
 }
-@media (max-width: 650px) {
-  /* line 17, ../../../components/sass/modules/_nav.scss */
+@media (max-width: 540px) {
+  /* line 33, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar .brand a {
     font-size: 1em;
   }
-  /* line 27, ../../../components/sass/modules/_nav.scss */
+  /* line 43, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar .brand a span {
     display: none;
   }
 }
-/* line 34, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 20%;
-  float: left;
-  padding-left: 0.22088%;
-  padding-right: 0.22088%;
-  float: left;
+/* line 48, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar .abs-wrapper {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 37, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li a {
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+header #nav .navbar .abs-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 51, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul {
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
-  color: #f7f7f7;
-  font: normal 1.5em/1.5em "DIN Next W01 Light";
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  display: block;
-  padding: 18px 22px 14px;
-  text-decoration: none;
 }
-/* line 59, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li a:hover {
-  background-color: black;
-  color: #f7f7f7;
-}
-@media (min-width: 0) and (max-width: 650px) {
-  /* line 37, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar ul li a {
-    padding: 10px 18px;
+@media (min-width: 0) and (max-width: 540px) {
+  /* line 51, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul {
+    display: block;
+    width: 480px;
+    min-width: 100%;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
   }
 }
-/* line 79, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li a.active {
-  background-color: #fff;
+/* line 64, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li {
+  display: inline-block;
+}
+@media (min-width: 540px) {
+  /* line 64, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+  }
+}
+/* line 72, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a {
+  display: block;
+  font-size: 1.3rem;
+  padding: 1.4em 1.25em 1.2em;
+  text-decoration: none;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  letter-spacing: 0.065em;
+}
+@media (min-width: 540px) {
+  /* line 72, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+  }
+}
+/* line 86, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a:hover {
+  background-color: #f7f7f7;
   color: #333;
-  font-family: "DIN Next W01 Regular";
-  letter-spacing: 0.0525em;
+}
+/* line 91, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.active {
+  background-color: #f7f7f7;
+  color: #333;
+}
+/* line 95, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.active #toolBundles {
+  background-color: #fff;
 }
 
 /* line 2, ../../../components/sass/modules/_shopTools.scss */
@@ -438,8 +465,9 @@ header #nav .navbar ul li a.active {
 /* line 3, ../../../components/sass/modules/_shopTools.scss */
 .scene.products {
   background: #f7f7f7;
+  border-top: 1px solid #e4e4e4;
 }
-/* line 5, ../../../components/sass/modules/_shopTools.scss */
+/* line 8, ../../../components/sass/modules/_shopTools.scss */
 .scene article {
   text-align: left;
   max-width: 1160px;
@@ -462,90 +490,90 @@ header #nav .navbar ul li a.active {
   clear: both;
 }
 /* line 16, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .headings {
-  text-align: left;
-  border-bottom: 1px solid #efefef;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 1.65663%;
-  padding-right: 1.65663%;
-}
-/* line 21, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .headings h1 {
-  position: relative;
-  font-family: "DINNextLTW01-UltraLight 706122";
-  font-size: 35px;
-  font-weight: normal;
-  margin: 55px 0 0;
-}
-/* line 35, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .headings h2 {
-  font-family: "DINNextW01-LightItalic";
-  font-size: 22px;
-  line-height: 1.2em;
-  font-weight: normal;
-  margin: 6px 0 18px;
-}
-/* line 44, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module {
-  margin-bottom: 22px;
+  border-top: 1px solid #e4e4e4;
+  font-size: 1rem;
 }
-/* line 47, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module:hover {
-  -moz-box-shadow: 0 0 18px 0 #ddd;
-  -webkit-box-shadow: 0 0 18px 0 #ddd;
-  box-shadow: 0 0 18px 0 #ddd;
+/* line 18, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module:nth-of-type(2) {
+  border-top: none;
 }
-/* line 50, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 540px) {
+  /* line 16, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module {
+    font-size: 1.15rem;
+  }
+}
+/* line 23, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module h2, .scene article .gallery .shoptools-module h3 {
+  font-size: 1.15em;
+}
+@media (min-width: 540px) {
+  /* line 16, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module {
+    border-top: none;
+  }
+  /* line 27, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module:hover {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 18px 0 #dadada;
+    -webkit-box-shadow: 0 0 18px 0 #dadada;
+    box-shadow: 0 0 18px 0 #dadada;
+  }
+}
+@media (min-width: 960px) {
+  /* line 16, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+}
+/* line 38, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module h1 {
   text-align: left;
   font-family: "DIN Next W01 Light";
-  font-size: 22px;
+  font-size: 1.8rem;
+  line-height: 1em;
   position: relative;
-  margin: 18px 0;
+  margin: 1em -3em 1em 0;
+  padding-right: 3em;
+  width: 100%;
 }
-/* line 57, ../../../components/sass/modules/_shopTools.scss */
+/* line 47, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module h1 span {
   font-family: "DINNextW01-CondensedMed";
   display: inline-block;
   position: absolute;
   right: 0;
+  top: 0.1rem;
 }
-/* line 62, ../../../components/sass/modules/_shopTools.scss */
+/* line 53, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module h1 span span {
-  font-family: "DINNextW01-CondensedReg";
-  letter-spacing: .1em;
   font-size: 0.65em;
-  line-height: 5em;
+  line-height: 4.5em;
+  font-family: "DINNextW01-CondensedReg";
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+/* line 61, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module h2 {
+  font-size: 1.5rem;
+  font-family: "DIN Next W01 Light";
+  margin: 1em 0 0;
+}
+/* line 66, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .shoptools-module h3 {
+  font-size: 1.5rem;
+  font-family: "DINNextW01-LightItalic";
+  margin-top: 0.5em;
 }
 /* line 71, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module h2 {
-  font-family: "DIN Next W01 Light";
-  font-size: 18px;
-  margin: 18px 0 0;
-}
-/* line 76, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module h3 {
-  font-size: 18px;
-  font-family: "DINNextW01-LightItalic";
-  margin-top: 10px;
-}
-/* line 82, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module a.btn {
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   display: block;
   margin: 14px 0 22px;
-  padding: 10px 28px;
+  padding: 11px 28px 9px;
   background: #333;
   color: #fff;
   text-decoration: none;
@@ -553,19 +581,30 @@ header #nav .navbar ul li a.active {
   font-family: "DIN Next W01 Light";
   font-size: 14px;
 }
-/* line 95, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 540px) {
+  /* line 71, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module a.btn {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+  }
+}
+/* line 84, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module a.btn:hover {
+  z-index: 1000;
   background-color: black;
   color: #f7f7f7;
 }
-@media (min-width: 960px) {
-  /* line 82, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 540px) {
+  /* line 71, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .shoptools-module a.btn {
     text-align: left;
     display: inline-block;
   }
 }
-/* line 106, ../../../components/sass/modules/_shopTools.scss */
+/* line 95, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module ul.logoArea {
   background: #fff;
   border-top: 1px solid #e4e4e4;
@@ -582,23 +621,23 @@ header #nav .navbar ul li a.active {
 .scene article .gallery .shoptools-module ul.logoArea:after {
   clear: both;
 }
-/* line 115, ../../../components/sass/modules/_shopTools.scss */
+/* line 105, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module ul.logoArea li {
   text-align: center;
   padding-top: 14px;
 }
-@media (min-width: 650px) {
-  /* line 126, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .bundle {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 1.65663%;
-    padding-right: 1.65663%;
-  }
-  /* line 129, ../../../components/sass/modules/_shopTools.scss */
+/* line 116, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .bundle {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 4.96988%;
+  padding-right: 4.96988%;
+}
+@media (min-width: 360px) {
+  /* line 119, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .bundle ul.logoArea > li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -609,16 +648,309 @@ header #nav .navbar ul li a.active {
     padding-right: 9.93976%;
   }
 }
-@media (min-width: 650px) {
-  /* line 135, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 540px) {
+  /* line 116, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .bundle {
+    border-top: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 2.48494%;
+    padding-right: 2.48494%;
+  }
+  /* line 126, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .bundle ul.logoArea > li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 3.31325%;
+    padding-right: 3.31325%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 116, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .bundle {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 2.20884%;
+    padding-right: 2.20884%;
+  }
+  /* line 132, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .bundle ul.logoArea > li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 3.31325%;
+    padding-right: 3.31325%;
+  }
+}
+/* line 138, ../../../components/sass/modules/_shopTools.scss */
+.scene article .gallery .product {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 4.96988%;
+  padding-right: 4.96988%;
+}
+@media (min-width: 360px) {
+  /* line 138, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .product {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 4.96988%;
+    padding-right: 4.96988%;
+  }
+  /* line 142, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .product.single-product {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 4.96988%;
+    padding-right: 4.96988%;
+  }
+}
+@media (min-width: 540px) {
+  /* line 138, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .product {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 2.48494%;
+    padding-right: 2.48494%;
+  }
+  /* line 146, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .product.single-product {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 2.48494%;
+    padding-right: 2.48494%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 138, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 33.33333%;
     float: left;
+    padding-left: 2.20884%;
+    padding-right: 2.20884%;
+  }
+  /* line 150, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .product.single-product {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 2.48494%;
+    padding-right: 2.48494%;
+  }
+}
+/* line 156, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits {
+  padding-bottom: 55px;
+  background: #fff;
+}
+/* line 166, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits h2 {
+  font-family: "DINNextW01-LightItalic";
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 1.5em 0 0;
+}
+@media (min-width: 540px) {
+  /* line 166, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits h2 {
+    font-size: 1.8rem;
+  }
+}
+/* line 177, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits p {
+  font-family: "DIN Next W01 Light";
+  font-size: 1.5rem;
+  margin: .75em 0 0em;
+}
+@media (min-width: 540px) {
+  /* line 177, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits p {
+    font-size: 1.6rem;
+  }
+}
+/* line 187, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits ul#benefit-list {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.scene.benefits ul#benefit-list:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 189, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits ul#benefit-list li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 4.96988%;
+  padding-right: 4.96988%;
+}
+@media (min-width: 540px) {
+  /* line 189, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 2.48494%;
+    padding-right: 2.48494%;
+  }
+  /* line 193, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list li.single-product {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 2.48494%;
+    padding-right: 2.48494%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 189, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 2.20884%;
+    padding-right: 2.20884%;
+  }
+  /* line 197, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list li.single-product {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 2.48494%;
+    padding-right: 2.48494%;
+  }
+}
+/* line 203, ../../../components/sass/modules/_shopTools.scss */
+.scene .headings {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-bottom: 1px solid #e4e4e4;
+}
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.scene .headings:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 208, ../../../components/sass/modules/_shopTools.scss */
+.scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 4.96988%;
+  padding-right: 4.96988%;
+}
+@media (min-width: 540px) {
+  /* line 208, ../../../components/sass/modules/_shopTools.scss */
+  .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 2.48494%;
+    padding-right: 2.48494%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 208, ../../../components/sass/modules/_shopTools.scss */
+  .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 2.20884%;
+    padding-right: 2.20884%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 208, ../../../components/sass/modules/_shopTools.scss */
+  .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
     padding-left: 1.65663%;
     padding-right: 1.65663%;
+  }
+}
+/* line 221, ../../../components/sass/modules/_shopTools.scss */
+.scene .headings h1 {
+  position: relative;
+  font-family: "DINNextLTW01-UltraLight 706122";
+  font-size: 2.58rem;
+  font-weight: normal;
+  margin: 6rem 0 0;
+}
+@media (min-width: 540px) {
+  /* line 221, ../../../components/sass/modules/_shopTools.scss */
+  .scene .headings h1 {
+    font-size: 3.5rem;
+  }
+}
+/* line 233, ../../../components/sass/modules/_shopTools.scss */
+.scene .headings h2 {
+  font-family: "DINNextW01-LightItalic";
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin: .2em 0 0.75em;
+}
+@media (min-width: 540px) {
+  /* line 233, ../../../components/sass/modules/_shopTools.scss */
+  .scene .headings h2 {
+    font-size: 2.2rem;
   }
 }
 
@@ -648,7 +980,7 @@ header #nav .navbar ul li a.active {
   display: block;
   clear: both;
 }
-@media (min-width: 650px) {
+@media (min-width: 540px) {
   /* line 5, ../../../components/sass/modules/_events.scss */
   #events .event {
     -moz-box-sizing: border-box;
@@ -710,7 +1042,7 @@ header #nav .navbar ul li a.active {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-@media (min-width: 650px) {
+@media (min-width: 540px) {
   /* line 14, ../../../components/sass/modules/_dining.scss */
   #dining #areadining {
     margin-bottom: 30px;
@@ -792,7 +1124,7 @@ header #nav .navbar ul li a.active {
 #hotelinfo #usefulinfo:after {
   clear: both;
 }
-@media (min-width: 650px) {
+@media (min-width: 540px) {
   /* line 18, ../../../components/sass/modules/_hotelinfo.scss */
   #hotelinfo #usefulinfo section {
     -moz-box-sizing: border-box;
@@ -804,7 +1136,7 @@ header #nav .navbar ul li a.active {
     padding-right: 6.62651%;
   }
 }
-@media (min-width: 450px) and (max-width: 650px) {
+@media (min-width: 450px) and (max-width: 540px) {
   /* line 23, ../../../components/sass/modules/_hotelinfo.scss */
   #hotelinfo #usefulinfo section.checklist {
     -moz-box-sizing: border-box;
@@ -925,7 +1257,7 @@ header #nav .navbar ul li a.active {
   display: block;
   clear: both;
 }
-@media (min-width: 650px) {
+@media (min-width: 540px) {
   /* line 11, ../../../components/sass/modules/_rooms.scss */
   #rooms .room {
     padding-left: 59.98996%;

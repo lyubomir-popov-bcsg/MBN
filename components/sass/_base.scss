@@ -1,24 +1,22 @@
 img {
-     max-width: 100%;
+	max-width: 100%;
 }
-
+html{font-size: 62.5%;} 
 body {
-  font: $mainFont;
-  background: $backgroundColor;
-  color: $typeDefault;
+	// font: $mainFont;
+	font-family: $fontfamily-base;
+	background: $backgroundColor;
+	color: $typeDefault;
+	// font-size: 10px;
+	@include breakpoint($small) {
+	}
 }
 
 #{headings()} {
- font: $headFont;
- color: $headColor;
- font-weight: normal;
+	color: $headColor;
+	font-weight: normal;
 }
 
 strong {
-  font-weight: $bold;
-}
-
-p {
-  font-weight: normal;
-  padding-bottom: 14px;
+	font-weight: $bold;
 }

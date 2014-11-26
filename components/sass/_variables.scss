@@ -2,6 +2,7 @@
 
 @include border-box-sizing; //uses border box sizing like the old IE
 $gutter-width:1em;
+
 $susy: (
   columns: 12,
   container: 1160px,
@@ -10,10 +11,16 @@ $susy: (
   grid-padding:$gutter-width
 );
 
-$narrow: 400px;
-$small: 650px;
+$narrow: 360px;
+$small: 540px;
 $medium: 960px;
 $wide: 1200px;
+
+
+$narrowCols : 4;
+$smallCols : 8;
+$mediumCols : 9;
+$wideCols : 12;
 
 //Add Color Palette
 $blue       : #063642;
@@ -34,16 +41,55 @@ $navForeground      : $light;
 $navHover           : $yellow;
 $navBrandBg         : $red;
 $headersubbg        : $dark;
+$cobrandColor		: #009edf; //comdata blue
 
 //Font variables
-$fontfamily-base     : 'DIN Next W01 Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fontfamily-base     : 'DIN Next W01 Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $thin     : 200;
 $normal   : 400;
 $bold     : 600;
 $heavy    : 800;
 
-$headFont   : normal 1.5em/1.5em 'DIN Next W01 Light';
-$mainFont   : normal 1em/1.5em 'DIN Next W01 Regular';
+$headFont   : 'DIN Next W01 Light';
+$mainFont   : 'DIN Next W01 Regular';
 $headColor  : $dark;
 
+
+// $mc1:    floor(2.213933123) +  'px';
+// $mc2:     ceil(3.510794282) +  'px';
+// $mc3:    floor(4.387814452) +  'px';
+// $mc4:     ceil(5.567321054) +  'px';
+// $mc5:     ceil(6.958075529) +  'px';
+// $mc6:     ceil(8.828504673) +  'px';
+// $mc7:   floor(11.03392489) +  'px';
+// $mc8:         14 +  'px';
+// $mc9:    ceil(17.49729474) +  'px';
+// $mc10:  floor(22.20081512) +  'px';
+// $mc11:   ceil(27.74672897) +  'px';
+// $mc12:  floor(35.20544227) +  'px';
+// $mc13:  	  44 + 'px';
+// $mc14:   ceil(55.8278225) +  'px';
+// $mc15:   ceil(69.77399037) +  'px';
+// $mc16:   ceil(88.53022613) +  'px';
+// $mc17:  ceil(110.6456757) +  'px';
+// $mc22:  ceil(136.645676) +  'px';
+
+$mc1:    2px;
+$mc2:    3px;
+$mc3:    4px;
+$mc4:    6px;
+$mc5:    7px;
+$mc6:    9px;
+$mc7:   11px; //.7rem
+$mc8:   14px;
+$mc9:   18px;
+$mc10:  22px;
+$mc11:  28px;
+$mc12:  35px;
+$mc13:  44px;
+$mc14:  55px;
+$mc15:  70px;
+$mc16:  89px;
+$mc17: 111px;
+$mc22: 137px;
