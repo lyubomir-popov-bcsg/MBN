@@ -426,14 +426,14 @@ header #nav .navbar ul li {
 /* line 72, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a {
   display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.065em;
   font-size: 1.3rem;
   padding: 1.4em 1.25em 1.2em;
   text-decoration: none;
   color: #f7f7f7;
-  text-transform: uppercase;
-  letter-spacing: 0.065em;
 }
-@media (min-width: 540px) {
+@media (min-width: 960px) {
   /* line 72, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a {
     transition: all 0.2s ease;
@@ -441,6 +441,7 @@ header #nav .navbar ul li a {
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
+    font-size: 1.4rem;
   }
 }
 /* line 86, ../../../components/sass/modules/_nav.scss */
@@ -524,8 +525,8 @@ header #nav .navbar ul li a.active #toolBundles {
 @media (min-width: 960px) {
   /* line 16, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .shoptools-module {
-    font-size: 18px;
-    margin-bottom: 22px;
+    font-size: 1.8rem;
+    margin-bottom: 2.2rem;
   }
 }
 /* line 38, ../../../components/sass/modules/_shopTools.scss */
@@ -539,7 +540,13 @@ header #nav .navbar ul li a.active #toolBundles {
   padding-right: 3em;
   width: 100%;
 }
-/* line 47, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 960px) {
+  /* line 38, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module h1 {
+    font-size: 2.2rem;
+  }
+}
+/* line 48, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module h1 span {
   font-family: "DINNextW01-CondensedMed";
   display: inline-block;
@@ -547,7 +554,7 @@ header #nav .navbar ul li a.active #toolBundles {
   right: 0;
   top: 0.1rem;
 }
-/* line 53, ../../../components/sass/modules/_shopTools.scss */
+/* line 54, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module h1 span span {
   font-size: 0.65em;
   line-height: 4.5em;
@@ -555,34 +562,46 @@ header #nav .navbar ul li a.active #toolBundles {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-/* line 61, ../../../components/sass/modules/_shopTools.scss */
+/* line 62, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module h2 {
   font-size: 1.5rem;
   font-family: "DIN Next W01 Light";
   margin: 1em 0 0;
 }
-/* line 66, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 960px) {
+  /* line 62, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module h2 {
+    font-size: 1.8rem;
+  }
+}
+/* line 68, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module h3 {
   font-size: 1.5rem;
   font-family: "DINNextW01-LightItalic";
   margin-top: 0.5em;
 }
-/* line 71, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 960px) {
+  /* line 68, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module h3 {
+    font-size: 1.8rem;
+  }
+}
+/* line 74, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module a.btn {
   text-transform: uppercase;
   letter-spacing: 0.02em;
   display: block;
-  margin: 14px 0 22px;
-  padding: 11px 28px 9px;
+  font-size: 1.2rem;
+  margin: 1em 0 2em;
+  padding: 1em 2em .8em;
   background: #333;
   color: #fff;
   text-decoration: none;
   text-align: center;
   font-family: "DIN Next W01 Light";
-  font-size: 14px;
 }
-@media (min-width: 540px) {
-  /* line 71, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 960px) {
+  /* line 74, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .shoptools-module a.btn {
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -591,20 +610,26 @@ header #nav .navbar ul li a.active #toolBundles {
     -ms-transition: all 0.2s ease;
   }
 }
-/* line 84, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 960px) {
+  /* line 74, ../../../components/sass/modules/_shopTools.scss */
+  .scene article .gallery .shoptools-module a.btn {
+    font-size: 1.4rem;
+  }
+}
+/* line 88, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module a.btn:hover {
   z-index: 1000;
   background-color: black;
   color: #f7f7f7;
 }
 @media (min-width: 540px) {
-  /* line 71, ../../../components/sass/modules/_shopTools.scss */
+  /* line 74, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .shoptools-module a.btn {
     text-align: left;
     display: inline-block;
   }
 }
-/* line 95, ../../../components/sass/modules/_shopTools.scss */
+/* line 99, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module ul.logoArea {
   background: #fff;
   border-top: 1px solid #e4e4e4;
@@ -621,12 +646,12 @@ header #nav .navbar ul li a.active #toolBundles {
 .scene article .gallery .shoptools-module ul.logoArea:after {
   clear: both;
 }
-/* line 105, ../../../components/sass/modules/_shopTools.scss */
+/* line 109, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .shoptools-module ul.logoArea li {
   text-align: center;
   padding-top: 14px;
 }
-/* line 116, ../../../components/sass/modules/_shopTools.scss */
+/* line 120, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .bundle {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -637,7 +662,7 @@ header #nav .navbar ul li a.active #toolBundles {
   padding-right: 4.96988%;
 }
 @media (min-width: 360px) {
-  /* line 119, ../../../components/sass/modules/_shopTools.scss */
+  /* line 123, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .bundle ul.logoArea > li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -649,18 +674,18 @@ header #nav .navbar ul li a.active #toolBundles {
   }
 }
 @media (min-width: 540px) {
-  /* line 116, ../../../components/sass/modules/_shopTools.scss */
+  /* line 120, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .bundle {
     border-top: none;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 100%;
+    width: 50%;
     float: left;
     padding-left: 2.48494%;
     padding-right: 2.48494%;
   }
-  /* line 126, ../../../components/sass/modules/_shopTools.scss */
+  /* line 130, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .bundle ul.logoArea > li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -672,7 +697,7 @@ header #nav .navbar ul li a.active #toolBundles {
   }
 }
 @media (min-width: 960px) {
-  /* line 116, ../../../components/sass/modules/_shopTools.scss */
+  /* line 120, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .bundle {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -682,7 +707,7 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-left: 2.20884%;
     padding-right: 2.20884%;
   }
-  /* line 132, ../../../components/sass/modules/_shopTools.scss */
+  /* line 136, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .bundle ul.logoArea > li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -693,7 +718,7 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-right: 3.31325%;
   }
 }
-/* line 138, ../../../components/sass/modules/_shopTools.scss */
+/* line 142, ../../../components/sass/modules/_shopTools.scss */
 .scene article .gallery .product {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -704,7 +729,7 @@ header #nav .navbar ul li a.active #toolBundles {
   padding-right: 4.96988%;
 }
 @media (min-width: 360px) {
-  /* line 138, ../../../components/sass/modules/_shopTools.scss */
+  /* line 142, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -714,7 +739,7 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-left: 4.96988%;
     padding-right: 4.96988%;
   }
-  /* line 142, ../../../components/sass/modules/_shopTools.scss */
+  /* line 146, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .product.single-product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -726,7 +751,7 @@ header #nav .navbar ul li a.active #toolBundles {
   }
 }
 @media (min-width: 540px) {
-  /* line 138, ../../../components/sass/modules/_shopTools.scss */
+  /* line 142, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -736,7 +761,7 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-left: 2.48494%;
     padding-right: 2.48494%;
   }
-  /* line 146, ../../../components/sass/modules/_shopTools.scss */
+  /* line 150, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .product.single-product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -748,7 +773,7 @@ header #nav .navbar ul li a.active #toolBundles {
   }
 }
 @media (min-width: 960px) {
-  /* line 138, ../../../components/sass/modules/_shopTools.scss */
+  /* line 142, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -758,7 +783,7 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-left: 2.20884%;
     padding-right: 2.20884%;
   }
-  /* line 150, ../../../components/sass/modules/_shopTools.scss */
+  /* line 154, ../../../components/sass/modules/_shopTools.scss */
   .scene article .gallery .product.single-product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -769,12 +794,12 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-right: 2.48494%;
   }
 }
-/* line 156, ../../../components/sass/modules/_shopTools.scss */
+/* line 160, ../../../components/sass/modules/_shopTools.scss */
 .scene.benefits {
   padding-bottom: 55px;
   background: #fff;
 }
-/* line 166, ../../../components/sass/modules/_shopTools.scss */
+/* line 170, ../../../components/sass/modules/_shopTools.scss */
 .scene.benefits h2 {
   font-family: "DINNextW01-LightItalic";
   font-size: 1.5rem;
@@ -782,24 +807,24 @@ header #nav .navbar ul li a.active #toolBundles {
   margin: 1.5em 0 0;
 }
 @media (min-width: 540px) {
-  /* line 166, ../../../components/sass/modules/_shopTools.scss */
+  /* line 170, ../../../components/sass/modules/_shopTools.scss */
   .scene.benefits h2 {
     font-size: 1.8rem;
   }
 }
-/* line 177, ../../../components/sass/modules/_shopTools.scss */
+/* line 181, ../../../components/sass/modules/_shopTools.scss */
 .scene.benefits p {
   font-family: "DIN Next W01 Light";
   font-size: 1.5rem;
   margin: .75em 0 0em;
 }
 @media (min-width: 540px) {
-  /* line 177, ../../../components/sass/modules/_shopTools.scss */
+  /* line 181, ../../../components/sass/modules/_shopTools.scss */
   .scene.benefits p {
     font-size: 1.6rem;
   }
 }
-/* line 187, ../../../components/sass/modules/_shopTools.scss */
+/* line 191, ../../../components/sass/modules/_shopTools.scss */
 .scene.benefits ul#benefit-list {
   max-width: 1160px;
   margin-left: auto;
@@ -811,7 +836,7 @@ header #nav .navbar ul li a.active #toolBundles {
   display: block;
   clear: both;
 }
-/* line 189, ../../../components/sass/modules/_shopTools.scss */
+/* line 193, ../../../components/sass/modules/_shopTools.scss */
 .scene.benefits ul#benefit-list li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -822,7 +847,7 @@ header #nav .navbar ul li a.active #toolBundles {
   padding-right: 4.96988%;
 }
 @media (min-width: 540px) {
-  /* line 189, ../../../components/sass/modules/_shopTools.scss */
+  /* line 193, ../../../components/sass/modules/_shopTools.scss */
   .scene.benefits ul#benefit-list li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -832,7 +857,7 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-left: 2.48494%;
     padding-right: 2.48494%;
   }
-  /* line 193, ../../../components/sass/modules/_shopTools.scss */
+  /* line 197, ../../../components/sass/modules/_shopTools.scss */
   .scene.benefits ul#benefit-list li.single-product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -844,7 +869,7 @@ header #nav .navbar ul li a.active #toolBundles {
   }
 }
 @media (min-width: 960px) {
-  /* line 189, ../../../components/sass/modules/_shopTools.scss */
+  /* line 193, ../../../components/sass/modules/_shopTools.scss */
   .scene.benefits ul#benefit-list li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -854,7 +879,7 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-left: 2.20884%;
     padding-right: 2.20884%;
   }
-  /* line 197, ../../../components/sass/modules/_shopTools.scss */
+  /* line 201, ../../../components/sass/modules/_shopTools.scss */
   .scene.benefits ul#benefit-list li.single-product {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -865,12 +890,11 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-right: 2.48494%;
   }
 }
-/* line 203, ../../../components/sass/modules/_shopTools.scss */
+/* line 207, ../../../components/sass/modules/_shopTools.scss */
 .scene .headings {
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
   border-bottom: 1px solid #e4e4e4;
 }
 /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
@@ -879,7 +903,13 @@ header #nav .navbar ul li a.active #toolBundles {
   display: block;
   clear: both;
 }
-/* line 208, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 960px) {
+  /* line 207, ../../../components/sass/modules/_shopTools.scss */
+  .scene .headings {
+    text-align: left;
+  }
+}
+/* line 213, ../../../components/sass/modules/_shopTools.scss */
 .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -890,7 +920,7 @@ header #nav .navbar ul li a.active #toolBundles {
   padding-right: 4.96988%;
 }
 @media (min-width: 540px) {
-  /* line 208, ../../../components/sass/modules/_shopTools.scss */
+  /* line 213, ../../../components/sass/modules/_shopTools.scss */
   .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -902,7 +932,7 @@ header #nav .navbar ul li a.active #toolBundles {
   }
 }
 @media (min-width: 960px) {
-  /* line 208, ../../../components/sass/modules/_shopTools.scss */
+  /* line 213, ../../../components/sass/modules/_shopTools.scss */
   .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -914,7 +944,7 @@ header #nav .navbar ul li a.active #toolBundles {
   }
 }
 @media (min-width: 1200px) {
-  /* line 208, ../../../components/sass/modules/_shopTools.scss */
+  /* line 213, ../../../components/sass/modules/_shopTools.scss */
   .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -925,32 +955,34 @@ header #nav .navbar ul li a.active #toolBundles {
     padding-right: 1.65663%;
   }
 }
-/* line 221, ../../../components/sass/modules/_shopTools.scss */
+/* line 226, ../../../components/sass/modules/_shopTools.scss */
 .scene .headings h1 {
   position: relative;
   font-family: "DINNextLTW01-UltraLight 706122";
   font-size: 2.58rem;
   font-weight: normal;
-  margin: 6rem 0 0;
+  margin: 6rem 0 0.5rem;
 }
-@media (min-width: 540px) {
-  /* line 221, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 960px) {
+  /* line 226, ../../../components/sass/modules/_shopTools.scss */
   .scene .headings h1 {
     font-size: 3.5rem;
+    margin: 6rem 0 0rem;
   }
 }
-/* line 233, ../../../components/sass/modules/_shopTools.scss */
+/* line 239, ../../../components/sass/modules/_shopTools.scss */
 .scene .headings h2 {
   font-family: "DINNextW01-LightItalic";
   font-size: 1.8rem;
   line-height: 1.2em;
   font-weight: normal;
-  margin: .2em 0 0.75em;
+  margin: .2em 0 1em;
 }
-@media (min-width: 540px) {
-  /* line 233, ../../../components/sass/modules/_shopTools.scss */
+@media (min-width: 960px) {
+  /* line 239, ../../../components/sass/modules/_shopTools.scss */
   .scene .headings h2 {
     font-size: 2.2rem;
+    margin: .2em 0 0.75em;
   }
 }
 

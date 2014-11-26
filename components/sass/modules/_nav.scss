@@ -57,7 +57,7 @@ header #nav {
         // overflow-y: hidden; 
         // overflow-x: scroll; //cause a horizontal scrollbar
         -ms-overflow-style: -ms-autohiding-scrollbar; 
-        -webkit-overflow-scrolling: touch;       
+        -webkit-overflow-scrolling: touch;
       }
 
       // @include span(12 at 0 of 12);
@@ -70,18 +70,18 @@ header #nav {
           }
         } //breakpoint
         a {
-          @include breakpoint($small) { @include transitionAll(0.2s); }
           display: block;
+          @include capitalise(0.065em);
           font-size: 1.3rem;
           padding: 1.4em 1.25em 1.2em;
           text-decoration: none;
           color: $navForeground;
           
-          @include breakpoint($small) {
-            // font-size: 1.4rem;
+          @include breakpoint($medium) {
+              @include transitionAll(0.2s);
+              font-size: 1.4rem;
           }
           
-          @include capitalise(0.065em);
 
           &:hover {
             background-color: $light;

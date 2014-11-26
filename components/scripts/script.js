@@ -67,7 +67,7 @@ $(function() {
   $(window).scroll(function() {
     var topoffset = $('.navbar').height();
     var windowpos = $(window).scrollTop() + topoffset;
-    // $('nav li a').removeClass('active');
+    $('nav li a').removeClass('active');
 
     // $('.scene').each(function(){ 
       // var id = $(this).attr('id');
