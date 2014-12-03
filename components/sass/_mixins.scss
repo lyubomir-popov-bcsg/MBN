@@ -1,3 +1,11 @@
+@mixin gutterPad($breakpoint:$small){
+  padding-left: gutter();
+  padding-right: gutter();
+  @include breakpoint($breakpoint) {
+    padding-left: 0;
+    padding-right: 0; 
+  }
+}
 @mixin backImage(
   $image,
   $grDir: to bottom,

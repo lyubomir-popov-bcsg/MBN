@@ -26,7 +26,8 @@ $(function() {
   
   var ns = {};
   ns.anchorOffsets = {};
-
+  var navOffset = $('.navbar').height();//patch
+  $('#intro').css({'padding-top' : navOffset + 'px'});
   $( "nav li" ).each(function(index) {
     // console.log( $( this ).text() + " " + $(this).position().left );
     ns.anchorOffsets[index] = $(this).position().left;
@@ -35,13 +36,13 @@ $(function() {
   // var leftOffset = $('a[href$="#finances"]').position().left;
 
   //window height
-  var wheight = $(window).height()/2; //get height of the window
+  // var wheight = $(window).height()/2; //get height of the window
 
-  $('.fullheight').css('height', wheight);
+  // $('.fullheight').css('height', wheight);
 
   $(window).resize(function() {
     wheight = $(window).height()/2; //get height of the window
-    $('.fullheight').css('height', wheight);
+    // $('.fullheight').css('height', wheight);
     checkWidth();
 
 
@@ -50,10 +51,10 @@ $(function() {
   function checkWidth(){
     if( $(window).width() < 600){
       $('.navbar').css({
-            'overflow-y': 'hidden',
-            'overflow-x': 'scroll', 
-            '-ms-overflow-style':'-ms-autohiding-scrollbar',
-            '-webkit-overflow-scrolling': 'touch'
+        'overflow-y': 'hidden',
+        'overflow-x': 'scroll', 
+        '-ms-overflow-style':'-ms-autohiding-scrollbar',
+        '-webkit-overflow-scrolling': 'touch'
       });
     }else{
       $('.navbar').css({

@@ -3,20 +3,19 @@ img {
 }
 html{font-size: 62.5%;} 
 body {
-	// font: $mainFont;
+	-webkit-font-smoothing: subpixel-antialiased;
 	font-family: $fontfamily-base;
 	background: $backgroundColor;
 	color: $typeDefault;
-	// font-size: 10px;
-	@include breakpoint($small) {
+	p {
+		font-size: 1.5rem;
+		line-height: 1.35em;
+		margin: 0 0 1em;
+		@include breakpoint($small) {
+			font-size: 1.6rem;
+		}
 	}
 }
-
 #{headings()} {
-	color: $headColor;
 	font-weight: normal;
-}
-
-strong {
-	font-weight: $bold;
 }

@@ -1,46 +1,108 @@
-header {
-  padding-top:90px;
+#intro {
+  margin: 0 auto;
   background-color: $light;
-  .fullheight {
-    @include backImage('../images/shop-tools.jpg');
-    // background: #666;
-    @include display-flex();
-    @include align-items(center);
-    @include justify-content(center);
-
-    .hgroup {
-      padding: 100px 0;
-
+  background: url('../images/shop-tools.jpg');
+  .container {
+    color: #fff;
+    @include container(1140px);
+    @include clearfix;
+    #sidebar{
+      @include breakpoint($medium) {
+        @include span(4 of 12 last);
+      } //breakpoint      
+      h1{
+        font-family: 'DINNextW01-CondensedBol';
+        font-size: 2.7rem;
+        margin: 3.5rem 0 1em;
+      }
+      h2{
+        font-family: 'DIN Next W01 Regular';
+        font-size: 1.8rem;
+        margin: 1em 0 1em;
+      }
+      p{
+        font-family: 'DIN Next W01 Regular';
+        font-size: 1.4rem;
+        a{
+          color: $white;
+          // display: inline-block;
+          background: #3f3f3f;
+          padding: .5rem 2rem;
+          border-radius: .5em;
+        }
+      }
+    }
+    .content{
+      @include show-grid($susySmall);
+      @include clearfix;      
+      // @include span(12 of 12);
+      @include gutterPad($medium);
+      @include breakpoint($medium) {
+        @include span(8 of 12);
+      } //breakpoint
       h1 {
-        color: $light;
-        font-size: 5em;
-        font-weight: $heavy;
-        line-height: .8em;
-        @include text-shadow($dark 0 0 20px);
-        text-align: center;
+        font-family: "DIN Next W01 Bold";
+        font-size: 3.5rem;
+        line-height: 1em;
+        text-shadow: rgba(33, 33, 33, 0.15) 0 1px 0px;
+        text-align: left;
+        margin: 1em 0 .5em;
       } //h1
 
       h2 {
-        display: block;
-        color: $light;
-        width: 60%;
-        max-width: 200px;
-        margin: 0 auto;
-        text-align: center;
-        border: 1px solid $light;
-        margin-top: 15px;
-        padding: 10px;
-        background: rgba($headersubbg, .5);
-        font-size: 1.3em;
+        font-family: "DIN Next W01 Regular";
+        margin: 1em 0 1em 0;
+        font-size: 2.2rem;
+        line-height: 1em;
       } //h2
+     
+      // p {
+      //   font-family: "DIN Next W01 Regular";
+      //   margin: 1em 0 0em 0;
+      //   font-size: 1.4rem;
+      //   line-height: 1em;
+      // } //p
+      #how{
+        @include span(8 of 8);      
+        // display: table;
+        @include clearfix;
+        a{
+          color: #fff;
+          font-size: 1.8rem;
+          font-family: "DIN Next W01 Bold";
+          padding: 1.2em 0 0.5em 0;
+          font-weight: normal;
+        }
 
-      p {
-        text-align: center;
-        img {
-          padding-top: 50px;
-          max-width: 50px;
-        } //img
-      } //p
+        h3{
+          font-family: "DIN Next W01 Bold";
+          font-size: 2.2rem;
+          @include capitalise(.02em);
+          margin: 0;
+          padding: 22.20081512px 0 0 0;      
+        }
+        h4{
+          font-family: "DIN Next W01 Light";
+          font-weight: normal;
+          font-size: 27.74672897px;
+          padding: 22.20081512px 0 22.20081512px 0;
+          color: #fff;
+          margin: 0;
+        }
+        p{
+          font-size: 1.4rem;
+          padding: 0 0 2em 0;
+          line-height: 22px;
+          font-family: "DIN Next W01 Light";      
+        }
+        div{
+          display: table-cell;
+          @include span(8 of 8);
+          @include breakpoint($medium) {
+            @include span(4 of 8);
+          } //breakpoint      
+        }
+      }
     } //hgroup
-  } //fullheight
+  } //container
 } //header

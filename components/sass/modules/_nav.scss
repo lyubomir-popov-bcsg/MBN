@@ -1,5 +1,5 @@
-header #nav {
-  @include clearfix;
+#nav {
+  height:50px;
   background: #333;
   width: 100%;
   z-index: 100;
@@ -8,7 +8,8 @@ header #nav {
   // overflow-: hidden;
 
   .navbar {
-    // @include container;
+    @include clearfix;
+    @include container(1140px);
     position: absolute;
     background: $dark;
     left:0;

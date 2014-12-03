@@ -3,24 +3,69 @@
 @include border-box-sizing; //uses border box sizing like the old IE
 $gutter-width:1em;
 
-$susy: (
-  columns: 12,
-  container: 1160px,
-  gutters: .66,
-  gutter-position: inside,
-  grid-padding:$gutter-width
-);
+// $susy: (
+//   columns: 12,
+//   container: 1140px,
+//   gutters: .66,
+//   gutter-position: inside,
+//   grid-padding:$gutter-width,
+//   global-box-sizing: border-box,
+//   use-custom: (rem: true),
+//   // math: static,
+//   debug: (image: show)
+// );
+
+/* Changing Susy default global settings */
+// $susy: (
+//   /* Tells Susy to use 12 columns */
+//   columns: 4,
+//   /* Tells Susy that the container has a max-width of 1120px */
+//   container: 1160px,
+//   /* Tells Susy to use border-box */
+//   global-box-sizing: border-box,
+//   debug: (image: show)
+// );
+
+// $susyFour: (
+//   /* Tells Susy to use 12 columns */
+//   columns: 4,
+//   /* Tells Susy that the container has a max-width of 1120px */
+//   container: 1160px,
+//   /* Tells Susy to use border-box */
+//   global-box-sizing: border-box,
+//   debug: (image: show)
+// ); 
+// $susyInsideStatic: (
+// 	// grid: 4 (.25),
+// 	math: fluid,
+// 	gutter-position: inside-static,
+//   	debug: (
+// 		    image: show,
+// 		    color: black,
+// 		    output: overlay,
+// 		    toggle: top right,
+// 		  )
+// 	);
+$susyWide: 12 (4rem 3.6rem) fluid inside-static;
+$susySmall: 2 (1rem 3.6rem) fluid inside-static;
+// $susySmall: (
+// 	// columns: 2,
+// 	grid: 2 (4rem 3.6rem),
+// 	math: fluid,
+// 	// gutter-position: inside-static,
+//   	// debug: (image: show)
+// );
+
 
 $narrow: 360px;
-$small: 540px;
-$medium: 960px;
-$wide: 1200px;
-
+$small:  540px;
+$medium: 720px;
+$wide:  1200px;
 
 $narrowCols : 4;
-$smallCols : 8;
-$mediumCols : 9;
-$wideCols : 12;
+$smallCols  : 2;
+$mediumCols : 8;
+$wideCols   :12;
 
 //Add Color Palette
 $blue       : #063642;
@@ -32,7 +77,7 @@ $pink       : #CD0069;
 $purple     : #6C71C4;
 $dark       : #333;
 $white		: #fff;
-$light      : #f7f7f7;
+$light      : #f7f7f7; 
 
 $backgroundColor    : $light;
 $typeDefault        : $dark;

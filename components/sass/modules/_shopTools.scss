@@ -1,20 +1,70 @@
 .scene {
+  &:nth-child(odd){background-color: $white;}
+  &:nth-child(even){background-color: $light;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
   &.bundles {background: $white}
   &.products{
-    background: $light;
+    // background: $light;
     @include hrule;
   }
 
-  article {
-    // text-align: center;
+  .content {
+    @include container(1140px);
+    // border:1px solid #ff0;
+
+
     text-align: left;
-    @include container();
+    @include breakpoint($small) {
+      // @include container;
+      @include clearfix;
+    }
+  
+    .headings{
+      // padding-bottom: 1.25em;
+      border-bottom: 1px solid #e4e4e4;
+      @include gutterPad();
+      h1 {
+        font-family: "DIN Next W01 Bold";
+        font-size: 1.8rem;
+        font-weight: normal;
+        padding-top: 6rem;
+        padding-bottom: .25em;
+        @include breakpoint($small) {
+          font-size: 2.4rem;
+        }
+      } //h1
+      h2 {
+        font-family: "DIN Next W01 Light";
+        // font-family: "DINNextLTW01-UltraLight 706122";
+        font-size: 1.8rem;
+        line-height: 1.2em;
+        font-weight: normal;
+        margin: 0 0 .5em;
+
+        @include breakpoint($small) {
+          font-size: 2.2rem;
+          line-height: 1em;
+          padding: 0 0 0.5em;
+          margin: 0;
+        }
+      } //h2
+    } //headings
 
     .gallery {
+      // @include bleed(gutter());
       @include clearfix;
+      @include breakpoint($small) {
+      @include gallery(2 of 2);
+      }
+      @include breakpoint($wide) {
+        @include gallery(12 of 12);
+      }
 
       .shoptools-module{
-        border-top: 1px solid #e4e4e4;
+        @include gutterPad();
         &:nth-of-type(2){ border-top: none; }
         font-size: 1rem;
         @include breakpoint($small) {
@@ -34,41 +84,43 @@
           font-size: 1.8rem;
           margin-bottom:2.2rem;
         }
-        // @include span(3 of 3);
         h1{
           text-align: left;
-          font-family: "DIN Next W01 Light";
-          font-size: 1.8rem;
-          @include breakpoint($medium) {font-size: 2.2rem;}          
+          font-family: "DIN Next W01 Regular";
+          font-size: 1.4rem;
           line-height:1em;
           position:relative;
-          margin: 1em -3em 1em 0;
+          margin: 1.45em -3em 1.14em 0;
           padding-right: 3em;
+          margin-bottom: 1.3rem;
           width: 100%;
+          @include capitalise(.02em);
           span{
+            font-family: "DIN Next W01 Bold";
             font-family: "DINNextW01-CondensedMed";
+
             display: inline-block;
             position: absolute;
             right: 0;
-            top: 0.1rem;
+            top: 0rem;
             span{
-              font-size: 0.65em;
-              line-height: 4.5em;
-              font-family: "DINNextW01-CondensedReg";
-              @include capitalise(.1em);
+              font-family: "DINNextW01-CondensedMed";
+              font-size: .8em;
+              line-height: 3.8em;
+              @include capitalise(.02em);
+              margin-right: -0.05em;
             }
           }
         }
         h2{
           font-size: 1.5rem;
-          @include breakpoint($medium) {font-size: 1.8rem;}         
           font-family: "DIN Next W01 Light";
+          @include breakpoint($medium) {font-size: 1.8rem;}         
           margin: 1em 0 0;
         }
         h3{
+          // font-family: "DINNextW01-LightItalic";
           font-size: 1.5rem;
-          @include breakpoint($medium) {font-size: 1.8rem;}
-          font-family: "DINNextW01-LightItalic";
           margin-top: 0.5em;
         }
         a.btn{
@@ -76,7 +128,6 @@
           @include breakpoint($medium) {@include transitionAll;}
           display: block;
           font-size: 1.2rem;
-          @include breakpoint($medium) {font-size: 1.4rem;}
           margin: 1em 0 2em;
           padding: 1em 2em .8em;
           background:$dark;
@@ -98,27 +149,19 @@
         } //a.btn
         ul.logoArea{
           @include clearfix;
-          // @include verticalCenter;
-          // @include bleed($gutter-width);
           background:$white;
           border-top:1px solid #e4e4e4;
-          border-bottom:1px solid #e4e4e4;          
-          padding-top: 14px;
-          padding-bottom: 28px;
+          border-bottom:1px solid #e4e4e4;
+          margin: 1.4rem 0;
 
           li{
             text-align:center;
-            padding-top:14px;
-            // @include span(12 of 12);
-            @include breakpoint($small) {
-              // @include span(1 of 3);
-            }
+            padding: 1.4rem 0;
           } //li
         } //ul
       }
 
       .bundle{
-        @include span($narrowCols of $narrowCols);
         @include breakpoint($narrow) {
           ul.logoArea>li{
               @include span(1 of 2);
@@ -140,117 +183,71 @@
       } //bundle
 
       .product{
-        @include span($narrowCols of $narrowCols);
-        @include breakpoint($narrow) {
-          @include span($narrowCols of $narrowCols);
-          &.single-product{@include span($narrowCols of $narrowCols);}
-        }
+        // @include span($narrowCols of $narrowCols);
         @include breakpoint($small) {
-          @include span($smallCols/2 of $smallCols);
-          &.single-product{@include span($smallCols/2 of $smallCols);}
-        }
+          @include span(2 of 4);
+          // &.single-product{@include span($smallCols/2 of $smallCols);}
+        } //breakpoint
         @include breakpoint($medium) {
-          @include span($mediumCols/3 of $mediumCols);
+          @include span(4 of 8);
+          // &.single-product{@include span($smallCols/3 of $smallCols);}
+        }//breakpoint
+        @include breakpoint($medium) {
+          @include span(4 of 12);
           &.single-product{@include span($smallCols/3 of $smallCols);}
-        }//breakpoint        
+        }//breakpoint              
       }//product
     } //gallery
-  } //article
+  } //.content
   
   &.benefits{
-    // h1, h2{
-    //   @include span(12 at 0 of 12);
-    // }
-    padding-bottom:$mc14;
-    background: $white;
-    // .benefit-area{
-    //   @include clearfix;
-    // }
-
-    h2 {
-      font-family: "DINNextW01-LightItalic";
-      font-size: 1.5rem; 
-      @include breakpoint($small) {
-        font-size: 1.8rem; 
-      }
-      // line-height: 1.2em;
-      font-weight: normal;
-      margin: 1.5em 0 0;
-    } //h2
-
-    p{
-      font-family: "DIN Next W01 Light";
-      font-size: 1.5rem; 
-      @include breakpoint($small) {
-        font-size: 1.6rem; 
-      }
-      margin: .75em 0 0em;
-
-    }
-    
-    ul#benefit-list{
-      @include container;
-      li{
-        @include span($narrowCols of $narrowCols);
-        @include breakpoint($small) {
-          @include span($smallCols/2 of $smallCols);
-          &.single-product{@include span($smallCols/2 of $smallCols);}
+      .headings{
+        h1 {
+          padding-bottom: 1.3rem;
         }
+        border: none;
+        @include gutterPad;
+      }
+
+    ul#benefit-list{
+      h2 {
+        border-top: 1px solid #e4e4e4;
+        // font-family: "DINNextLTW01-UltraLight 706122";
+        font-family: 'DIN Next W01 Light';
+        font-size: 1.8rem; 
+        @include breakpoint($small) {
+          font-size: 2.2rem; 
+        }
+        line-height: 1em;
+        padding: .7em 0 1.25em;
+        margin: 0;
+      } //h2
+      p{
+        margin: 0 0 1em;
+      }
+      @include gutterPad;
+      padding-bottom:$mc14;
+      @include clearfix;
+      li{
+        @include breakpoint($small) {
+          &:nth-child(2n+1){
+            @include span(2 of 6 last);
+          } 
+          &:nth-child(even){
+            @include span(2 of 6);
+          }
+        } //breakpoint
         @include breakpoint($medium) {
-          @include span($mediumCols/3 of $mediumCols);
-          &.single-product{@include span($smallCols/3 of $smallCols);}
-        }//breakpoints
-      }
-    }
+
+          &:nth-child(odd){
+            @include span(4 of 12);
+          } 
+          &:nth-child(even){
+            @include span(4 of 12 last);
+          }
+        } //breakpoint
+
+      } //li
+    } //ul
   } //benefits
-
-  .headings{
-    @include container;
-    // text-align: center;
-    @include breakpoint($medium) {text-align: left;}
-    border-bottom: 1px solid #e4e4e4;
-    
-    #{headings()} {
-      @include span($narrowCols of $narrowCols);
-      @include breakpoint($small) {    
-        @include span($smallCols of $smallCols);
-      }
-      @include breakpoint($medium) {    
-        @include span($mediumCols of $mediumCols);
-      }    
-      @include breakpoint($wide) {    
-        @include span($wideCols of $wideCols);
-      }
-    }    
-    
-    h1 {
-      position: relative;
-      font-family: "DINNextLTW01-UltraLight 706122";
-      font-size: 2.58rem;
-      font-weight: normal;
-      margin: 6rem 0 0.5rem;
-
-      @include breakpoint($medium) {
-        font-size: 3.5rem;
-        margin: 6rem 0 0rem;
-      }
-    } //h1
-
-    h2 {
-      font-family: "DINNextW01-LightItalic";
-      font-size: 1.8rem;
-      line-height: 1.2em;
-      font-weight: normal;
-      margin: .2em 0 1em;
-
-      @include breakpoint($medium) {
-        font-size: 2.2rem;
-        margin: .2em 0 0.75em;
-      }
-
-    } //h2
-
-
-  } //headings
-
 }

@@ -65,14 +65,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
-  font-family: "DIN Next W01 Bold";
-  src: url("../Fonts/din/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix");
-  src: url("../Fonts/din/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix") format("eot"), url("../Fonts/din/9949035f-6226-4080-a14a-bf7d94ffb1e1.woff") format("woff"), url("../Fonts/din/6241bd09-15c2-485e-9796-9db8d0aa6974.ttf") format("truetype"), url("../Fonts/din/af94da3e-4232-416a-b6bc-f39f85dd5db6.svg#af94da3e-4232-416a-b6bc-f39f85dd5db6") format("svg");
+  font-family: "DINNextW01-CondensedUlt";
+  src: url("../Fonts/din/d8b8889b-af70-4f3d-b86e-e0cf674dd069.eot?#iefix");
+  src: url("../Fonts/din/d8b8889b-af70-4f3d-b86e-e0cf674dd069.eot?#iefix") format("eot"), url("../Fonts/din/02c54ffd-ffe5-4a1d-baf3-6f2f329e985e.woff") format("woff"), url("../Fonts/din/be798c01-2b57-4464-b4f2-8fdda5148346.ttf") format("truetype"), url("../Fonts/din/9286c432-d97d-4af1-8608-fbd7b9cb38a0.svg#9286c432-d97d-4af1-8608-fbd7b9cb38a0") format("svg");
 }
 @font-face {
-  font-family: "DINNextW01-CondensedHea";
-  src: url("../Fonts/din/10ea3ea4-cd5d-4305-a069-553921bb4565.eot?#iefix");
-  src: url("../Fonts/din/10ea3ea4-cd5d-4305-a069-553921bb4565.eot?#iefix") format("eot"), url("../Fonts/din/d245e531-16e5-4428-904d-d6cb987d44f9.woff") format("woff"), url("../Fonts/din/b85fd97e-f10c-4dde-87fb-51dd1bdbf114.ttf") format("truetype"), url("../Fonts/din/3aed4526-cc9c-4bc4-9642-157b26400e95.svg#3aed4526-cc9c-4bc4-9642-157b26400e95") format("svg");
+  font-family: "DINNextW01-CondensedLig";
+  src: url("../Fonts/din/c0be55e4-0b40-4646-a643-431ca3639465.eot?#iefix");
+  src: url("../Fonts/din/c0be55e4-0b40-4646-a643-431ca3639465.eot?#iefix") format("eot"), url("../Fonts/din/43e82893-3880-47b2-82d6-5b136f8f7477.woff") format("woff"), url("../Fonts/din/72f03533-e4e2-48a4-9d34-53d2964eb649.ttf") format("truetype"), url("../Fonts/din/c11fd4df-941d-4a17-8af0-be88e02e0042.svg#c11fd4df-941d-4a17-8af0-be88e02e0042") format("svg");
 }
 @font-face {
   font-family: "DINNextW01-CondensedReg";
@@ -80,9 +80,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../Fonts/din/6fa09720-5b0e-48a5-8895-5af8af928c01.eot?#iefix") format("eot"), url("../Fonts/din/3b15daf5-d7fb-4099-93b9-db20fd26c2fe.woff") format("woff"), url("../Fonts/din/16159505-c85d-44ba-ba2b-64f94e68ddb5.ttf") format("truetype"), url("../Fonts/din/b2be45ad-0169-4c84-9fc9-66a0e9ebff0a.svg#b2be45ad-0169-4c84-9fc9-66a0e9ebff0a") format("svg");
 }
 @font-face {
+  font-family: "DINNextW01-CondensedMed";
+  src: url("../Fonts/din/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?#iefix");
+  src: url("../Fonts/din/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?#iefix") format("eot"), url("../Fonts/din/2613a064-2962-44af-ae6f-3640e06e8dc4.woff") format("woff"), url("../Fonts/din/2889b152-497e-4ea3-a90d-02854d136a8d.ttf") format("truetype"), url("../Fonts/din/4f311da1-9ec6-4379-9621-b45be0e23abd.svg#4f311da1-9ec6-4379-9621-b45be0e23abd") format("svg");
+}
+@font-face {
+  font-family: "DINNextW01-CondensedBol";
+  src: url("../Fonts/din/71888b4d-cd66-4c8b-9a5c-b37014e8e4fa.eot?#iefix");
+  src: url("../Fonts/din/71888b4d-cd66-4c8b-9a5c-b37014e8e4fa.eot?#iefix") format("eot"), url("../Fonts/din/0c0418fe-d324-4ab2-978a-e8201c646ca1.woff") format("woff"), url("../Fonts/din/2c4f6a99-1274-42cd-8d14-fecf6ae449a4.ttf") format("truetype"), url("../Fonts/din/aabfdee7-da54-4fae-93d3-afae95449faa.svg#aabfdee7-da54-4fae-93d3-afae95449faa") format("svg");
+}
+@font-face {
+  font-family: "DINNextW01-CondensedBla";
+  src: url("../Fonts/din/4fdd4a2f-fc95-4fd1-9b35-a883e0b2b3d6.eot?#iefix");
+  src: url("../Fonts/din/4fdd4a2f-fc95-4fd1-9b35-a883e0b2b3d6.eot?#iefix") format("eot"), url("../Fonts/din/5a992686-aab3-4b26-9c57-f41b0f01b6fd.woff") format("woff"), url("../Fonts/din/5229463c-ec7d-4d0c-97ca-49aa4ff3abe5.ttf") format("truetype"), url("../Fonts/din/c67946ea-aa8b-46fe-96af-14d6d108b17b.svg#c67946ea-aa8b-46fe-96af-14d6d108b17b") format("svg");
+}
+@font-face {
+  font-family: "DINNextW01-CondensedHea";
+  src: url("../Fonts/din/10ea3ea4-cd5d-4305-a069-553921bb4565.eot?#iefix");
+  src: url("../Fonts/din/10ea3ea4-cd5d-4305-a069-553921bb4565.eot?#iefix") format("eot"), url("../Fonts/din/d245e531-16e5-4428-904d-d6cb987d44f9.woff") format("woff"), url("../Fonts/din/b85fd97e-f10c-4dde-87fb-51dd1bdbf114.ttf") format("truetype"), url("../Fonts/din/3aed4526-cc9c-4bc4-9642-157b26400e95.svg#3aed4526-cc9c-4bc4-9642-157b26400e95") format("svg");
+}
+@font-face {
   font-family: "DINNextW01-HeavyItalic";
   src: url("../Fonts/din/097254d3-a44a-458a-9638-87a9b1e282f7.eot?#iefix");
   src: url("../Fonts/din/097254d3-a44a-458a-9638-87a9b1e282f7.eot?#iefix") format("eot"), url("../Fonts/din/0e69005b-f8b8-4d6d-999f-865965bdfd21.woff") format("woff"), url("../Fonts/din/838e1987-f80a-4590-9734-0034870f4492.ttf") format("truetype"), url("../Fonts/din/5574a913-9fa6-4f91-9496-1fafd293ba1f.svg#5574a913-9fa6-4f91-9496-1fafd293ba1f") format("svg");
+}
+@font-face {
+  font-family: "DINNextLTW01-UltraLight 706125";
+  src: url("../Fonts/din/67ced202-4fbf-450a-91c0-5dfa71a2b70e.eot?#iefix");
+  src: url("../Fonts/din/67ced202-4fbf-450a-91c0-5dfa71a2b70e.eot?#iefix") format("eot"), url("../Fonts/din/11143434-96a9-4740-a138-f16d49263f2f.woff") format("woff"), url("../Fonts/din/3a7440b3-1b5c-4693-9280-9522f0c3006e.ttf") format("truetype"), url("../Fonts/din/6230196d-2226-4a80-8915-110bc6710446.svg#6230196d-2226-4a80-8915-110bc6710446") format("svg");
+}
+@font-face {
+  font-family: "DINNextLTW01-UltraLight 706122";
+  src: url("../Fonts/din/06e964c1-d71a-48a5-b3fd-88c164e2b0fa.eot?#iefix");
+  src: url("../Fonts/din/06e964c1-d71a-48a5-b3fd-88c164e2b0fa.eot?#iefix") format("eot"), url("../Fonts/din/04c0d1f1-0fdf-4866-a034-1b5d1ba44a94.woff") format("woff"), url("../Fonts/din/a840f6fc-ef1f-44cd-a5fb-f68784b9bc1e.ttf") format("truetype"), url("../Fonts/din/4032b83f-6bbc-40a1-bfb9-cafd86356a17.svg#4032b83f-6bbc-40a1-bfb9-cafd86356a17") format("svg");
 }
 @font-face {
   font-family: "DIN Next W01 Light";
@@ -93,6 +123,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "DINNextW01-LightItalic";
   src: url("../Fonts/din/3ab2ca1d-35c8-4471-9c57-04cb66b9cffa.eot?#iefix");
   src: url("../Fonts/din/3ab2ca1d-35c8-4471-9c57-04cb66b9cffa.eot?#iefix") format("eot"), url("../Fonts/din/e1c997f3-fb27-4289-abc6-5ef059e51723.woff") format("woff"), url("../Fonts/din/0b3b140c-bdbe-488f-8976-992b4104de0c.ttf") format("truetype"), url("../Fonts/din/1fdd14a5-aaa2-4662-a7ae-ab0d4c3adb3c.svg#1fdd14a5-aaa2-4662-a7ae-ab0d4c3adb3c") format("svg");
+}
+@font-face {
+  font-family: "DIN Next W01 Bold";
+  src: url("../Fonts/din/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix");
+  src: url("../Fonts/din/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix") format("eot"), url("../Fonts/din/9949035f-6226-4080-a14a-bf7d94ffb1e1.woff") format("woff"), url("../Fonts/din/6241bd09-15c2-485e-9796-9db8d0aa6974.ttf") format("truetype"), url("../Fonts/din/af94da3e-4232-416a-b6bc-f39f85dd5db6.svg#af94da3e-4232-416a-b6bc-f39f85dd5db6") format("svg");
 }
 @font-face {
   font-family: "DIN Next W01 Black";
@@ -125,21 +160,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../Fonts/din/a1de4b41-809e-4f42-8768-ed5a3e9f8f05.eot?#iefix") format("eot"), url("../Fonts/din/a97ce140-d04b-430b-a41b-56ea0794c997.woff") format("woff"), url("../Fonts/din/ad44eab7-3b14-4691-8a6d-f6f344f54cb6.ttf") format("truetype"), url("../Fonts/din/39f433a1-f35d-4fad-86d1-889cbd83b680.svg#39f433a1-f35d-4fad-86d1-889cbd83b680") format("svg");
 }
 @font-face {
-  font-family: "DINNextLTW01-UltraLight 706125";
-  src: url("../Fonts/din/67ced202-4fbf-450a-91c0-5dfa71a2b70e.eot?#iefix");
-  src: url("../Fonts/din/67ced202-4fbf-450a-91c0-5dfa71a2b70e.eot?#iefix") format("eot"), url("../Fonts/din/11143434-96a9-4740-a138-f16d49263f2f.woff") format("woff"), url("../Fonts/din/3a7440b3-1b5c-4693-9280-9522f0c3006e.ttf") format("truetype"), url("../Fonts/din/6230196d-2226-4a80-8915-110bc6710446.svg#6230196d-2226-4a80-8915-110bc6710446") format("svg");
-}
-@font-face {
-  font-family: "DINNextW01-CondensedMed";
-  src: url("../Fonts/din/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?#iefix");
-  src: url("../Fonts/din/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?#iefix") format("eot"), url("../Fonts/din/2613a064-2962-44af-ae6f-3640e06e8dc4.woff") format("woff"), url("../Fonts/din/2889b152-497e-4ea3-a90d-02854d136a8d.ttf") format("truetype"), url("../Fonts/din/4f311da1-9ec6-4379-9621-b45be0e23abd.svg#4f311da1-9ec6-4379-9621-b45be0e23abd") format("svg");
-}
-@font-face {
-  font-family: "DINNextW01-CondensedUlt";
-  src: url("../Fonts/din/d8b8889b-af70-4f3d-b86e-e0cf674dd069.eot?#iefix");
-  src: url("../Fonts/din/d8b8889b-af70-4f3d-b86e-e0cf674dd069.eot?#iefix") format("eot"), url("../Fonts/din/02c54ffd-ffe5-4a1d-baf3-6f2f329e985e.woff") format("woff"), url("../Fonts/din/be798c01-2b57-4464-b4f2-8fdda5148346.ttf") format("truetype"), url("../Fonts/din/9286c432-d97d-4af1-8608-fbd7b9cb38a0.svg#9286c432-d97d-4af1-8608-fbd7b9cb38a0") format("svg");
-}
-@font-face {
   font-family: "DIN Next W01 Heavy";
   src: url("../Fonts/din/ffaa522c-c9e9-4f51-8688-2a18c2987b94.eot?#iefix");
   src: url("../Fonts/din/ffaa522c-c9e9-4f51-8688-2a18c2987b94.eot?#iefix") format("eot"), url("../Fonts/din/d5c47039-3cdf-4eb9-ad4a-220e7441ec5d.woff") format("woff"), url("../Fonts/din/64bef797-e9f8-447f-b80a-aece7617c45f.ttf") format("truetype"), url("../Fonts/din/a7139e2d-6218-4f3c-9bb0-b42325336f56.svg#a7139e2d-6218-4f3c-9bb0-b42325336f56") format("svg");
@@ -165,29 +185,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../Fonts/din/d7c339aa-46b7-4f31-8573-7ea230bfcbbb.eot?#iefix") format("eot"), url("../Fonts/din/140a0a6f-f218-4071-8eb8-f2bc45ed5121.woff") format("woff"), url("../Fonts/din/ecbfe302-4f46-4fef-b823-83eedbc353e7.ttf") format("truetype"), url("../Fonts/din/58f54e11-a0ac-4cfa-852e-3c73b93d74a8.svg#58f54e11-a0ac-4cfa-852e-3c73b93d74a8") format("svg");
 }
 @font-face {
-  font-family: "DINNextW01-CondensedBla";
-  src: url("../Fonts/din/4fdd4a2f-fc95-4fd1-9b35-a883e0b2b3d6.eot?#iefix");
-  src: url("../Fonts/din/4fdd4a2f-fc95-4fd1-9b35-a883e0b2b3d6.eot?#iefix") format("eot"), url("../Fonts/din/5a992686-aab3-4b26-9c57-f41b0f01b6fd.woff") format("woff"), url("../Fonts/din/5229463c-ec7d-4d0c-97ca-49aa4ff3abe5.ttf") format("truetype"), url("../Fonts/din/c67946ea-aa8b-46fe-96af-14d6d108b17b.svg#c67946ea-aa8b-46fe-96af-14d6d108b17b") format("svg");
-}
-@font-face {
-  font-family: "DINNextW01-CondensedBol";
-  src: url("../Fonts/din/71888b4d-cd66-4c8b-9a5c-b37014e8e4fa.eot?#iefix");
-  src: url("../Fonts/din/71888b4d-cd66-4c8b-9a5c-b37014e8e4fa.eot?#iefix") format("eot"), url("../Fonts/din/0c0418fe-d324-4ab2-978a-e8201c646ca1.woff") format("woff"), url("../Fonts/din/2c4f6a99-1274-42cd-8d14-fecf6ae449a4.ttf") format("truetype"), url("../Fonts/din/aabfdee7-da54-4fae-93d3-afae95449faa.svg#aabfdee7-da54-4fae-93d3-afae95449faa") format("svg");
-}
-@font-face {
-  font-family: "DINNextW01-CondensedLig";
-  src: url("../Fonts/din/c0be55e4-0b40-4646-a643-431ca3639465.eot?#iefix");
-  src: url("../Fonts/din/c0be55e4-0b40-4646-a643-431ca3639465.eot?#iefix") format("eot"), url("../Fonts/din/43e82893-3880-47b2-82d6-5b136f8f7477.woff") format("woff"), url("../Fonts/din/72f03533-e4e2-48a4-9d34-53d2964eb649.ttf") format("truetype"), url("../Fonts/din/c11fd4df-941d-4a17-8af0-be88e02e0042.svg#c11fd4df-941d-4a17-8af0-be88e02e0042") format("svg");
-}
-@font-face {
   font-family: "DINNextRoundedLTW01-Reg";
   src: url("../Fonts/din/414aac2b-b155-4948-8733-ca83f707714f.eot?#iefix");
   src: url("../Fonts/din/414aac2b-b155-4948-8733-ca83f707714f.eot?#iefix") format("eot"), url("../Fonts/din/b03c5cd2-c6ad-4764-9cab-bf6211f181a7.woff") format("woff"), url("../Fonts/din/e06f8fa7-aeda-4810-967e-0fd3d4621441.ttf") format("truetype"), url("../Fonts/din/82765f99-353c-4685-8ae4-4f0f0208ccd1.svg#82765f99-353c-4685-8ae4-4f0f0208ccd1") format("svg");
-}
-@font-face {
-  font-family: "DINNextLTW01-UltraLight 706122";
-  src: url("../Fonts/din/06e964c1-d71a-48a5-b3fd-88c164e2b0fa.eot?#iefix");
-  src: url("../Fonts/din/06e964c1-d71a-48a5-b3fd-88c164e2b0fa.eot?#iefix") format("eot"), url("../Fonts/din/04c0d1f1-0fdf-4866-a034-1b5d1ba44a94.woff") format("woff"), url("../Fonts/din/a840f6fc-ef1f-44cd-a5fb-f68784b9bc1e.ttf") format("truetype"), url("../Fonts/din/4032b83f-6bbc-40a1-bfb9-cafd86356a17.svg#4032b83f-6bbc-40a1-bfb9-cafd86356a17") format("svg");
 }
 /* line 14, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
@@ -196,6 +196,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
+/* Changing Susy default global settings */
 /* line 1, ../../../components/sass/_base.scss */
 img {
   max-width: 100%;
@@ -208,20 +209,27 @@ html {
 
 /* line 5, ../../../components/sass/_base.scss */
 body {
+  -webkit-font-smoothing: subpixel-antialiased;
   font-family: "DIN Next W01 Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #f7f7f7;
   color: #333;
 }
-
-/* line 15, ../../../components/sass/_base.scss */
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  font-weight: normal;
+/* line 10, ../../../components/sass/_base.scss */
+body p {
+  font-size: 1.5rem;
+  line-height: 1.35em;
+  margin: 0 0 1em;
+}
+@media (min-width: 540px) {
+  /* line 10, ../../../components/sass/_base.scss */
+  body p {
+    font-size: 1.6rem;
+  }
 }
 
-/* line 20, ../../../components/sass/_base.scss */
-strong {
-  font-weight: 600;
+/* line 19, ../../../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
 
 /* line 1, ../../../components/sass/_layout.scss */
@@ -231,107 +239,232 @@ body {
   height: 100%;
 }
 
-/* line 7, ../../../components/sass/_layout.scss */
+/* line 6, ../../../components/sass/_layout.scss */
+#wrapper, #intro > container, #nav > .navbar {
+  position: relative;
+}
+
+/* line 16, ../../../components/sass/_layout.scss */
 .scene {
   position: relative;
 }
-/* line 10, ../../../components/sass/_layout.scss */
-.scene article {
-  max-width: 1160px;
+
+/* line 1, ../../../components/sass/modules/header.scss */
+header {
+  height: 90px;
+  background: #f7f7f7;
+}
+
+/* line 1, ../../../components/sass/modules/_intro.scss */
+#intro {
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  background: url("../images/shop-tools.jpg");
+}
+/* line 5, ../../../components/sass/modules/_intro.scss */
+#intro .container {
+  color: #fff;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-.scene article:after {
+#intro .container:after {
   content: " ";
   display: block;
   clear: both;
 }
-
-/* line 1, ../../../components/sass/modules/_intro.scss */
-header {
-  padding-top: 90px;
-  background-color: #f7f7f7;
+/* line 30, ../../../components/sass/_mixins.scss */
+#intro .container:before, #intro .container:after {
+  content: '';
+  display: table;
 }
-/* line 4, ../../../components/sass/modules/_intro.scss */
-header .fullheight {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/shop-tools.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+/* line 35, ../../../components/sass/_mixins.scss */
+#intro .container:after {
+  clear: both;
 }
-/* line 11, ../../../components/sass/modules/_intro.scss */
-header .fullheight .hgroup {
-  padding: 100px 0;
+@media (min-width: 720px) {
+  /* line 9, ../../../components/sass/modules/_intro.scss */
+  #intro .container #sidebar {
+    width: 33.33333%;
+    float: right;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
 }
-/* line 14, ../../../components/sass/modules/_intro.scss */
-header .fullheight .hgroup h1 {
-  color: #f7f7f7;
-  font-size: 5em;
-  font-weight: 800;
-  line-height: .8em;
-  text-shadow: #333 0 0 20px;
-  text-align: center;
+/* line 13, ../../../components/sass/modules/_intro.scss */
+#intro .container #sidebar h1 {
+  font-family: 'DINNextW01-CondensedBol';
+  font-size: 2.7rem;
+  margin: 3.5rem 0 1em;
+}
+/* line 18, ../../../components/sass/modules/_intro.scss */
+#intro .container #sidebar h2 {
+  font-family: 'DIN Next W01 Regular';
+  font-size: 1.8rem;
+  margin: 1em 0 1em;
 }
 /* line 23, ../../../components/sass/modules/_intro.scss */
-header .fullheight .hgroup h2 {
-  display: block;
-  color: #f7f7f7;
-  width: 60%;
-  max-width: 200px;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid #f7f7f7;
-  margin-top: 15px;
-  padding: 10px;
-  background: rgba(51, 51, 51, 0.5);
-  font-size: 1.3em;
+#intro .container #sidebar p {
+  font-family: 'DIN Next W01 Regular';
+  font-size: 1.4rem;
 }
-/* line 37, ../../../components/sass/modules/_intro.scss */
-header .fullheight .hgroup p {
-  text-align: center;
+/* line 26, ../../../components/sass/modules/_intro.scss */
+#intro .container #sidebar p a {
+  color: #fff;
+  background: #3f3f3f;
+  padding: .5rem 2rem;
+  border-radius: .5em;
 }
-/* line 39, ../../../components/sass/modules/_intro.scss */
-header .fullheight .hgroup p img {
-  padding-top: 50px;
-  max-width: 50px;
+/* line 35, ../../../components/sass/modules/_intro.scss */
+#intro .container .content {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+/* line 30, ../../../components/sass/_mixins.scss */
+#intro .container .content:before, #intro .container .content:after {
+  content: '';
+  display: table;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+#intro .container .content:after {
+  clear: both;
+}
+@media (min-width: 720px) {
+  /* line 35, ../../../components/sass/modules/_intro.scss */
+  #intro .container .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 720px) {
+  /* line 35, ../../../components/sass/modules/_intro.scss */
+  #intro .container .content {
+    width: 66.66667%;
+    float: left;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
+/* line 43, ../../../components/sass/modules/_intro.scss */
+#intro .container .content h1 {
+  font-family: "DIN Next W01 Bold";
+  font-size: 3.5rem;
+  line-height: 1em;
+  text-shadow: rgba(33, 33, 33, 0.15) 0 1px 0px;
+  text-align: left;
+  margin: 1em 0 .5em;
+}
+/* line 52, ../../../components/sass/modules/_intro.scss */
+#intro .container .content h2 {
+  font-family: "DIN Next W01 Regular";
+  margin: 1em 0 1em 0;
+  font-size: 2.2rem;
+  line-height: 1em;
+}
+/* line 65, ../../../components/sass/modules/_intro.scss */
+#intro .container .content #how {
+  width: 100%;
+  float: left;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+/* line 30, ../../../components/sass/_mixins.scss */
+#intro .container .content #how:before, #intro .container .content #how:after {
+  content: '';
+  display: table;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+#intro .container .content #how:after {
+  clear: both;
+}
+/* line 69, ../../../components/sass/modules/_intro.scss */
+#intro .container .content #how a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "DIN Next W01 Bold";
+  padding: 1.2em 0 0.5em 0;
+  font-weight: normal;
+}
+/* line 77, ../../../components/sass/modules/_intro.scss */
+#intro .container .content #how h3 {
+  font-family: "DIN Next W01 Bold";
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 22.20081512px 0 0 0;
+}
+/* line 84, ../../../components/sass/modules/_intro.scss */
+#intro .container .content #how h4 {
+  font-family: "DIN Next W01 Light";
+  font-weight: normal;
+  font-size: 27.74672897px;
+  padding: 22.20081512px 0 22.20081512px 0;
+  color: #fff;
+  margin: 0;
+}
+/* line 92, ../../../components/sass/modules/_intro.scss */
+#intro .container .content #how p {
+  font-size: 1.4rem;
+  padding: 0 0 2em 0;
+  line-height: 22px;
+  font-family: "DIN Next W01 Light";
+}
+/* line 98, ../../../components/sass/modules/_intro.scss */
+#intro .container .content #how div {
+  display: table-cell;
+  width: 100%;
+  float: left;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+@media (min-width: 720px) {
+  /* line 98, ../../../components/sass/modules/_intro.scss */
+  #intro .container .content #how div {
+    width: 50%;
+    float: left;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
 }
 
 /* line 1, ../../../components/sass/modules/_nav.scss */
-header #nav {
+#nav {
+  height: 50px;
   background: #333;
   width: 100%;
   z-index: 100;
   position: relative;
 }
-/* line 22, ../../../components/sass/_mixins.scss */
-header #nav:before, header #nav:after {
-  content: '';
-  display: table;
-}
-/* line 27, ../../../components/sass/_mixins.scss */
-header #nav:after {
-  clear: both;
-}
 /* line 10, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar {
+#nav .navbar {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   background: #333;
   left: 0;
   right: 0;
 }
+/* line 30, ../../../components/sass/_mixins.scss */
+#nav .navbar:before, #nav .navbar:after {
+  content: '';
+  display: table;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+#nav .navbar:after {
+  clear: both;
+}
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#nav .navbar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 @media (min-width: 0) {
   /* line 10, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar {
+  #nav .navbar {
     overflow-y: hidden;
     overflow-x: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -340,19 +473,16 @@ header #nav .navbar {
 }
 @media (min-width: 540px) {
   /* line 10, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar {
+  #nav .navbar {
     overflow-x: hidden;
   }
 }
-/* line 25, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar .brand {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+/* line 26, ../../../components/sass/modules/_nav.scss */
+#nav .navbar .brand {
   width: 33.33333%;
   float: left;
-  padding-left: 1.65663%;
-  padding-right: 1.65663%;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
   float: left;
   font-weight: normal;
   font-family: "DIN Next W01 Light";
@@ -360,8 +490,8 @@ header #nav .navbar .brand {
   text-transform: uppercase;
   background: #DF4848;
 }
-/* line 33, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar .brand a {
+/* line 34, ../../../components/sass/modules/_nav.scss */
+#nav .navbar .brand a {
   color: #f7f7f7;
   text-decoration: none;
   text-align: center;
@@ -370,29 +500,29 @@ header #nav .navbar .brand a {
   font-size: .75em;
 }
 @media (max-width: 540px) {
-  /* line 33, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar .brand a {
+  /* line 34, ../../../components/sass/modules/_nav.scss */
+  #nav .navbar .brand a {
     font-size: 1em;
   }
-  /* line 43, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar .brand a span {
+  /* line 44, ../../../components/sass/modules/_nav.scss */
+  #nav .navbar .brand a span {
     display: none;
   }
 }
-/* line 48, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar .abs-wrapper {
-  max-width: 1160px;
+/* line 49, ../../../components/sass/modules/_nav.scss */
+#nav .navbar .abs-wrapper {
+  max-width: 91.2rem;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-header #nav .navbar .abs-wrapper:after {
+#nav .navbar .abs-wrapper:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 51, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul {
+/* line 52, ../../../components/sass/modules/_nav.scss */
+#nav .navbar ul {
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -400,8 +530,8 @@ header #nav .navbar ul {
   -ms-transition: all 0.2s ease;
 }
 @media (min-width: 0) and (max-width: 540px) {
-  /* line 51, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar ul {
+  /* line 52, ../../../components/sass/modules/_nav.scss */
+  #nav .navbar ul {
     display: block;
     width: 480px;
     min-width: 100%;
@@ -409,22 +539,19 @@ header #nav .navbar ul {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 64, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li {
+/* line 65, ../../../components/sass/modules/_nav.scss */
+#nav .navbar ul li {
   display: inline-block;
 }
 @media (min-width: 540px) {
-  /* line 64, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar ul li {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  /* line 65, ../../../components/sass/modules/_nav.scss */
+  #nav .navbar ul li {
     width: 25%;
     float: left;
   }
 }
-/* line 72, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li a {
+/* line 73, ../../../components/sass/modules/_nav.scss */
+#nav .navbar ul li a {
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.065em;
@@ -433,9 +560,9 @@ header #nav .navbar ul li a {
   text-decoration: none;
   color: #f7f7f7;
 }
-@media (min-width: 960px) {
-  /* line 72, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar ul li a {
+@media (min-width: 720px) {
+  /* line 73, ../../../components/sass/modules/_nav.scss */
+  #nav .navbar ul li a {
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -444,150 +571,244 @@ header #nav .navbar ul li a {
     font-size: 1.4rem;
   }
 }
-/* line 86, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li a:hover {
+/* line 87, ../../../components/sass/modules/_nav.scss */
+#nav .navbar ul li a:hover {
   background-color: #f7f7f7;
   color: #333;
 }
-/* line 91, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li a.active {
+/* line 92, ../../../components/sass/modules/_nav.scss */
+#nav .navbar ul li a.active {
   background-color: #f7f7f7;
   color: #333;
 }
-/* line 95, ../../../components/sass/modules/_nav.scss */
-header #nav .navbar ul li a.active #toolBundles {
+/* line 96, ../../../components/sass/modules/_nav.scss */
+#nav .navbar ul li a.active #toolBundles {
   background-color: #fff;
 }
 
 /* line 2, ../../../components/sass/modules/_shopTools.scss */
+.scene:nth-child(odd) {
+  background-color: #fff;
+}
+/* line 3, ../../../components/sass/modules/_shopTools.scss */
+.scene:nth-child(even) {
+  background-color: #f7f7f7;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+/* line 8, ../../../components/sass/modules/_shopTools.scss */
 .scene.bundles {
   background: #fff;
 }
-/* line 3, ../../../components/sass/modules/_shopTools.scss */
+/* line 9, ../../../components/sass/modules/_shopTools.scss */
 .scene.products {
-  background: #f7f7f7;
   border-top: 1px solid #e4e4e4;
 }
-/* line 8, ../../../components/sass/modules/_shopTools.scss */
-.scene article {
-  text-align: left;
-  max-width: 1160px;
+/* line 14, ../../../components/sass/modules/_shopTools.scss */
+.scene .content {
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
 }
 /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-.scene article:after {
+.scene .content:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 22, ../../../components/sass/_mixins.scss */
-.scene article .gallery:before, .scene article .gallery:after {
+@media (min-width: 540px) {
+  /* line 30, ../../../components/sass/_mixins.scss */
+  .scene .content:before, .scene .content:after {
+    content: '';
+    display: table;
+  }
+  /* line 35, ../../../components/sass/_mixins.scss */
+  .scene .content:after {
+    clear: both;
+  }
+}
+/* line 25, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .headings {
+  border-bottom: 1px solid #e4e4e4;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+@media (min-width: 540px) {
+  /* line 25, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .headings {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 29, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .headings h1 {
+  font-family: "DIN Next W01 Bold";
+  font-size: 1.8rem;
+  font-weight: normal;
+  padding-top: 6rem;
+  padding-bottom: .25em;
+}
+@media (min-width: 540px) {
+  /* line 29, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .headings h1 {
+    font-size: 2.4rem;
+  }
+}
+/* line 39, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .headings h2 {
+  font-family: "DIN Next W01 Light";
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin: 0 0 .5em;
+}
+@media (min-width: 540px) {
+  /* line 39, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .headings h2 {
+    font-size: 2.2rem;
+    line-height: 1em;
+    padding: 0 0 0.5em;
+    margin: 0;
+  }
+}
+/* line 30, ../../../components/sass/_mixins.scss */
+.scene .content .gallery:before, .scene .content .gallery:after {
   content: '';
   display: table;
 }
-/* line 27, ../../../components/sass/_mixins.scss */
-.scene article .gallery:after {
+/* line 35, ../../../components/sass/_mixins.scss */
+.scene .content .gallery:after {
   clear: both;
 }
-/* line 16, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module {
-  border-top: 1px solid #e4e4e4;
+@media (min-width: 540px) {
+  /* line 56, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery {
+    width: 100%;
+    float: left;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+  /* line 66, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .scene .content .gallery:nth-child(1n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 56, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery {
+    width: 100%;
+    float: left;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+  /* line 66, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .scene .content .gallery:nth-child(1n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 66, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
   font-size: 1rem;
 }
-/* line 18, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module:nth-of-type(2) {
+@media (min-width: 540px) {
+  /* line 66, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .shoptools-module {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 68, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module:nth-of-type(2) {
   border-top: none;
 }
 @media (min-width: 540px) {
-  /* line 16, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module {
+  /* line 66, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .shoptools-module {
     font-size: 1.15rem;
   }
 }
-/* line 23, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module h2, .scene article .gallery .shoptools-module h3 {
+/* line 73, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module h2, .scene .content .gallery .shoptools-module h3 {
   font-size: 1.15em;
 }
 @media (min-width: 540px) {
-  /* line 16, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module {
+  /* line 66, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .shoptools-module {
     border-top: none;
   }
-  /* line 27, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module:hover {
+  /* line 77, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .shoptools-module:hover {
     background-color: #fff;
     -moz-box-shadow: 0 0 18px 0 #dadada;
     -webkit-box-shadow: 0 0 18px 0 #dadada;
     box-shadow: 0 0 18px 0 #dadada;
   }
 }
-@media (min-width: 960px) {
-  /* line 16, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module {
+@media (min-width: 720px) {
+  /* line 66, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .shoptools-module {
     font-size: 1.8rem;
     margin-bottom: 2.2rem;
   }
 }
-/* line 38, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module h1 {
+/* line 87, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module h1 {
   text-align: left;
-  font-family: "DIN Next W01 Light";
-  font-size: 1.8rem;
+  font-family: "DIN Next W01 Regular";
+  font-size: 1.4rem;
   line-height: 1em;
   position: relative;
-  margin: 1em -3em 1em 0;
+  margin: 1.45em -3em 1.14em 0;
   padding-right: 3em;
+  margin-bottom: 1.3rem;
   width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
-@media (min-width: 960px) {
-  /* line 38, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module h1 {
-    font-size: 2.2rem;
-  }
-}
-/* line 48, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module h1 span {
+/* line 98, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module h1 span {
+  font-family: "DIN Next W01 Bold";
   font-family: "DINNextW01-CondensedMed";
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 0.1rem;
+  top: 0rem;
 }
-/* line 54, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module h1 span span {
-  font-size: 0.65em;
-  line-height: 4.5em;
-  font-family: "DINNextW01-CondensedReg";
+/* line 106, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module h1 span span {
+  font-family: "DINNextW01-CondensedMed";
+  font-size: .8em;
+  line-height: 3.8em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
+  margin-right: -0.05em;
 }
-/* line 62, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module h2 {
+/* line 115, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module h2 {
   font-size: 1.5rem;
   font-family: "DIN Next W01 Light";
   margin: 1em 0 0;
 }
-@media (min-width: 960px) {
-  /* line 62, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module h2 {
+@media (min-width: 720px) {
+  /* line 115, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .shoptools-module h2 {
     font-size: 1.8rem;
   }
 }
-/* line 68, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module h3 {
+/* line 121, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module h3 {
   font-size: 1.5rem;
-  font-family: "DINNextW01-LightItalic";
   margin-top: 0.5em;
 }
-@media (min-width: 960px) {
-  /* line 68, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module h3 {
-    font-size: 1.8rem;
-  }
-}
-/* line 74, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module a.btn {
+/* line 126, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module a.btn {
   text-transform: uppercase;
   letter-spacing: 0.02em;
   display: block;
@@ -600,9 +821,9 @@ header #nav .navbar ul li a.active #toolBundles {
   text-align: center;
   font-family: "DIN Next W01 Light";
 }
-@media (min-width: 960px) {
-  /* line 74, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module a.btn {
+@media (min-width: 720px) {
+  /* line 126, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .shoptools-module a.btn {
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -610,379 +831,204 @@ header #nav .navbar ul li a.active #toolBundles {
     -ms-transition: all 0.2s ease;
   }
 }
-@media (min-width: 960px) {
-  /* line 74, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module a.btn {
-    font-size: 1.4rem;
-  }
-}
-/* line 88, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module a.btn:hover {
+/* line 139, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module a.btn:hover {
   z-index: 1000;
   background-color: black;
   color: #f7f7f7;
 }
 @media (min-width: 540px) {
-  /* line 74, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .shoptools-module a.btn {
+  /* line 126, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .shoptools-module a.btn {
     text-align: left;
     display: inline-block;
   }
 }
-/* line 99, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module ul.logoArea {
+/* line 150, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module ul.logoArea {
   background: #fff;
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
-  padding-top: 14px;
-  padding-bottom: 28px;
+  margin: 1.4rem 0;
 }
-/* line 22, ../../../components/sass/_mixins.scss */
-.scene article .gallery .shoptools-module ul.logoArea:before, .scene article .gallery .shoptools-module ul.logoArea:after {
+/* line 30, ../../../components/sass/_mixins.scss */
+.scene .content .gallery .shoptools-module ul.logoArea:before, .scene .content .gallery .shoptools-module ul.logoArea:after {
   content: '';
   display: table;
 }
-/* line 27, ../../../components/sass/_mixins.scss */
-.scene article .gallery .shoptools-module ul.logoArea:after {
+/* line 35, ../../../components/sass/_mixins.scss */
+.scene .content .gallery .shoptools-module ul.logoArea:after {
   clear: both;
 }
-/* line 109, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .shoptools-module ul.logoArea li {
+/* line 157, ../../../components/sass/modules/_shopTools.scss */
+.scene .content .gallery .shoptools-module ul.logoArea li {
   text-align: center;
-  padding-top: 14px;
-}
-/* line 120, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .bundle {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 4.96988%;
-  padding-right: 4.96988%;
+  padding: 1.4rem 0;
 }
 @media (min-width: 360px) {
-  /* line 123, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .bundle ul.logoArea > li {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  /* line 166, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .bundle ul.logoArea > li {
     width: 50%;
     float: left;
-    padding-left: 9.93976%;
-    padding-right: 9.93976%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
 @media (min-width: 540px) {
-  /* line 120, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .bundle {
+  /* line 164, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .bundle {
     border-top: none;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 50%;
     float: left;
-    padding-left: 2.48494%;
-    padding-right: 2.48494%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
-  /* line 130, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .bundle ul.logoArea > li {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  /* line 173, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .bundle ul.logoArea > li {
     width: 50%;
     float: left;
-    padding-left: 3.31325%;
-    padding-right: 3.31325%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
-@media (min-width: 960px) {
-  /* line 120, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .bundle {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+@media (min-width: 720px) {
+  /* line 164, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .bundle {
     width: 50%;
     float: left;
-    padding-left: 2.20884%;
-    padding-right: 2.20884%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
-  /* line 136, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .bundle ul.logoArea > li {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  /* line 179, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .bundle ul.logoArea > li {
     width: 50%;
     float: left;
-    padding-left: 3.31325%;
-    padding-right: 3.31325%;
-  }
-}
-/* line 142, ../../../components/sass/modules/_shopTools.scss */
-.scene article .gallery .product {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 4.96988%;
-  padding-right: 4.96988%;
-}
-@media (min-width: 360px) {
-  /* line 142, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .product {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 4.96988%;
-    padding-right: 4.96988%;
-  }
-  /* line 146, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .product.single-product {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 4.96988%;
-    padding-right: 4.96988%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
 @media (min-width: 540px) {
-  /* line 142, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .product {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  /* line 185, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .product {
     width: 50%;
     float: left;
-    padding-left: 2.48494%;
-    padding-right: 2.48494%;
-  }
-  /* line 150, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .product.single-product {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 2.48494%;
-    padding-right: 2.48494%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
-@media (min-width: 960px) {
-  /* line 142, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .product {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+@media (min-width: 720px) {
+  /* line 185, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .product {
+    width: 50%;
+    float: left;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
+@media (min-width: 720px) {
+  /* line 185, ../../../components/sass/modules/_shopTools.scss */
+  .scene .content .gallery .product {
     width: 33.33333%;
     float: left;
-    padding-left: 2.20884%;
-    padding-right: 2.20884%;
-  }
-  /* line 154, ../../../components/sass/modules/_shopTools.scss */
-  .scene article .gallery .product.single-product {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 33.33333%;
-    float: left;
-    padding-left: 2.48494%;
-    padding-right: 2.48494%;
-  }
-}
-/* line 160, ../../../components/sass/modules/_shopTools.scss */
-.scene.benefits {
-  padding-bottom: 55px;
-  background: #fff;
-}
-/* line 170, ../../../components/sass/modules/_shopTools.scss */
-.scene.benefits h2 {
-  font-family: "DINNextW01-LightItalic";
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin: 1.5em 0 0;
-}
-@media (min-width: 540px) {
-  /* line 170, ../../../components/sass/modules/_shopTools.scss */
-  .scene.benefits h2 {
-    font-size: 1.8rem;
-  }
-}
-/* line 181, ../../../components/sass/modules/_shopTools.scss */
-.scene.benefits p {
-  font-family: "DIN Next W01 Light";
-  font-size: 1.5rem;
-  margin: .75em 0 0em;
-}
-@media (min-width: 540px) {
-  /* line 181, ../../../components/sass/modules/_shopTools.scss */
-  .scene.benefits p {
-    font-size: 1.6rem;
-  }
-}
-/* line 191, ../../../components/sass/modules/_shopTools.scss */
-.scene.benefits ul#benefit-list {
-  max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-.scene.benefits ul#benefit-list:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-/* line 193, ../../../components/sass/modules/_shopTools.scss */
-.scene.benefits ul#benefit-list li {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 4.96988%;
-  padding-right: 4.96988%;
-}
-@media (min-width: 540px) {
-  /* line 193, ../../../components/sass/modules/_shopTools.scss */
-  .scene.benefits ul#benefit-list li {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 2.48494%;
-    padding-right: 2.48494%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
   /* line 197, ../../../components/sass/modules/_shopTools.scss */
-  .scene.benefits ul#benefit-list li.single-product {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 2.48494%;
-    padding-right: 2.48494%;
-  }
-}
-@media (min-width: 960px) {
-  /* line 193, ../../../components/sass/modules/_shopTools.scss */
-  .scene.benefits ul#benefit-list li {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  .scene .content .gallery .product.single-product {
     width: 33.33333%;
     float: left;
-    padding-left: 2.20884%;
-    padding-right: 2.20884%;
-  }
-  /* line 201, ../../../components/sass/modules/_shopTools.scss */
-  .scene.benefits ul#benefit-list li.single-product {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 33.33333%;
-    float: left;
-    padding-left: 2.48494%;
-    padding-right: 2.48494%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
-/* line 207, ../../../components/sass/modules/_shopTools.scss */
-.scene .headings {
-  max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid #e4e4e4;
+/* line 204, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits .headings {
+  border: none;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
 }
-/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-.scene .headings:after {
-  content: " ";
-  display: block;
-  clear: both;
+/* line 205, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits .headings h1 {
+  padding-bottom: 1.3rem;
 }
-@media (min-width: 960px) {
-  /* line 207, ../../../components/sass/modules/_shopTools.scss */
-  .scene .headings {
-    text-align: left;
+@media (min-width: 540px) {
+  /* line 204, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits .headings {
+    padding-left: 0;
+    padding-right: 0;
   }
+}
+/* line 212, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits ul#benefit-list {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-bottom: 55px;
 }
 /* line 213, ../../../components/sass/modules/_shopTools.scss */
-.scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 4.96988%;
-  padding-right: 4.96988%;
+.scene.benefits ul#benefit-list h2 {
+  border-top: 1px solid #e4e4e4;
+  font-family: 'DIN Next W01 Light';
+  font-size: 1.8rem;
+  line-height: 1em;
+  padding: .7em 0 1.25em;
+  margin: 0;
 }
 @media (min-width: 540px) {
   /* line 213, ../../../components/sass/modules/_shopTools.scss */
-  .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 2.48494%;
-    padding-right: 2.48494%;
-  }
-}
-@media (min-width: 960px) {
-  /* line 213, ../../../components/sass/modules/_shopTools.scss */
-  .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 2.20884%;
-    padding-right: 2.20884%;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 213, ../../../components/sass/modules/_shopTools.scss */
-  .scene .headings h1, .scene .headings h2, .scene .headings h3, .scene .headings h4, .scene .headings h5, .scene .headings h6 {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 1.65663%;
-    padding-right: 1.65663%;
-  }
-}
-/* line 226, ../../../components/sass/modules/_shopTools.scss */
-.scene .headings h1 {
-  position: relative;
-  font-family: "DINNextLTW01-UltraLight 706122";
-  font-size: 2.58rem;
-  font-weight: normal;
-  margin: 6rem 0 0.5rem;
-}
-@media (min-width: 960px) {
-  /* line 226, ../../../components/sass/modules/_shopTools.scss */
-  .scene .headings h1 {
-    font-size: 3.5rem;
-    margin: 6rem 0 0rem;
-  }
-}
-/* line 239, ../../../components/sass/modules/_shopTools.scss */
-.scene .headings h2 {
-  font-family: "DINNextW01-LightItalic";
-  font-size: 1.8rem;
-  line-height: 1.2em;
-  font-weight: normal;
-  margin: .2em 0 1em;
-}
-@media (min-width: 960px) {
-  /* line 239, ../../../components/sass/modules/_shopTools.scss */
-  .scene .headings h2 {
+  .scene.benefits ul#benefit-list h2 {
     font-size: 2.2rem;
-    margin: .2em 0 0.75em;
+  }
+}
+/* line 225, ../../../components/sass/modules/_shopTools.scss */
+.scene.benefits ul#benefit-list p {
+  margin: 0 0 1em;
+}
+@media (min-width: 540px) {
+  /* line 212, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 30, ../../../components/sass/_mixins.scss */
+.scene.benefits ul#benefit-list:before, .scene.benefits ul#benefit-list:after {
+  content: '';
+  display: table;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+.scene.benefits ul#benefit-list:after {
+  clear: both;
+}
+@media (min-width: 540px) {
+  /* line 233, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list li:nth-child(2n+1) {
+    width: 33.33333%;
+    float: right;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+  /* line 236, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list li:nth-child(even) {
+    width: 33.33333%;
+    float: left;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
+@media (min-width: 720px) {
+  /* line 242, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list li:nth-child(odd) {
+    width: 33.33333%;
+    float: left;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+  /* line 245, ../../../components/sass/modules/_shopTools.scss */
+  .scene.benefits ul#benefit-list li:nth-child(even) {
+    width: 33.33333%;
+    float: right;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
 
@@ -990,12 +1036,12 @@ header #nav .navbar ul li a.active #toolBundles {
 #events {
   padding: 0;
 }
-/* line 22, ../../../components/sass/_mixins.scss */
+/* line 30, ../../../components/sass/_mixins.scss */
 #events:before, #events:after {
   content: '';
   display: table;
 }
-/* line 27, ../../../components/sass/_mixins.scss */
+/* line 35, ../../../components/sass/_mixins.scss */
 #events:after {
   clear: both;
 }
@@ -1015,9 +1061,6 @@ header #nav .navbar ul li a.active #toolBundles {
 @media (min-width: 540px) {
   /* line 5, ../../../components/sass/modules/_events.scss */
   #events .event {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 50%;
     float: left;
   }
@@ -1091,13 +1134,10 @@ header #nav .navbar ul li a.active #toolBundles {
   }
   /* line 27, ../../../components/sass/modules/_dining.scss */
   #dining section {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 33.33333%;
     float: left;
-    padding-left: 1.65663%;
-    padding-right: 1.65663%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
   /* line 30, ../../../components/sass/modules/_dining.scss */
   #dining section h2 {
@@ -1121,8 +1161,8 @@ header #nav .navbar ul li a.active #toolBundles {
   background-image: -moz-linear-gradient(top, #f7f7f7, #fefaf0);
   background-image: -webkit-linear-gradient(top, #f7f7f7, #fefaf0);
   background-image: linear-gradient(to bottom, #f7f7f7, #fefaf0);
-  padding-left: 9.98996%;
-  padding-right: 9.98996%;
+  padding-left: 8.33333%;
+  padding-right: 8.33333%;
   text-align: center;
   border-top: 1px solid #DF4848;
   border-bottom: 1px solid #DF4848;
@@ -1147,37 +1187,31 @@ header #nav .navbar ul li a.active #toolBundles {
   font-size: 3em;
   font-weight: 200;
 }
-/* line 22, ../../../components/sass/_mixins.scss */
+/* line 30, ../../../components/sass/_mixins.scss */
 #hotelinfo #usefulinfo:before, #hotelinfo #usefulinfo:after {
   content: '';
   display: table;
 }
-/* line 27, ../../../components/sass/_mixins.scss */
+/* line 35, ../../../components/sass/_mixins.scss */
 #hotelinfo #usefulinfo:after {
   clear: both;
 }
 @media (min-width: 540px) {
   /* line 18, ../../../components/sass/modules/_hotelinfo.scss */
   #hotelinfo #usefulinfo section {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 33.33333%;
     float: left;
-    padding-left: 6.62651%;
-    padding-right: 6.62651%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
 @media (min-width: 450px) and (max-width: 540px) {
   /* line 23, ../../../components/sass/modules/_hotelinfo.scss */
   #hotelinfo #usefulinfo section.checklist {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 50%;
     float: left;
-    padding-left: 9.93976%;
-    padding-right: 9.93976%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
 /* line 28, ../../../components/sass/modules/_hotelinfo.scss */
@@ -1252,14 +1286,14 @@ header #nav .navbar ul li a.active #toolBundles {
   display: block;
   clear: both;
 }
-@media (min-width: 960px) {
+@media (min-width: 720px) {
   /* line 2, ../../../components/sass/modules/_rooms.scss */
   #rooms header {
-    max-width: 1160px;
+    max-width: 91.2rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 9.98996%;
-    padding-right: 9.98996%;
+    padding-left: 8.33333%;
+    padding-right: 8.33333%;
   }
   /* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   #rooms header:after {
@@ -1273,8 +1307,8 @@ header #nav .navbar ul li a.active #toolBundles {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 9.98996%;
-  padding-right: 9.98996%;
+  padding-left: 8.33333%;
+  padding-right: 8.33333%;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1292,8 +1326,8 @@ header #nav .navbar ul li a.active #toolBundles {
 @media (min-width: 540px) {
   /* line 11, ../../../components/sass/modules/_rooms.scss */
   #rooms .room {
-    padding-left: 59.98996%;
-    padding-right: 9.98996%;
+    padding-left: 58.33333%;
+    padding-right: 8.33333%;
   }
 }
 /* line 24, ../../../components/sass/modules/_rooms.scss */
@@ -1389,12 +1423,12 @@ header #nav .navbar ul li a.active #toolBundles {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 22, ../../../components/sass/_mixins.scss */
+/* line 30, ../../../components/sass/_mixins.scss */
 #attractions:before, #attractions:after {
   content: '';
   display: table;
 }
-/* line 27, ../../../components/sass/_mixins.scss */
+/* line 35, ../../../components/sass/_mixins.scss */
 #attractions:after {
   clear: both;
 }
@@ -1423,7 +1457,7 @@ header #nav .navbar ul li a.active #toolBundles {
   display: block;
   clear: both;
 }
-@media (min-width: 960px) {
+@media (min-width: 720px) {
   /* line 11, ../../../components/sass/modules/_attractions.scss */
   #attractions article {
     max-width: 50%;
