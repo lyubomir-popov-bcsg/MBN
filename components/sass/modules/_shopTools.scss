@@ -1,3 +1,44 @@
+// Priceless
+//******************************************************
+#menu{
+  @include gutterPad();
+  border-bottom: 1px solid #3f3f3f;
+  @include span(12 of 12);
+  width: 100%;
+  h1#toolsLogo {
+    padding-left: (gutter()); // patch
+    margin: 0em -3em 0 0;
+    padding-right: 3em;
+    position: relative;
+    max-width: 6.5em;
+    color: white;
+    font-family: "DIN Next W01 Bold";
+    font-size: 1.8rem;
+    font-weight: normal;
+    padding-top: 2rem;
+    @include capitalise(.1em);
+    padding-bottom: .25em;
+    @include breakpoint($small) {
+      font-size: 2.4rem;
+    }
+    span{
+      font-family: "DIN Next W01 Bold";
+      font-family: "DINNextW01-CondensedMed";
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 2.1rem;
+      font-size: 1rem;
+      span{
+        font-family: "DINNextW01-CondensedMed";
+        line-height: 1em;
+        top: 1.0rem;
+        // margin-right: -0.05em;
+      }
+    }
+  } //h1
+}
+
 .scene {
   &:nth-child(odd){background-color: $white;}
   &:nth-child(even){background-color: $light;

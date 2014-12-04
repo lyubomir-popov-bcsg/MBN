@@ -1,37 +1,14 @@
-#intro {
+#priceless-hero {
+min-height: 500px;
   margin: 0 auto;
   background-color: $light;
-  background: url('../images/shop-tools.jpg');
+  // background: #f8981c;
+  background: url('../images/herobanners/priceless-cities/lasVegas.jpg');
   .container {
     color: #fff;
     @include container(1140px);
     @include clearfix;
-    #sidebar{
-      @include breakpoint($medium) {
-        @include span(4 of 12 last);
-      } //breakpoint      
-      h1{
-        font-family: 'DINNextW01-CondensedBol';
-        font-size: 2.7rem;
-        margin: 3.5rem 0 1em;
-      }
-      h2{
-        font-family: 'DIN Next W01 Light';
-        font-size: 1.8rem;
-        margin: 1em 0 1em;
-      }
-      p{
-        font-family: 'DIN Next W01 Light';
-        font-size: 1.4rem;
-        a{
-          color: $white;
-          // display: inline-block;
-          background: #3f3f3f;
-          padding: .5rem 2rem;
-          border-radius: .5em;
-        }
-      }
-    }
+
     .content{
       @include show-grid($susySmall);
       @include clearfix;      
@@ -42,6 +19,7 @@
         // @include bleed(gutter());
       } //breakpoint
       h1 {
+        @include capitalise(0.01em);      	
         font-family: "DIN Next W01 Bold";
         font-size: 3.5rem;
         line-height: 1em;

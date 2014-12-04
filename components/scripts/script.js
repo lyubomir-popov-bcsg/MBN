@@ -1,10 +1,25 @@
 $(function() {
   var isTouch = 'ontouchstart' in document.documentElement;
   
+  
+  // offcanvas menu
+  var $transformer = $('.transformer'),
+    $menuToggle = $('.menu-toggle');
+
+  // Attaches event handler when .menu-toggle is clicked
+  $('.menu-toggle').on('click', function(event) {
+    event.preventDefault();
+    $transformer.toggleClass('is-open');
+    console.log('clicked');
+  });
+  // end offcanvas menu
+
+
+
   var ns = {};
   ns.anchorOffsets = {};
   var navOffset = $('.navbar').height();//patch
-  $('#intro').css({'padding-top' , navOffset + 'px'});
+  // $('#intro').css({'padding-top' , navOffset + 'px'});
   $( "nav li" ).each(function(index) {
     // console.log( $( this ).text() + " " + $(this).position().left );
     ns.anchorOffsets[index] = $(this).position().left;
