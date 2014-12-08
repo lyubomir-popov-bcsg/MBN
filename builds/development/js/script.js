@@ -77,6 +77,7 @@ $(function() {
     checkWidth();
     setNavHeight();
   }); //on resize
+  $(window).trigger('resize');
 
   function setNavHeight() {
     var $c = $('nav').children();
