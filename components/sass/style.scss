@@ -22,7 +22,11 @@
 @import "layout";
 
 //Import Modules
-@import "modules/header";
+//@import "modules/header";
+header{
+	height:90px;
+	background: $light;
+}
 @import "modules/easy-savings";
 @import "modules/mobilenav";
 @import "modules/intro";

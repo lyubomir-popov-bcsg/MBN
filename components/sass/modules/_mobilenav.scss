@@ -6,6 +6,7 @@
 	position: absolute;
 	top: 26px;
 	width: 36px;
+	z-index: 1001;
 }
 .mobile-nav {
 	div.clipped-visible{
@@ -68,14 +69,18 @@
 
 
 .mobile-nav {
+	//-webkit-transition: -webkit-transform 100ms ease-in-out;
+	//transition: transform 100ms ease-in-out;
+	transition-duration: 0.3s;
 	background: #fff;
 	border-right: 1px solid #e1e1e1;
 	height: 100%;
-	left: 0;
+	right: -240px;
+	&.open{
+		right: 0px;
+	}
 	position: fixed !important;
 	top: 0px;
-	-webkit-transition: -webkit-transform 100ms ease-in-out;
-	transition: transform 100ms ease-in-out;
 	width: 240px;
 	z-index: 1000;
 }

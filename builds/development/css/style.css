@@ -249,7 +249,7 @@ body {
   position: relative;
 }
 
-/* line 1, ../../../components/sass/modules/_header.scss */
+/* line 26, ../../../components/sass/style.scss */
 header {
   height: 90px;
   background: #f7f7f7;
@@ -264,23 +264,24 @@ header {
   position: absolute;
   top: 26px;
   width: 36px;
+  z-index: 1001;
 }
 
-/* line 10, ../../../components/sass/modules/_mobilenav.scss */
+/* line 11, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
   overflow: hidden;
 }
-/* line 11, ../../../components/sass/modules/_mobilenav.scss */
+/* line 12, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav div.clipped-visible {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
   transition-duration: 0.3s;
 }
-/* line 18, ../../../components/sass/modules/_mobilenav.scss */
+/* line 19, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav div.clipped-visible-sub {
   -webkit-transform: translateX(-240px);
   -ms-transform: translateX(-240px);
@@ -296,7 +297,7 @@ header {
 .mobile-nav:after {
   clear: both;
 }
-/* line 32, ../../../components/sass/modules/_mobilenav.scss */
+/* line 33, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped {
   transition-duration: 0.3s;
   transform: translateX(240px);
@@ -304,7 +305,7 @@ header {
   position: relative;
   display: block;
 }
-/* line 38, ../../../components/sass/modules/_mobilenav.scss */
+/* line 39, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped ul {
   position: absolute;
   display: inline;
@@ -321,7 +322,7 @@ header {
 .mobile-nav .clipped ul:after {
   clear: both;
 }
-/* line 45, ../../../components/sass/modules/_mobilenav.scss */
+/* line 46, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped ul li a {
   widows: 100%;
   font-size: 1.2rem;
@@ -333,28 +334,31 @@ header {
   border-top: 1px solid #dadada;
   background: #f7f7f7;
 }
-/* line 54, ../../../components/sass/modules/_mobilenav.scss */
+/* line 55, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped ul li a:hover {
   background: #e4e4e4;
 }
-/* line 60, ../../../components/sass/modules/_mobilenav.scss */
+/* line 61, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped ul.mobile-sub {
   margin-left: 50%;
   background: red;
 }
 
-/* line 70, ../../../components/sass/modules/_mobilenav.scss */
+/* line 71, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav {
+  transition-duration: 0.3s;
   background: #fff;
   border-right: 1px solid #e1e1e1;
   height: 100%;
-  left: 0;
+  right: -240px;
   position: fixed !important;
   top: 0px;
-  -webkit-transition: -webkit-transform 100ms ease-in-out;
-  transition: transform 100ms ease-in-out;
   width: 240px;
   z-index: 1000;
+}
+/* line 79, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav.open {
+  right: 0px;
 }
 
 /* line 1, ../../../components/sass/modules/_intro.scss */
