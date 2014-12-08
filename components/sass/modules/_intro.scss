@@ -10,23 +10,23 @@
     #sidebar {
       position: relative;
       background: rgba(10,10,10,.8);
-      .extendright {
+      &:after{
         z-index: 0;
         padding-right: 3000px;
         margin-right: -3000px;
         position: absolute;
         top: 0; left:0; bottom:0; right: 0;
       }
-      margin: 2rem 0;
-      @include breakpoint($small) {@include span(12 of 12);}
-
+      // margin: 2rem 0;
+      @include breakpoint($medium) {@include span(12 of 12);}
+      @include span(12 of 12 last);
       @include breakpoint($medium) {
         @include span(4 of 12 last);
       } //breakpoint      
       h1{
         font-family: 'DINNextW01-CondensedBol';
         font-size: 2.7rem;
-        margin: 1.5rem 0 1em;
+        padding-top: 1.5rem;
       }
       h2{
         font-family: 'DIN Next W01 Light';
@@ -38,8 +38,8 @@
         text-shadow: none;
         color: $white;
         display: inline-block;
-        background: rgba(51,51,51, .2);
-        padding: .0rem 1rem;
+        background: rgba(60,60,60, .5);
+        padding: .0rem 1rem 0 0;
         border-radius: .5em;
         &:hover{
           text-decoration: underline;
@@ -70,7 +70,7 @@
     }
     .content{
       display:none;
-      @include breakpoint($small) {display:block;}
+      @include breakpoint($medium) {display:block;}
       @include show-grid($susySmall);
       @include clearfix;      
       // @include span(12 of 12);

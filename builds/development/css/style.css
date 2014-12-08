@@ -396,10 +396,13 @@ body {
 #intro .container #sidebar {
   position: relative;
   background: rgba(10, 10, 10, 0.8);
-  margin: 2rem 0;
+  width: 100%;
+  float: right;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
 }
 /* line 13, ../../../components/sass/modules/_intro.scss */
-#intro .container #sidebar .extendright {
+#intro .container #sidebar:after {
   z-index: 0;
   padding-right: 3000px;
   margin-right: -3000px;
@@ -409,7 +412,7 @@ body {
   bottom: 0;
   right: 0;
 }
-@media (min-width: 540px) {
+@media (min-width: 720px) {
   /* line 10, ../../../components/sass/modules/_intro.scss */
   #intro .container #sidebar {
     width: 100%;
@@ -431,7 +434,7 @@ body {
 #intro .container #sidebar h1 {
   font-family: 'DINNextW01-CondensedBol';
   font-size: 2.7rem;
-  margin: 1.5rem 0 1em;
+  padding-top: 1.5rem;
 }
 /* line 31, ../../../components/sass/modules/_intro.scss */
 #intro .container #sidebar h2 {
@@ -445,8 +448,8 @@ body {
   text-shadow: none;
   color: #fff;
   display: inline-block;
-  background: rgba(51, 51, 51, 0.2);
-  padding: .0rem 1rem;
+  background: rgba(60, 60, 60, 0.5);
+  padding: .0rem 1rem 0 0;
   border-radius: .5em;
 }
 /* line 44, ../../../components/sass/modules/_intro.scss */
@@ -483,7 +486,7 @@ body {
   padding-left: 1.8rem;
   padding-right: 1.8rem;
 }
-@media (min-width: 540px) {
+@media (min-width: 720px) {
   /* line 71, ../../../components/sass/modules/_intro.scss */
   #intro .container .content {
     display: block;
