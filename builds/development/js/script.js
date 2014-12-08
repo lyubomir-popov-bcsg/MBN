@@ -42,8 +42,10 @@ $(function() {
   $('.mobile-nav-toggle').on('click', function() {
     if($clipped.hasClass('clipped-visible') || $clipped.hasClass('clipped-visible-sub')) {
       $clipped.removeClass('clipped-visible-sub').removeClass('clipped-visible');
+      $('.mobile-nav').removeClass('open');
     } else {
       $clipped.addClass('clipped-visible');
+      $('.mobile-nav').addClass('open');
     }
   });
   $('a#atools').on('click', function() {
