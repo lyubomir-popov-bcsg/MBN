@@ -44,7 +44,7 @@ $(function() {
       $clipped.removeClass('clipped-visible-sub').removeClass('clipped-visible');
       $('.mobile-nav').removeClass('open');
     } else {
-      $clipped.addClass('clipped-visible');
+      $clipped.addClass('clipped-visible-sub');
       $('.mobile-nav').addClass('open');
     }
   });
