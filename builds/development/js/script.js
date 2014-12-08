@@ -38,6 +38,7 @@ $(function() {
   // end offcanvas menu
 
   var $clipped = $('.clipped');
+  var mobileNav = $('.mobile-nav');
   $('.mobile-nav-toggle').on('click', function() {
     if($clipped.hasClass('clipped-visible') || $clipped.hasClass('clipped-visible-sub')) {
       $clipped.removeClass('clipped-visible-sub').removeClass('clipped-visible');

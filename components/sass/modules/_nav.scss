@@ -2,30 +2,30 @@
     @include clearfix;
     @include container(1140px);
     .brand {
-      background:url('../images/mcLogo-desktop-EN-375px_patch.png');
+      background: transparent url('../images/logos/mbn-cobrand.svg');
+      background-origin: content-box;      
       background-repeat: no-repeat;
-      background-size: auto;
-      background-position: 50% 34%;
-      @include span(4);
-      min-height: 84px;
+      background-size: 300px 32px;
+      background-size: contain;
+      max-width: 300px;
+      min-width: 150px;
+      min-height: 94px;
+      background-position: 9% 60%;
+      @include span(11);
       float: left;
       font-weight: normal;
-      a {
-        color: $navForeground;
-        text-decoration: none;
-        text-align: center;
-        display: inline-block;
-        padding: $mc6;
-        font-size: .75em;
+      @include breakpoint(min-width $small) {
+        @include span(6);
+      }
+      @include breakpoint(min-width $medium) {
+        @include span(6);
+      }
 
-        @include breakpoint(max-width $small) {
-          font-size: 1em;
-          span {display: none;}
-        }
-      } //a
     } //brand
+
   ul.main-menu{
-    @include span(8 of 12 last);
+    @include span(8 of 12);
+    overflow: hidden;
     li {
       font-size:0;
       // float: left;
@@ -42,14 +42,15 @@
         @include transitionAll(0.2s);
         display: block;
         @include capitalise(0.0em);
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 5.25rem 2rem 2rem 1rem;
         font-family: 'DIN Next W01 Regular';
-        padding: 5.25rem 4rem 1.5rem 1.5rem;
         text-decoration: none;
         color: $dark;
         
-        @include breakpoint($medium) {
-            // font-size: 1.4rem;
+        @include breakpoint($wide) {
+          font-size: 1.2rem;
+          padding: 5.25rem 4rem 1.5rem 1.5rem;
         }
         &:hover {
           background-color: #e4e4e4;
@@ -160,7 +161,10 @@
       }
       font-size: 1.8rem;
       color: white;
-      padding: 2rem 3em 1.2rem;
+      position: relative;
+      display: inline-block;
+      padding: 2rem 1.8rem 1.2rem;
+      margin-right: -1.8rem;
       position: relative;
       display: inline-block;
     }
@@ -187,7 +191,7 @@
 }
 
 #nav {
-  // height:101px;
+  height:101px;
   background: #333;
   width: 100%;
   z-index: 100;
