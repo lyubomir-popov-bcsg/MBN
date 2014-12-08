@@ -1,3 +1,173 @@
+  header{
+    @include clearfix;
+    @include container(1140px);
+    .brand {
+      background:url('../images/mcLogo-desktop-EN-375px_patch.png');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: 50% 34%;
+      @include span(4);
+      min-height: 84px;
+      float: left;
+      font-weight: normal;
+      a {
+        color: $navForeground;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        padding: $mc6;
+        font-size: .75em;
+
+        @include breakpoint(max-width $small) {
+          font-size: 1em;
+          span {display: none;}
+        }
+      } //a
+    } //brand
+  ul.main-menu{
+    @include span(8 of 12 last);
+    li {
+      font-size:0;
+      // float: left;
+      display: inline-block;
+      border-left: 1px solid #dadada;
+      // &:last-child{border: none}
+      @include breakpoint($small) {
+        // @include with-layout(4 .0) {
+        //   @include span(1 of 4);
+        // }
+      } //breakpoint
+      a {
+        // min-height: 90px;
+        @include transitionAll(0.2s);
+        display: block;
+        @include capitalise(0.0em);
+        font-size: 1.2rem;
+        font-family: 'DIN Next W01 Regular';
+        padding: 5.25rem 4rem 1.5rem 1.5rem;
+        text-decoration: none;
+        color: $dark;
+        
+        @include breakpoint($medium) {
+            // font-size: 1.4rem;
+        }
+        &:hover {
+          background-color: #e4e4e4;
+          color: $dark;
+        } //hover
+      
+        &.active {
+          background-color: $light;
+          color: $dark;
+        }
+      } //a
+    } //li
+  } //ul
+}
+// #menu{
+//   @include gutterPad();
+//   border-bottom: 1px solid #3f3f3f;
+//   @include span(12 of 12);
+//   width: 100%;
+//   h1#toolsLogo {
+//     padding-left: (gutter()); // patch
+//     margin: 0em -3em 0 0;
+//     padding-right: 3em;
+//     position: relative;
+//     max-width: 6.5em;
+//     color: white;
+//     font-family: "DIN Next W01 Bold";
+//     font-size: 1.8rem;
+//     font-weight: normal;
+//     padding-top: 2rem;
+//     @include capitalise(.1em);
+//     padding-bottom: .25em;
+//     @include breakpoint($small) {
+//       font-size: 2.4rem;
+//     }
+//     span{
+//       font-family: "DIN Next W01 Bold";
+//       font-family: "DINNextW01-CondensedMed";
+//       display: inline-block;
+//       position: absolute;
+//       right: 0;
+//       top: 2.1rem;
+//       font-size: 1rem;
+//       span{
+//         font-family: "DINNextW01-CondensedMed";
+//         line-height: 1em;
+//         top: 1.0rem;
+//         // margin-right: -0.05em;
+//       }
+//     }
+//   } //h1
+// }
+#menu{
+  @include clearfix;
+  @include container(1140px);
+  @include gutterPad();
+  border-bottom: 1px solid #3f3f3f;
+  width: 100%;
+  .logo{
+    @include span(8 of 12);
+    h1#toolsLogo {
+      padding-left: 0;
+      margin: 0em -3em 0 0;
+      padding-right: 3em;
+      position: relative;
+      max-width: 6em;
+      color: white;
+      font-family: "DIN Next W01 Bold";
+      font-size: 1.8rem;
+      font-weight: normal;
+      padding-top: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding-bottom: 1rem;
+      @include capitalise(.1em);
+      padding-bottom: .25em;
+      @include breakpoint($small) {
+        font-size: 2.4rem;
+      // padding-left: (gutter()); // patch
+      }
+      span{
+        font-family: "DIN Next W01 Bold";
+        font-family: "DINNextW01-CondensedMed";
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 2.1rem;
+        font-size: 1rem;
+        span{
+          font-family: "DINNextW01-CondensedMed";
+          line-height: 1em;
+          top: 1.0rem;
+          // margin-right: -0.05em;
+        }
+      }
+    } //h1
+  }
+
+  .login-container{
+    @include span(4 of 12 last);
+      text-align: right;
+    a{
+      cursor:pointer;
+      transition: all .5 easy-out;
+      &:hover {
+        background-color: #3F3F3F;
+        color: $white;
+      }
+      font-size: 1.8rem;
+      color: white;
+      padding: 2rem 3em 1.2rem;
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
+
+
 .container{
   overflow: hidden;
   .transformer{
@@ -17,45 +187,7 @@
 }
 
 #nav {
-  #menu{
-    @include gutterPad();
-    border-bottom: 1px solid #3f3f3f;
-    @include span(12 of 12);
-    width: 100%;
-    h1#toolsLogo {
-      padding-left: (gutter()); // patch
-      margin: 0em -3em 0 0;
-      padding-right: 3em;
-      position: relative;
-      max-width: 6.5em;
-      color: white;
-      font-family: "DIN Next W01 Bold";
-      font-size: 1.8rem;
-      font-weight: normal;
-      padding-top: 2rem;
-      @include capitalise(.1em);
-      padding-bottom: .25em;
-      @include breakpoint($small) {
-        font-size: 2.4rem;
-      }
-      span{
-        font-family: "DIN Next W01 Bold";
-        font-family: "DINNextW01-CondensedMed";
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 2.1rem;
-        font-size: 1rem;
-        span{
-          font-family: "DINNextW01-CondensedMed";
-          line-height: 1em;
-          top: 1.0rem;
-          // margin-right: -0.05em;
-        }
-      }
-    } //h1
-  }
-  height:101px;
+  // height:101px;
   background: #333;
   width: 100%;
   z-index: 100;
@@ -70,6 +202,7 @@
     background: $dark;
     left:0;
     right:0;
+    top:0px;
     @include breakpoint(0,$small) {
       overflow-y: hidden;
       overflow-x: scroll; 
@@ -79,28 +212,6 @@
     @include breakpoint($small) {
       overflow-x: hidden;
     }
-    .brand {
-      @include span(4);
-      float: left;
-      font-weight: normal;
-      font-family: $headFont;
-      text-align: center;
-      text-transform: uppercase;
-      background: $navBrandBg;
-      a {
-        color: $navForeground;
-        text-decoration: none;
-        text-align: center;
-        display: inline-block;
-        padding: $mc6;
-        font-size: .75em;
-
-        @include breakpoint(max-width $small) {
-          font-size: 1em;
-          span {display: none;}
-        }
-      } //a
-    } //brand
   
     .abs-wrapper{
       @include container(1140px);
@@ -117,8 +228,6 @@
         -ms-overflow-style: -ms-autohiding-scrollbar; 
         -webkit-overflow-scrolling: touch;
       }
-
-      // @include span(12 at 0 of 12);
       li {
         // float: left;
         display: inline-block;

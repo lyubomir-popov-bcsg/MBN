@@ -38,7 +38,6 @@ $(function() {
   // end offcanvas menu
 
 
-
   var ns = {};
   ns.anchorOffsets = {};
   var navOffset = $('.navbar').height();//patch
@@ -59,9 +58,20 @@ $(function() {
     wheight = $(window).height()/2; //get height of the window
     // $('.fullheight').css('height', wheight);
     checkWidth();
+    setNavHeight();
+  }); //on resize
 
+  function setNavHeight() {
+    var $c = $('nav').children();
+    var h = 0;
+    $c.each(function() {
+      h += parseFloat($(this).css('height'));
+    });
 
-  }) //on resize
+    $('nav').css({
+      'height' : h + 'px'
+    });
+  }
 
   function checkWidth(){
     if( $(window).width() < 600){
@@ -104,41 +114,46 @@ $(function() {
   
   //highlight navigation
   $(window).scroll(function() {
-    var topoffset = $('.navbar').height();
-    var windowpos = $(window).scrollTop() + topoffset;
-    $('nav li a').removeClass('active');
+    if($('body').hasClass('shoppingTools')){
 
-    // $('.scene').each(function(){ 
-      // var id = $(this).attr('id');
-      // updateNav(windowpos, '#' + $(this).attr('id'));//closure problem
-      //$('nav ul li' + id ).offset().left
-    //   }
-    // );
 
-    if (windowpos > $('#toolBundles').offset().top) {
+      var topoffset = $('.navbar').height();
+      var windowpos = $(window).scrollTop() + topoffset;
       $('nav li a').removeClass('active');
-      $('a[href$="#toolBundles"]').addClass('active');
-    } //windowpos
 
-    if (windowpos > $('#finances').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#finances"]').addClass('active');
+      // $('.scene').each(function(){ 
+        // var id = $(this).attr('id');
+        // updateNav(windowpos, '#' + $(this).attr('id'));//closure problem
+        //$('nav ul li' + id ).offset().left
+      //   }
+      // );
 
-      // $('nav .abs-wrapper ul').css({
-      //   'margin-left' : -$('nav ul li' + '#finances' ).offset().left + 'px'
-      // }); // slide nav
+      if (windowpos > $('#toolBundles').offset().top) {
+        $('nav li a').removeClass('active');
+        $('a[href$="#toolBundles"]').addClass('active');
+      } //windowpos
 
-    } //windowpos
+      if (windowpos > $('#finances').offset().top) {
+        $('nav li a').removeClass('active');
+        $('a[href$="#finances"]').addClass('active');
 
-    if (windowpos > $('#marketing').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#marketing"]').addClass('active');
-    } //windowpos
+        // $('nav .abs-wrapper ul').css({
+        //   'margin-left' : -$('nav ul li' + '#finances' ).offset().left + 'px'
+        // }); // slide nav
 
-    if (windowpos > $('#safeguarding').offset().top) {
-      $('nav li a').removeClass('active');
-      $('a[href$="#safeguarding"]').addClass('active');
-    } //windowpos
+      } //windowpos
+
+      if (windowpos > $('#marketing').offset().top) {
+        $('nav li a').removeClass('active');
+        $('a[href$="#marketing"]').addClass('active');
+      } //windowpos
+
+      if (windowpos > $('#safeguarding').offset().top) {
+        $('nav li a').removeClass('active');
+        $('a[href$="#safeguarding"]').addClass('active');
+      } //windowpos
+    }
+
 
   }); //window scroll
 
@@ -154,6 +169,9 @@ $(function() {
     triggerElement: '#nav',
   }).setPin('#nav').addTo(controller);
 
+  // var pinOne = new ScrollScene({
+  //   triggerElement: '#menu',
+  // }).setPin('#menu').addTo(controller);
 
   // if(!isTouch) {
   //   //room animations

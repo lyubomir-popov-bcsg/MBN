@@ -1,0 +1,28 @@
+.mobile-nav-toggle {
+	background: transparent url(../images/mobile-nav-icon.svg) center center no-repeat;
+	background-size: 18px 12px;
+	height: 24px;
+	left: 12px;
+	position: absolute;
+	top: 26px;
+	width: 36px;
+}
+
+.mobile-nav {
+	-webkit-transform: translateX(-240px);
+	-ms-transform: translateX(-240px);
+	transform: translateX(-240px);
+}
+
+.mobile-nav, .cart-nav {
+	background: #fff;
+	border-right: 1px solid #e1e1e1;
+	height: 100%;
+	left: 0;
+	position: fixed !important;
+	top: 80px;
+	-webkit-transition: -webkit-transform 100ms ease-in-out;
+	transition: transform 100ms ease-in-out;
+	width: 240px;
+	z-index: 10;
+}

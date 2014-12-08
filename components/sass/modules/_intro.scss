@@ -6,33 +6,71 @@
     color: #fff;
     @include container(1140px);
     @include clearfix;
-    #sidebar{
+    overflow: visible;
+    #sidebar {
+      position: relative;
+      background: rgba(10,10,10,.8);
+      .extendright {
+        z-index: 0;
+        padding-right: 3000px;
+        margin-right: -3000px;
+        position: absolute;
+        top: 0; left:0; bottom:0; right: 0;
+      }
+      margin: 2rem 0;
+      @include breakpoint($small) {@include span(12 of 12);}
+
       @include breakpoint($medium) {
         @include span(4 of 12 last);
       } //breakpoint      
       h1{
         font-family: 'DINNextW01-CondensedBol';
         font-size: 2.7rem;
-        margin: 3.5rem 0 1em;
+        margin: 1.5rem 0 1em;
       }
       h2{
         font-family: 'DIN Next W01 Light';
         font-size: 1.8rem;
         margin: 1em 0 1em;
       }
+      a{ 
+        text-decoration: none;
+        text-shadow: none;
+        color: $white;
+        display: inline-block;
+        background: rgba(51,51,51, .2);
+        padding: .0rem 1rem;
+        border-radius: .5em;
+        &:hover{
+          text-decoration: underline;
+        }
+        
+        &#marketPlaceHeaderPromotion{
+          text-decoration: none;
+          transition: all 100ms ease-out;
+          &:hover{
+            background: #f7f7f7;
+          }
+          border-radius:0;
+          display: block;
+          padding: .75em 1em .5em;
+          margin: 1em 0;
+          text-align: center;
+          font-size: 1.8em;
+          text-transform: uppercase;
+          color: #333;
+          font-family: 'DIN Next W01 Regular';
+          background: #ddd;
+        }
+      }
       p{
         font-family: 'DIN Next W01 Light';
         font-size: 1.4rem;
-        a{
-          color: $white;
-          // display: inline-block;
-          background: #3f3f3f;
-          padding: .5rem 2rem;
-          border-radius: .5em;
-        }
       }
     }
     .content{
+      display:none;
+      @include breakpoint($small) {display:block;}
       @include show-grid($susySmall);
       @include clearfix;      
       // @include span(12 of 12);

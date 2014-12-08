@@ -1,0 +1,12 @@
+// .content {
+//   .gallery {
+//     .saving{
+//       @include breakpoint($small) {
+//         @include span(2 of 4);
+//       } //breakpoint
+//       @include breakpoint($medium) {
+//         @include span(4 of 8);
+//       }//breakpoint             
+//     }//saving
+//   } //gallery
+// } //.content
