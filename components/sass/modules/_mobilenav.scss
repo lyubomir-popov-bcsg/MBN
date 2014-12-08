@@ -1,10 +1,14 @@
 .mobile-nav-toggle {
+	display:block;
+	@include breakpoint($medium) {
+		display:none;
+	}
 	background: transparent url(../images/mobile-nav-icon-grey.svg) center center no-repeat;
 	background-size: 18px 12px;
 	height: 24px;
 	right: 12px;
 	position: absolute;
-	top: 26px;
+	top: 13px;
 	width: 36px;
 	z-index: 1001;
 }
@@ -36,33 +40,33 @@
 	width: 480px;
 	position: relative;
 	display:block;
-		ul{ position: absolute;
+	ul{ position: absolute;
 
-			display: inline;
-			display: block;
-			width: 240px;
-			@include clearfix;
-			li{
-				a{	widows: 100%;
-					font-size: 1.2rem;
-					padding: 1em 2em;
-					display: block;
-					text-transform: uppercase;
-					color: #333;
-					text-decoration: none;
-					border-top: 1px solid #dadada;
-					background:$light;
-					&:hover{
-						background: #e4e4e4
-					}
+		display: inline;
+		display: block;
+		width: 240px;
+		@include clearfix;
+		li{
+			a{	widows: 100%;
+				font-size: 1.2rem;
+				padding: 1em 2em .8em;
+				display: block;
+				text-transform: uppercase;
+				color: #333;
+				text-decoration: none;
+				border-top: 1px solid #dadada;
+				background:$light;
+				&:hover{
+					background: #e4e4e4
 				}
 			}
-			float:left;
-			&.mobile-sub{
-				margin-left: 50%;
-				background:red;
-			}
 		}
+		float:left;
+		&.mobile-sub{
+			margin-left: 50%;
+			background:red;
+		}
+	}
 	}
 
 }
@@ -78,9 +82,10 @@
 	right: -240px;
 	&.open{
 		right: 0px;
+		box-shadow: -5px 50px 51px rgba(50,50,50,.5);
 	}
 	position: fixed !important;
-	top: 0px;
+	top: 48px;
 	width: 240px;
 	z-index: 1000;
 }

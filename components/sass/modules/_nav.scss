@@ -1,4 +1,7 @@
-  header{
+header{
+  height:48px;
+  @include breakpoint($medium) {height:90px;}
+  background: $light;
     @include clearfix;
     @include container(1140px);
     .brand {
@@ -8,23 +11,28 @@
       background-size: 300px 32px;
       background-size: contain;
       max-width: 300px;
-      min-width: 150px;
-      min-height: 94px;
+      min-width: 260px;
+      padding: 0 1.8rem;
+      min-height: 48px;  @include breakpoint($medium) {min-height:90px;}
+
       background-position: 9% 60%;
-      @include span(11);
+      // @include span(12);
       float: left;
       font-weight: normal;
       @include breakpoint(min-width $small) {
-        @include span(6);
+        // @include span(8); 
       }
       @include breakpoint(min-width $medium) {
-        @include span(6);
+        // @include span(4);
       }
-
     } //brand
 
   ul.main-menu{
-    @include span(8 of 12);
+    display:none;
+    @include breakpoint(min-width $medium) {
+      display:block
+      // @include span(8 of 12);
+    }
     overflow: hidden;
     li {
       font-size:0;
@@ -65,44 +73,7 @@
     } //li
   } //ul
 }
-// #menu{
-//   @include gutterPad();
-//   border-bottom: 1px solid #3f3f3f;
-//   @include span(12 of 12);
-//   width: 100%;
-//   h1#toolsLogo {
-//     padding-left: (gutter()); // patch
-//     margin: 0em -3em 0 0;
-//     padding-right: 3em;
-//     position: relative;
-//     max-width: 6.5em;
-//     color: white;
-//     font-family: "DIN Next W01 Bold";
-//     font-size: 1.8rem;
-//     font-weight: normal;
-//     padding-top: 2rem;
-//     @include capitalise(.1em);
-//     padding-bottom: .25em;
-//     @include breakpoint($small) {
-//       font-size: 2.4rem;
-//     }
-//     span{
-//       font-family: "DIN Next W01 Bold";
-//       font-family: "DINNextW01-CondensedMed";
-//       display: inline-block;
-//       position: absolute;
-//       right: 0;
-//       top: 2.1rem;
-//       font-size: 1rem;
-//       span{
-//         font-family: "DINNextW01-CondensedMed";
-//         line-height: 1em;
-//         top: 1.0rem;
-//         // margin-right: -0.05em;
-//       }
-//     }
-//   } //h1
-// }
+
 #menu{
   @include clearfix;
   @include container(1140px);
@@ -110,7 +81,7 @@
   border-bottom: 1px solid #3f3f3f;
   width: 100%;
   .logo{
-    @include span(8 of 12);
+    @include span(6 of 12);
     h1#toolsLogo {
       padding-left: 0;
       margin: 0em -3em 0 0;
@@ -128,6 +99,7 @@
       @include capitalise(.1em);
       padding-bottom: .25em;
       @include breakpoint($small) {
+        margin-right: -1.8rem;
         font-size: 2.4rem;
       // padding-left: (gutter()); // patch
       }
@@ -170,7 +142,6 @@
     }
   }
 }
-
 
 .container{
   overflow: hidden;

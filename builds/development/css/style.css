@@ -249,43 +249,40 @@ body {
   position: relative;
 }
 
-<<<<<<< HEAD
-/* line 1, ../../../components/sass/modules/_header-new.scss */
-=======
-/* line 26, ../../../components/sass/style.scss */
->>>>>>> 3d92d9c3c9047b37f91a354255f1ca488dcd21c9
-header {
-  height: 90px;
-  background: #f7f7f7;
-}
-
 /* line 1, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav-toggle {
+  display: block;
   background: transparent url(../images/mobile-nav-icon-grey.svg) center center no-repeat;
   background-size: 18px 12px;
   height: 24px;
   right: 12px;
   position: absolute;
-  top: 26px;
+  top: 13px;
   width: 36px;
   z-index: 1001;
 }
+@media (min-width: 720px) {
+  /* line 1, ../../../components/sass/modules/_mobilenav.scss */
+  .mobile-nav-toggle {
+    display: none;
+  }
+}
 
-/* line 11, ../../../components/sass/modules/_mobilenav.scss */
+/* line 15, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
   overflow: hidden;
 }
-/* line 12, ../../../components/sass/modules/_mobilenav.scss */
+/* line 16, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav div.clipped-visible {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
   transition-duration: 0.3s;
 }
-/* line 19, ../../../components/sass/modules/_mobilenav.scss */
+/* line 23, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav div.clipped-visible-sub {
   -webkit-transform: translateX(-240px);
   -ms-transform: translateX(-240px);
@@ -301,7 +298,7 @@ header {
 .mobile-nav:after {
   clear: both;
 }
-/* line 33, ../../../components/sass/modules/_mobilenav.scss */
+/* line 37, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped {
   transition-duration: 0.3s;
   transform: translateX(240px);
@@ -309,7 +306,7 @@ header {
   position: relative;
   display: block;
 }
-/* line 39, ../../../components/sass/modules/_mobilenav.scss */
+/* line 43, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped ul {
   position: absolute;
   display: inline;
@@ -326,11 +323,11 @@ header {
 .mobile-nav .clipped ul:after {
   clear: both;
 }
-/* line 46, ../../../components/sass/modules/_mobilenav.scss */
+/* line 50, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped ul li a {
   widows: 100%;
   font-size: 1.2rem;
-  padding: 1em 2em;
+  padding: 1em 2em .8em;
   display: block;
   text-transform: uppercase;
   color: #333;
@@ -338,17 +335,17 @@ header {
   border-top: 1px solid #dadada;
   background: #f7f7f7;
 }
-/* line 55, ../../../components/sass/modules/_mobilenav.scss */
+/* line 59, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped ul li a:hover {
   background: #e4e4e4;
 }
-/* line 61, ../../../components/sass/modules/_mobilenav.scss */
+/* line 65, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav .clipped ul.mobile-sub {
   margin-left: 50%;
   background: red;
 }
 
-/* line 71, ../../../components/sass/modules/_mobilenav.scss */
+/* line 75, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav {
   transition-duration: 0.3s;
   background: #fff;
@@ -356,13 +353,14 @@ header {
   height: 100%;
   right: -240px;
   position: fixed !important;
-  top: 0px;
+  top: 48px;
   width: 240px;
   z-index: 1000;
 }
-/* line 79, ../../../components/sass/modules/_mobilenav.scss */
+/* line 83, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav.open {
   right: 0px;
+  box-shadow: -5px 50px 51px rgba(50, 50, 50, 0.5);
 }
 
 /* line 1, ../../../components/sass/modules/_intro.scss */
@@ -741,9 +739,17 @@ header {
 
 /* line 1, ../../../components/sass/modules/_nav.scss */
 header {
+  height: 48px;
+  background: #f7f7f7;
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 720px) {
+  /* line 1, ../../../components/sass/modules/_nav.scss */
+  header {
+    height: 90px;
+  }
 }
 /* line 30, ../../../components/sass/_mixins.scss */
 header:before, header:after {
@@ -760,7 +766,7 @@ header:after {
   display: block;
   clear: both;
 }
-/* line 4, ../../../components/sass/modules/_nav.scss */
+/* line 7, ../../../components/sass/modules/_nav.scss */
 header .brand {
   background: transparent url("../images/logos/mbn-cobrand.svg");
   background-origin: content-box;
@@ -768,49 +774,37 @@ header .brand {
   background-size: 300px 32px;
   background-size: contain;
   max-width: 300px;
-  min-width: 150px;
-  min-height: 94px;
+  min-width: 260px;
+  padding: 0 1.8rem;
+  min-height: 48px;
   background-position: 9% 60%;
-  width: 91.66667%;
-  float: left;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
   float: left;
   font-weight: normal;
 }
-@media (min-width: 540px) {
-  /* line 4, ../../../components/sass/modules/_nav.scss */
-  header .brand {
-    width: 50%;
-    float: left;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-  }
-}
 @media (min-width: 720px) {
-  /* line 4, ../../../components/sass/modules/_nav.scss */
+  /* line 7, ../../../components/sass/modules/_nav.scss */
   header .brand {
-    width: 50%;
-    float: left;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
+    min-height: 90px;
   }
 }
-/* line 26, ../../../components/sass/modules/_nav.scss */
+/* line 30, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu {
-  width: 66.66667%;
-  float: left;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
+  display: none;
   overflow: hidden;
 }
-/* line 29, ../../../components/sass/modules/_nav.scss */
+@media (min-width: 720px) {
+  /* line 30, ../../../components/sass/modules/_nav.scss */
+  header ul.main-menu {
+    display: block;
+  }
+}
+/* line 37, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu li {
   font-size: 0;
   display: inline-block;
   border-left: 1px solid #dadada;
 }
-/* line 40, ../../../components/sass/modules/_nav.scss */
+/* line 48, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu li a {
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -827,24 +821,24 @@ header ul.main-menu li a {
   color: #333;
 }
 @media (min-width: 1200px) {
-  /* line 40, ../../../components/sass/modules/_nav.scss */
+  /* line 48, ../../../components/sass/modules/_nav.scss */
   header ul.main-menu li a {
     font-size: 1.2rem;
     padding: 5.25rem 4rem 1.5rem 1.5rem;
   }
 }
-/* line 55, ../../../components/sass/modules/_nav.scss */
+/* line 63, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu li a:hover {
   background-color: #e4e4e4;
   color: #333;
 }
-/* line 60, ../../../components/sass/modules/_nav.scss */
+/* line 68, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu li a.active {
   background-color: #f7f7f7;
   color: #333;
 }
 
-/* line 106, ../../../components/sass/modules/_nav.scss */
+/* line 77, ../../../components/sass/modules/_nav.scss */
 #menu {
   max-width: 1140px;
   margin-left: auto;
@@ -870,20 +864,20 @@ header ul.main-menu li a.active {
   clear: both;
 }
 @media (min-width: 540px) {
-  /* line 106, ../../../components/sass/modules/_nav.scss */
+  /* line 77, ../../../components/sass/modules/_nav.scss */
   #menu {
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 112, ../../../components/sass/modules/_nav.scss */
+/* line 83, ../../../components/sass/modules/_nav.scss */
 #menu .logo {
-  width: 66.66667%;
+  width: 50%;
   float: left;
   padding-left: 1.8rem;
   padding-right: 1.8rem;
 }
-/* line 114, ../../../components/sass/modules/_nav.scss */
+/* line 85, ../../../components/sass/modules/_nav.scss */
 #menu .logo h1#toolsLogo {
   padding-left: 0;
   margin: 0em -3em 0 0;
@@ -903,12 +897,13 @@ header ul.main-menu li a.active {
   padding-bottom: .25em;
 }
 @media (min-width: 540px) {
-  /* line 114, ../../../components/sass/modules/_nav.scss */
+  /* line 85, ../../../components/sass/modules/_nav.scss */
   #menu .logo h1#toolsLogo {
+    margin-right: -1.8rem;
     font-size: 2.4rem;
   }
 }
-/* line 134, ../../../components/sass/modules/_nav.scss */
+/* line 106, ../../../components/sass/modules/_nav.scss */
 #menu .logo h1#toolsLogo span {
   font-family: "DIN Next W01 Bold";
   font-family: "DINNextW01-CondensedMed";
@@ -918,13 +913,13 @@ header ul.main-menu li a.active {
   top: 2.1rem;
   font-size: 1rem;
 }
-/* line 142, ../../../components/sass/modules/_nav.scss */
+/* line 114, ../../../components/sass/modules/_nav.scss */
 #menu .logo h1#toolsLogo span span {
   font-family: "DINNextW01-CondensedMed";
   line-height: 1em;
   top: 1.0rem;
 }
-/* line 152, ../../../components/sass/modules/_nav.scss */
+/* line 124, ../../../components/sass/modules/_nav.scss */
 #menu .login-container {
   width: 33.33333%;
   float: right;
@@ -932,7 +927,7 @@ header ul.main-menu li a.active {
   padding-right: 1.8rem;
   text-align: right;
 }
-/* line 155, ../../../components/sass/modules/_nav.scss */
+/* line 127, ../../../components/sass/modules/_nav.scss */
 #menu .login-container a {
   cursor: pointer;
   transition: all .5 easy-out;
@@ -945,22 +940,22 @@ header ul.main-menu li a.active {
   position: relative;
   display: inline-block;
 }
-/* line 158, ../../../components/sass/modules/_nav.scss */
+/* line 130, ../../../components/sass/modules/_nav.scss */
 #menu .login-container a:hover {
   background-color: #3F3F3F;
   color: #fff;
 }
 
-/* line 175, ../../../components/sass/modules/_nav.scss */
+/* line 146, ../../../components/sass/modules/_nav.scss */
 .container {
   overflow: hidden;
 }
-/* line 178, ../../../components/sass/modules/_nav.scss */
+/* line 149, ../../../components/sass/modules/_nav.scss */
 .container .transformer.is-open {
   transform: translate3d(260px, 0, 0);
 }
 
-/* line 184, ../../../components/sass/modules/_nav.scss */
+/* line 155, ../../../components/sass/modules/_nav.scss */
 .off-canvas {
   background: #333;
   position: absolute;
@@ -970,7 +965,7 @@ header ul.main-menu li a.active {
   bottom: 0;
 }
 
-/* line 193, ../../../components/sass/modules/_nav.scss */
+/* line 164, ../../../components/sass/modules/_nav.scss */
 #nav {
   height: 101px;
   background: #333;
@@ -978,7 +973,7 @@ header ul.main-menu li a.active {
   z-index: 100;
   position: relative;
 }
-/* line 202, ../../../components/sass/modules/_nav.scss */
+/* line 173, ../../../components/sass/modules/_nav.scss */
 #nav .navbar {
   max-width: 1140px;
   margin-left: auto;
@@ -1005,7 +1000,7 @@ header ul.main-menu li a.active {
   clear: both;
 }
 @media (min-width: 0) {
-  /* line 202, ../../../components/sass/modules/_nav.scss */
+  /* line 173, ../../../components/sass/modules/_nav.scss */
   #nav .navbar {
     overflow-y: hidden;
     overflow-x: scroll;
@@ -1014,12 +1009,12 @@ header ul.main-menu li a.active {
   }
 }
 @media (min-width: 540px) {
-  /* line 202, ../../../components/sass/modules/_nav.scss */
+  /* line 173, ../../../components/sass/modules/_nav.scss */
   #nav .navbar {
     overflow-x: hidden;
   }
 }
-/* line 220, ../../../components/sass/modules/_nav.scss */
+/* line 191, ../../../components/sass/modules/_nav.scss */
 #nav .navbar .abs-wrapper {
   max-width: 1140px;
   margin-left: auto;
@@ -1040,7 +1035,7 @@ header ul.main-menu li a.active {
 #nav .navbar .abs-wrapper:after {
   clear: both;
 }
-/* line 224, ../../../components/sass/modules/_nav.scss */
+/* line 195, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul {
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -1049,7 +1044,7 @@ header ul.main-menu li a.active {
   -ms-transition: all 0.2s ease;
 }
 @media (min-width: 0) and (max-width: 540px) {
-  /* line 224, ../../../components/sass/modules/_nav.scss */
+  /* line 195, ../../../components/sass/modules/_nav.scss */
   #nav .navbar ul {
     display: block;
     width: 480px;
@@ -1058,18 +1053,18 @@ header ul.main-menu li a.active {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 235, ../../../components/sass/modules/_nav.scss */
+/* line 206, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul li {
   display: inline-block;
 }
 @media (min-width: 540px) {
-  /* line 235, ../../../components/sass/modules/_nav.scss */
+  /* line 206, ../../../components/sass/modules/_nav.scss */
   #nav .navbar ul li {
     width: 25%;
     float: left;
   }
 }
-/* line 243, ../../../components/sass/modules/_nav.scss */
+/* line 214, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul li a {
   display: block;
   text-transform: uppercase;
@@ -1080,7 +1075,7 @@ header ul.main-menu li a.active {
   color: #f7f7f7;
 }
 @media (min-width: 720px) {
-  /* line 243, ../../../components/sass/modules/_nav.scss */
+  /* line 214, ../../../components/sass/modules/_nav.scss */
   #nav .navbar ul li a {
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -1090,17 +1085,17 @@ header ul.main-menu li a.active {
     font-size: 1.4rem;
   }
 }
-/* line 257, ../../../components/sass/modules/_nav.scss */
+/* line 228, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul li a:hover {
   background-color: #f7f7f7;
   color: #333;
 }
-/* line 262, ../../../components/sass/modules/_nav.scss */
+/* line 233, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul li a.active {
   background-color: #f7f7f7;
   color: #333;
 }
-/* line 266, ../../../components/sass/modules/_nav.scss */
+/* line 237, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul li a.active #toolBundles {
   background-color: #fff;
 }
