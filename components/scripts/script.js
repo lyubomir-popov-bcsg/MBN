@@ -14,6 +14,15 @@ $(function() {
   });
   // end offcanvas menu
 
+  $('.mobile-nav-toggle').on('click', function() {
+    $('.clipped').toggleClass('clipped-visible');
+  });
+  $('a#atools').on('click', function() {
+    $('.clipped').removeClass('clipped-visible').addClass('clipped-visible-sub');
+  });
+  $('a#aback').on('click', function() {
+    $('.clipped').removeClass('clipped-visible-sub').addClass('clipped-visible');
+  });
 
   var ns = {};
   ns.anchorOffsets = {};

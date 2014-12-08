@@ -257,34 +257,104 @@ header {
 
 /* line 1, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav-toggle {
-  background: transparent url(../images/mobile-nav-icon.svg) center center no-repeat;
+  background: transparent url(../images/mobile-nav-icon-grey.svg) center center no-repeat;
   background-size: 18px 12px;
   height: 24px;
-  left: 12px;
+  right: 12px;
   position: absolute;
   top: 26px;
   width: 36px;
 }
 
-/* line 11, ../../../components/sass/modules/_mobilenav.scss */
+/* line 10, ../../../components/sass/modules/_mobilenav.scss */
 .mobile-nav {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  overflow: hidden;
+}
+/* line 11, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav div.clipped-visible {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  transition-duration: 0.3s;
+}
+/* line 18, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav div.clipped-visible-sub {
   -webkit-transform: translateX(-240px);
   -ms-transform: translateX(-240px);
   transform: translateX(-240px);
+  transition-duration: 0.3s;
+}
+/* line 30, ../../../components/sass/_mixins.scss */
+.mobile-nav:before, .mobile-nav:after {
+  content: '';
+  display: table;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+.mobile-nav:after {
+  clear: both;
+}
+/* line 32, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav .clipped {
+  transition-duration: 0.3s;
+  transform: translateX(240px);
+  width: 480px;
+  position: relative;
+  display: block;
+}
+/* line 38, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav .clipped ul {
+  position: absolute;
+  display: inline;
+  display: block;
+  width: 240px;
+  float: left;
+}
+/* line 30, ../../../components/sass/_mixins.scss */
+.mobile-nav .clipped ul:before, .mobile-nav .clipped ul:after {
+  content: '';
+  display: table;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+.mobile-nav .clipped ul:after {
+  clear: both;
+}
+/* line 45, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav .clipped ul li a {
+  widows: 100%;
+  font-size: 1.2rem;
+  padding: 1em 2em;
+  display: block;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+  border-top: 1px solid #dadada;
+  background: #f7f7f7;
+}
+/* line 54, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav .clipped ul li a:hover {
+  background: #e4e4e4;
+}
+/* line 60, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav .clipped ul.mobile-sub {
+  margin-left: 50%;
+  background: red;
 }
 
-/* line 17, ../../../components/sass/modules/_mobilenav.scss */
-.mobile-nav, .cart-nav {
+/* line 70, ../../../components/sass/modules/_mobilenav.scss */
+.mobile-nav {
   background: #fff;
   border-right: 1px solid #e1e1e1;
   height: 100%;
   left: 0;
   position: fixed !important;
-  top: 80px;
+  top: 0px;
   -webkit-transition: -webkit-transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
   width: 240px;
-  z-index: 10;
+  z-index: 1000;
 }
 
 /* line 1, ../../../components/sass/modules/_intro.scss */

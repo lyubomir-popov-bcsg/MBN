@@ -1,28 +1,81 @@
 .mobile-nav-toggle {
-	background: transparent url(../images/mobile-nav-icon.svg) center center no-repeat;
+	background: transparent url(../images/mobile-nav-icon-grey.svg) center center no-repeat;
 	background-size: 18px 12px;
 	height: 24px;
-	left: 12px;
+	right: 12px;
 	position: absolute;
 	top: 26px;
 	width: 36px;
 }
-
 .mobile-nav {
-	-webkit-transform: translateX(-240px);
-	-ms-transform: translateX(-240px);
-	transform: translateX(-240px);
+	div.clipped-visible{
+		$offset0 : 0px;
+		-webkit-transform: translateX($offset0);
+		-ms-transform: translateX($offset0);
+		transform: translateX($offset0);
+		transition-duration: 0.3s;
+	}
+	div.clipped-visible-sub{
+		$offset240 : -240px;
+		-webkit-transform: translateX($offset240);
+		-ms-transform: translateX($offset240);
+		transform: translateX($offset240);
+		transition-duration: 0.3s;
+	}
+
+	$offset : 0px;
+	-webkit-transform: translateX($offset);
+	-ms-transform: translateX($offset);
+	transform: translateX($offset);
+	overflow: hidden;
+	@include clearfix;
+	.clipped{
+	transition-duration: 0.3s;		
+	transform: translateX(240px);
+	width: 480px;
+	position: relative;
+	display:block;
+		ul{ position: absolute;
+
+			display: inline;
+			display: block;
+			width: 240px;
+			@include clearfix;
+			li{
+				a{	widows: 100%;
+					font-size: 1.2rem;
+					padding: 1em 2em;
+					display: block;
+					text-transform: uppercase;
+					color: #333;
+					text-decoration: none;
+					border-top: 1px solid #dadada;
+					background:$light;
+					&:hover{
+						background: #e4e4e4
+					}
+				}
+			}
+			float:left;
+			&.mobile-sub{
+				margin-left: 50%;
+				background:red;
+			}
+		}
+	}
+
 }
 
-.mobile-nav, .cart-nav {
+
+.mobile-nav {
 	background: #fff;
 	border-right: 1px solid #e1e1e1;
 	height: 100%;
 	left: 0;
 	position: fixed !important;
-	top: 80px;
+	top: 0px;
 	-webkit-transition: -webkit-transform 100ms ease-in-out;
 	transition: transform 100ms ease-in-out;
 	width: 240px;
-	z-index: 10;
+	z-index: 1000;
 }
