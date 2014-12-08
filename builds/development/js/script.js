@@ -44,7 +44,7 @@ $(function() {
       $clipped.removeClass('clipped-visible-sub').removeClass('clipped-visible');
       $('.mobile-nav').removeClass('open');
     } else {
-      $clipped.addClass('clipped-visible');
+      $clipped.addClass('clipped-visible-sub');
       $('.mobile-nav').addClass('open');
     }
   });
@@ -86,9 +86,9 @@ $(function() {
       h += parseFloat($(this).css('height'));
     });
 
-    $('nav').css({
-      'height' : h + 'px'
-    });
+    // $('nav').css({
+    //   'height' : h + 'px'
+    // });
   }
 
   function checkWidth(){
