@@ -14,8 +14,13 @@ $(function() {
   });
   // end offcanvas menu
 
+  var $clipped = $('.clipped');
   $('.mobile-nav-toggle').on('click', function() {
-    $('.clipped').toggleClass('clipped-visible');
+    if($clipped.hasClass('clipped-visible') || $clipped.hasClass('clipped-visible-sub')) {
+      $clipped.removeClass('clipped-visible-sub').removeClass('clipped-visible');
+    } else {
+      $clipped.addClass('clipped-visible');
+    }
   });
   $('a#atools').on('click', function() {
     $('.clipped').removeClass('clipped-visible').addClass('clipped-visible-sub');
