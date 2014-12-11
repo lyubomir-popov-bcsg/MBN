@@ -1,19 +1,26 @@
 header{
-  height:48px;
-  @include breakpoint($medium) {height:90px;}
+  transition: all 100ms ease-out;
+  @include breakpoint($medium) {
+    // height:90px;
+  }
   background: $light;
     @include clearfix;
     @include container(1140px);
     .brand {
+      transition: all 100ms ease-out;
       background: transparent url('../images/logos/mbn-cobrand.svg');
       background-origin: content-box;      
       background-repeat: no-repeat;
       background-size: 300px 32px;
       background-size: contain;
       max-width: 300px;
-      min-width: 260px;
+      min-width: 300px;
       padding: 0 1.8rem;
-      min-height: 48px;  @include breakpoint($medium) {min-height:90px;}
+      min-height: 48px;  
+     @include breakpoint(min-width 740px) {
+        min-height:90px;
+        min-width: 300px;
+      }
 
       background-position: 9% 60%;
       // @include span(12);
@@ -28,9 +35,12 @@ header{
     } //brand
 
   ul.main-menu{
+
     display:none;
-    @include breakpoint(min-width $medium) {
-      display:block
+    height:0;
+    @include breakpoint(min-width 740px) {
+      display:block;
+      height:auto;
       // @include span(8 of 12);
     }
     overflow: hidden;
@@ -46,8 +56,12 @@ header{
         // }
       } //breakpoint
       a {
-        // min-height: 90px;
-        @include transitionAll(0.2s);
+        transition: all 100ms ease-out;
+        height: 0;
+        @include breakpoint(min-width 740px) {
+          height: auto;
+        }
+
         display: block;
         @include capitalise(0.0em);
         font-size: 1rem;
@@ -72,55 +86,53 @@ header{
       } //a
     } //li
   } //ul
-}
-
-#menu{
-  @include clearfix;
-  @include container(1140px);
-  @include gutterPad();
-  border-bottom: 1px solid #3f3f3f;
+} //header
+.menu-wrap{
+  position: relative;
   width: 100%;
-  .logo{
-    @include span(6 of 12);
-    h1#toolsLogo {
-      padding-left: 0;
-      margin: 0em -3em 0 0;
-      padding-right: 3em;
-      position: relative;
-      max-width: 6em;
-      color: white;
-      font-family: "DIN Next W01 Bold";
-      font-size: 1.8rem;
-      font-weight: normal;
-      padding-top: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      padding-bottom: 1rem;
-      @include capitalise(.1em);
-      padding-bottom: .25em;
-      @include breakpoint($small) {
-        margin-right: -1.8rem;
-        font-size: 2.4rem;
-      // padding-left: (gutter()); // patch
-      }
-      span{
-        font-family: "DIN Next W01 Bold";
-        font-family: "DINNextW01-CondensedMed";
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 2.1rem;
-        font-size: 1rem;
-        span{
-          font-family: "DINNextW01-CondensedMed";
-          line-height: 1em;
-          top: 1.0rem;
-          // margin-right: -0.05em;
+  z-index: 10;
+  background: #333;
+  #menu{
+    @include clearfix;
+    @include container(1140px);
+    // @include gutterPad();
+    border-bottom: 1px solid #3f3f3f;
+    width: 100%;
+    .logo{
+      // padding-left:gutter-padding()
+      @include span(4 of 12);
+      h1#toolsLogo {
+        @include capitalise(.05em);
+        padding: 0rem 2em 1.2rem 0;
+        position: relative;
+        max-width: 9rem;
+        font-size: 1.4rem;
+        margin: 2rem -2em 0 0;
+        color: white;
+        @include capitalise(.01em);
+        font-family: "DIN Next W01 Medium";
+        font-weight: normal;
+        @include breakpoint($small) {
+          font-size: 1.8rem;
+          max-width: 10rem;
         }
-      }
-    } //h1
-  }
-
+        span{
+          font-family: "DIN Next W01 Light";
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          font-size: 7px;
+          @include capitalise(.12em);
+          line-height: 1em;
+          span{
+            line-height: 7px;
+            top: 1em;
+            right: auto;
+          }
+        } //span
+      } //h1
+    } //logo
+  } //#menu
   .login-container{
     display:none;
     @include breakpoint(min-width $medium) {display: block}
@@ -130,14 +142,14 @@ header{
       cursor:pointer;
       transition: all .5 easy-out;
       &:hover {
-        background-color: #3F3F3F;
-        color: $white;
+        color: #3F3F3F;
+        background-color: $white;
       }
       font-size: 1.8rem;
       color: white;
       position: relative;
       display: inline-block;
-      padding: 2rem 1.8rem 1.2rem;
+      padding: 2rem 3.6rem 1.2rem;
       margin-right: -1.8rem;
       position: relative;
       display: inline-block;
@@ -164,8 +176,7 @@ header{
 }
 
 #nav {
-  height:101px;
-  background: #333;
+  background: rgba(51, 51, 51, 0.9);
   width: 100%;
   z-index: 100;
   position:relative;
@@ -173,10 +184,8 @@ header{
   // overflow-: hidden;
 
   .navbar {
-    @include clearfix;
-    @include container(1140px);
     position: absolute;
-    background: $dark;
+    // background: $dark;
     left:0;
     right:0;
     top:0px;
@@ -187,15 +196,15 @@ header{
       -webkit-overflow-scrolling: touch;  
     }
     @include breakpoint($small) {
-      overflow-x: hidden;
+      // overflow-x: hidden;
     }
   
     .abs-wrapper{
+    }
+    ul.categoriesMenu {
+      @include transitionAll();
       @include container(1140px);
       @include clearfix;
-    }
-    ul {
-      @include transitionAll();
       @include breakpoint(0 $small) {
         display: block;
         width: 480px; //patch, should be child width sum

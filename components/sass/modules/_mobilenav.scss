@@ -1,6 +1,6 @@
 .mobile-nav-toggle {
 	display:block;
-	@include breakpoint($medium) {
+	@include breakpoint(min-width 740px) {
 		display:none;
 	}
 	background: transparent url(../images/mobile-nav-icon-grey.svg) center center no-repeat;
@@ -12,7 +12,18 @@
 	width: 36px;
 	z-index: 1001;
 }
+@mixin dark-button{
+	background: #333;
+	color: #ddd;
+	&:hover, &.current{
+		background: #3f3f3f;
+		color: #f7f7f7;
+	}
+}
 .mobile-nav {
+	@include breakpoint(min-width 740px) {
+		display:none;
+	}
 	div.clipped-visible{
 		$offset0 : 0px;
 		-webkit-transform: translateX($offset0);
@@ -35,42 +46,62 @@
 	overflow: hidden;
 	@include clearfix;
 	.clipped{
-	transition-duration: 0.3s;		
-	transform: translateX(240px);
-	width: 480px;
-	position: relative;
-	display:block;
-	ul{ position: absolute;
+		transition-duration: 0.3s;		
+		transform: translateX(240px);
+		width: 480px;
+		position: relative;
+		display:block;
+		ul{ position: absolute;
 
-		display: inline;
-		display: block;
-		width: 240px;
-		@include clearfix;
-		li{
-			a{	widows: 100%;
-				font-size: 1.2rem;
-				padding: 1em 2em .8em;
-				display: block;
-				text-transform: uppercase;
-				color: #333;
-				text-decoration: none;
-				border-top: 1px solid #dadada;
-				background:$light;
-				&:hover{
-					background: #e4e4e4
+			display: inline;
+			display: block;
+			width: 240px;
+			@include clearfix;
+			li{
+				a{
+
+					widows: 100%;
+					font-size: 1.2rem;
+					padding: 1em 2em .8em;
+					display: block;
+					text-transform: uppercase;
+					color: #333;
+					text-decoration: none;
+					border-top: 1px solid #dadada;
+					background:$light;
+					&:hover{
+						background: #e4e4e4;
+					}
+					&#loginLink{
+						@include dark-button;
+						float: right;
+					}
+					&#en{
+						width: 50%;
+						@include dark-button;
+						float: left;					
+					}
+					&#es {
+						width: 50%;
+						@include dark-button;
+						float: right;
+					}
+					&#current{
+						@include dark-button;
+					}
 				}
 			}
-		}
-		float:left;
-		&.mobile-sub{
-			margin-left: 50%;
-			background:#f7f7f7;
+			float:left;
+			&.mobile-sub{
+				margin-left: 50%;
+				background:#f7f7f7;
+			}
 		}
 	}
-	}
-
 }
-
+.floatedChildren{
+	@include clearfix;
+}
 
 .mobile-nav {
 	//-webkit-transition: -webkit-transform 100ms ease-in-out;

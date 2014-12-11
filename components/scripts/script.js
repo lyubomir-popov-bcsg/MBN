@@ -1,7 +1,6 @@
 $(function() {
   var isTouch = 'ontouchstart' in document.documentElement;
-  
-  
+    
   // offcanvas menu
   var $transformer = $('.transformer'),
     $menuToggle = $('.menu-toggle');
@@ -33,41 +32,30 @@ $(function() {
   });
 
   var ns = {};
-  ns.anchorOffsets = {};
-  var navOffset = $('.navbar').height();//patch
-  // $('#intro').css({'padding-top' , navOffset + 'px'});
-  $( "nav li" ).each(function(index) {
-    // console.log( $( this ).text() + " " + $(this).position().left );
-    ns.anchorOffsets[index] = $(this).position().left;
-  });
-//  var anchorOffsets = $('nav ul li a')).each(function);
-  // var leftOffset = $('a[href$="#finances"]').position().left;
-
-  //window height
-  // var wheight = $(window).height()/2; //get height of the window
-
   // $('.fullheight').css('height', wheight);
 
   $(window).resize(function() {
     wheight = $(window).height()/2; //get height of the window
     // $('.fullheight').css('height', wheight);
     checkWidth();
-    setNavHeight();
+    setCatNavHeight();
+    repositionMobileNav();
+    // setNavHeight();
   }); //on resize
   $(window).trigger('resize');
 
-  function setNavHeight() {
-    var $c = $('nav').children();
-    var h = 0;
-    $c.each(function() {
-      h += parseFloat($(this).css('height'));
-    });
+  // function setNavHeight() {
+  //   var $c = $('nav').children();
+  //   var h = 0;
+  //   $c.each(function() {
+  //     h += parseFloat($(this).css('height'));
+  //   });
 
-    // $('nav').css({
-    //   'height' : h + 'px'
-    // });
+  //   $('nav').height(h);
+  // }
+  function repositionMobileNav(){ 
+    $('.mobile-nav').css({'top' : $('header').outerHeight() + 'px'})
   }
-
   function checkWidth(){
     if( $(window).width() < 600){
       $('.navbar').css({
@@ -84,7 +72,17 @@ $(function() {
     }
      //make subnav scrollable
   }
-
+  function setCatNavHeight(){ 
+    var categoriesHeight = $('.categoriesMenu li a').outerHeight();
+    $('#nav').height(categoriesHeight);
+    overlapIntroAndCats(categoriesHeight);
+  }
+  function overlapIntroAndCats(categoriesHeight){
+    $('#intro .container').css({
+      'padding-top' : categoriesHeight + 'px',
+      'margin-top' : -categoriesHeight + 'px'
+    });
+  }
 // Animated Scrolling
   // $('a[href*=#]:not([href=#])').click(function() {
   //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -110,9 +108,7 @@ $(function() {
   //highlight navigation
   $(window).scroll(function() {
     if($('body').hasClass('shoppingTools')){
-
-
-      var topoffset = $('.navbar').height();
+      var topoffset = $('.navbar').height() + $('#menu').height();
       var windowpos = $(window).scrollTop() + topoffset;
       $('nav li a').removeClass('active');
 
@@ -148,8 +144,6 @@ $(function() {
         $('a[href$="#safeguarding"]').addClass('active');
       } //windowpos
     }
-
-
   }); //window scroll
 
   //set up ScrollMagic
@@ -161,12 +155,14 @@ $(function() {
 
   //pin the navigation
   var pin = new ScrollScene({
+    offset:-$('.menu-wrap').outerHeight(),
     triggerElement: '#nav',
   }).setPin('#nav').addTo(controller);
 
-  // var pinOne = new ScrollScene({
-  //   triggerElement: '#menu',
-  // }).setPin('#menu').addTo(controller);
+  var pinOne = new ScrollScene({
+    offset : 0,
+    triggerElement: '.menu-wrap',
+  }).setPin('.menu-wrap').addTo(controller);
 
   // if(!isTouch) {
   //   //room animations
