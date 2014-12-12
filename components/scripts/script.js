@@ -1,6 +1,13 @@
 $(function() {
   var isTouch = 'ontouchstart' in document.documentElement;
-    
+  //set up ScrollMagic
+   controller = new ScrollMagic({
+    globalSceneOptions: {
+      triggerHook: "onLeave"
+    }
+  });
+
+
   // offcanvas menu
   var $transformer = $('.transformer'),
     $menuToggle = $('.menu-toggle');
@@ -40,6 +47,7 @@ $(function() {
     checkWidth();
     setCatNavHeight();
     repositionMobileNav();
+    controller.update();
     // setNavHeight();
   }); //on resize
   $(window).trigger('resize');
@@ -146,16 +154,11 @@ $(function() {
     }
   }); //window scroll
 
-  //set up ScrollMagic
-  var controller = new ScrollMagic({
-    globalSceneOptions: {
-      triggerHook: "onLeave"
-    }
-  });
+
 
   //pin the navigation
   var pin = new ScrollScene({
-    offset:-$('.menu-wrap').outerHeight(),
+    offset:-$('.menu-wrap').innerHeight(),
     triggerElement: '#nav',
   }).setPin('#nav').addTo(controller);
 
