@@ -4,6 +4,10 @@
 		display:none;
 	}
 	background: transparent url(../images/mobile-nav-icon-grey.svg) center center no-repeat;
+	
+	&.white{
+		background: transparent url(../images/mobile-nav-icon.svg) center center no-repeat;
+	}
 	background-size: 18px 12px;
 	height: 24px;
 	right: 12px;
@@ -59,8 +63,6 @@
 			@include clearfix;
 			li{
 				a{
-
-					widows: 100%;
 					font-size: 1.2rem;
 					padding: 1em 2em .8em;
 					display: block;
@@ -73,8 +75,11 @@
 						background: #e4e4e4;
 					}
 					&#loginLink{
-						@include dark-button;
-						float: right;
+						font-family:"DIN Next W01 Medium";
+
+
+						// @include dark-button;
+						// float: right;
 					}
 					&#en{
 						width: 50%;
@@ -86,9 +91,34 @@
 						@include dark-button;
 						float: right;
 					}
-					&#current{
-						@include dark-button;
+					&.current{
+			        	cursor: text;
 					}
+					span{
+						text-transform: uppercase;
+						font-size: .5em;
+						display: block;
+					}
+
+					&#aback{
+						float: left;
+						width: 44px;
+						display: inline-block;
+						background: #dadada;
+						padding-top: 16px;
+						padding-bottom: 15px;
+
+			        }
+			        &#title{
+			        	display: block;
+						float: left;
+
+						&:hover{background:transparent;}
+			        }
+			        &.disabled{
+			        	opacity:.5;
+			        	cursor: text;
+			        }
 				}
 			}
 			float:left;
