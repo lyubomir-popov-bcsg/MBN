@@ -1,0 +1,307 @@
+.purchase-summary{
+  .hero-area {
+    margin: 0 auto;
+    background-color: $info;
+    color: #333;
+
+    .container {
+      @include container(1140px);
+      @include clearfix;
+      overflow: visible;
+      .content{
+        // @include gutterPad($medium);
+        @include clearfix;      
+        // @include span(12 of 12 nest);
+        @include breakpoint($wide) {
+          @include span(12 of 12 nest);
+          display:block;
+        } //breakpoint
+        h1 {
+          @include breakpoint($wide) {
+            @include push(2);
+            @include span(6 of 12);
+          }
+          font-family: "DIN Next W01 Bold";
+          font-size: 2.8rem;
+          line-height: 1em;
+          text-transform: uppercase;
+          text-align: left;
+          margin: 2.2rem 0 .0em;
+        } //h1
+
+        h2 {
+          @include breakpoint($wide){ 
+          @include push(2);
+          @include span(6 of 12);
+        }
+          font-family: "DIN Next W01 Light";
+          margin: 1em 0 0em 0;
+          font-size: 2.2rem;
+          line-height: 1em;
+        } //h2
+       
+        p {
+          @include breakpoint($wide) {
+            @include push(2);
+            @include span(6 of 12);
+          }
+          font-family: "DIN Next W01 Regular";
+          margin: 1em 0 0em 0;
+          font-size: 1.5rem;
+          line-height: 1.5em;
+          margin-bottom: 2em;
+        } //p
+
+      } //.content
+      hr{
+        margin: 0 0 0 gutter();
+        opacity: .5; 
+      }
+    } //container
+  } //header
+  .content {
+    // background:white;
+    @include container(1140px);
+    text-align: left;
+    @include breakpoint($small) {
+      @include clearfix;
+    }
+    .headings{
+      // padding-bottom: 1.25em;
+      border-bottom: 1px solid #e4e4e4;
+      @include gutterPad();
+      h1 {
+        font-family: "DIN Next W01 Light";
+        font-size: 1.8rem;
+        font-weight: normal;
+        padding-top: 6rem;
+        padding-bottom: .25em;
+        @include breakpoint($small) {
+          font-size: 2.8rem;
+        }
+      } //h1
+      h2 {
+        font-family: "DIN Next W01 Light";
+        // font-family: "DINNextLTW01-UltraLight 706122";
+        font-size: 1.8rem;
+        line-height: 1.2;
+        font-weight: normal;
+        margin: 0 0 .5em;
+
+        @include breakpoint($small) {
+          font-size: 1.8rem;
+          line-height: 1.2;
+          padding: 0 0 0.5em;
+          margin: 0;
+        } 
+      }//h2
+    }
+    .gallery {
+      // @include bleed(gutter());
+      @include clearfix;
+      @include breakpoint($small) {
+        @include gallery(2 of 2 nest);
+      }
+      @include breakpoint($wide) {
+        @include gallery(12 of 12 nest);
+      }
+
+      .module{
+        @include gutterPad();
+        @include breakpoint($medium) {
+          border-top: none;
+          @include push(2);
+          @include span(8 of 12);
+        } //breakpoint
+        @include breakpoint($wide) {
+          border-top: none;
+          @include push(2);
+          @include span(8 of 12);
+        } //breakpoint
+        // &:nth-of-type(2){ border-top: none; }
+        font-size: 1rem;
+        @include breakpoint($small) {
+          font-size: 1.15rem;
+        }
+        #{headings(2,3)}{font-size:1.15em}
+
+        @include breakpoint($small) {
+          border-top: none; 
+          &:hover{
+            // background-color: $white;
+            // @include single-box-shadow(0, 0, $mc9, 0, #dadada, false);
+            single-box-shadow:none;
+          }
+        }
+
+        @include breakpoint($medium) {
+          font-size: 1.8rem;
+          margin-bottom:2.2rem;
+        }
+        h1{
+          text-align: left;
+          font-family: "DIN Next W01 Medium";
+          font-size: 1.4rem;
+          line-height:1em;
+          position:relative;
+          margin: 1.45em -9rem 1.14em 0;
+          padding-right: 9rem;
+          margin-bottom: 1.3rem;
+          width: 100%;
+          @include capitalise(.02em);
+          span{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0rem;
+            width: 9rem;
+            span{
+              font-family: "DIN Next W01 Bold";              
+              font-size: .66em;
+              line-height: 1em;
+              @include capitalise(.02em);
+              margin-right: -0.05em;
+              margin-top: 1.4em;
+              left: 0;
+              right: 0;
+              color: #666;
+              top: 0;
+              width: 100%;
+            }
+          }
+        }
+        h4{
+          margin-top: 1em;
+          margin-bottom: 1.5em;
+          position:relative;
+          width: 100%;
+          font-size: 2.2rem;
+          font-family: "DIN Next W01 Light";
+          line-height:1.2 !important;
+        }
+        h2{
+          position:relative;
+          width: 100%;
+          font-size: 2.2rem;
+          font-family: "DIN Next W01 Light";
+          line-height:1.2 !important;
+          
+          padding-right:9rem;
+          margin: 1em -9rem .5em 0;
+          
+          &.bundle-title{
+            text-transform: uppercase;
+          }
+
+          span{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0rem;
+            width: 9rem;
+            text-align: right;
+            font-family: "DIN Next W01 Medium";
+          }
+
+          &.flush-right{
+            text-align: right;
+            font-family: "DIN Next W01 Regular";
+            &.final-price{
+              border-top: 1px solid #dadada;
+              padding-top: 1em;
+              margin-top: 2em;
+              span{
+                padding-top: 1em;
+              }
+            }
+            // margin-right: 10rem;
+            // padding-right: 10rem;
+            @include clearfix;
+            span{
+              text-align: right;
+              font-family: "DIN Next W01 Medium";
+
+              &.secondline{
+                right: 0;
+                font-size: .65em;
+                width: 100%;
+                margin-top: 2em;
+                margin-right: 10rem;
+                font-family: "DIN Next W01 Regular";  
+                color:#666;
+              }
+            }
+          }
+        }
+
+        h3{
+          font-family: "DIN Next W01 Regular";
+          width:100%;
+          font-size: 1.6rem;
+          margin-top: 0.5em;
+          padding-left: 1.8rem;
+          position: relative;
+          margin-right: -9rem;
+          padding-right: 9rem;
+          span{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0rem;
+            width: 9rem;
+            text-align: right;
+            font-family: "DIN Next W01 Medium";
+          }
+        }
+        h5{
+          border-top: 1px solid #dadada;
+          padding: 1em 0;
+        }
+      }
+
+      .payment-plan{
+        @include gutterPad($medium);
+        margin-top: 0;
+        margin-bottom: 1.8rem;
+        margin-left:0;
+        border: none;
+        background: white;
+        min-height:13em;
+
+        @include breakpoint($medium) {
+          &:nth-child(odd){
+            @include push(2);
+            border-right: 1px solid #dadada;
+          }
+          @include span(4 of 12);
+        } //breakpoint
+        h3{
+          // font-family: "DINNextW01-LightItalic";
+          width:100%;
+          font-size: 1.6rem;
+          font-family: "DIN Next W01 Regular";
+          margin-top: 1em;
+          margin-bottom: 1em;
+          margin-left:0 !important;
+          // padding-left: 1.8rem;
+          position: relative;
+          margin-right: -12rem;
+          padding-right: 12rem;
+          span{
+            font-family: "DIN Next W01 Regular";
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0rem;
+            width: 12rem;
+            text-align: right;
+          }
+        } //h3
+        // p{
+        //   @include push(1)
+        //   @include span(5 of 6);
+        // }
+      } //.payment-plan
+    } //gallery
+  } //.content
+}
