@@ -2,6 +2,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  // background: #333;
 }
 #wrapper, #intro>container, #nav>.navbar{
   @include breakpoint($small) {
@@ -13,6 +14,3 @@ body {
   position: relative;
   // min-height: 100vh;
 }
-.scene { 
-  position: relative;
-} //scene

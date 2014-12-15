@@ -7,24 +7,33 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body class='shoppingTools'>
+<header>
+	<div class="mobile-nav-toggle" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+<!-- 				<div class="menu">
+          <h1 class="menu-toggle">menu</h1>
+        </div> -->
+	<div class="brand"></div>
+	<ul class="main-menu">
+		<li>
+			<a href="#"><br>Tools</a>
+		</li><li>
+			<a href="#"><br>Offers</a>
+		</li><li>
+			<a href="#">Accept<br>payments</a>
+		</li><li>
+			<a href="#">Insights &amp;<br>resources</a>
+		</li><li>
+			<a href="#">Help &amp;<br>support</a>
+		</li><li>
+			<a href="#"><br>About</a>
+		</li>		
+	</ul>
+</header>
 <div class="mobile-nav mobile-is-visible js-mobile-nav active">
-	<div class="clipped">
-		<ul class="mobile-main">
-			<li>
-				<a  id="aback"  href="#">Business network home</a>
+	<div class="clipped"><ul class="mobile-main"><li>
+				<a class="current" href="#">Business network home</a>
 			</li><li>
-				<a href="#">Shop Tools</a>
-			</li><li>
-				<a href="#">My Tools</a>
-			</li><li>
-				<a href="#">My Account</a>
-			</li>	
-		</ul>
-		<ul class="mobile-sub">
-			<li>
-				<a href="#">Back</a>
-			</li><li>
-				<a id="atools" href="#">Tools</a><!-- secondary click -->
+				<a id="atools" href="#">Tools <span>powered by bcsg</span></a>
 			</li><li>
 				<a href="#">Offers</a>
 			</li><li>
@@ -37,17 +46,30 @@
 				<a href="#">About</a>
 			</li>		
 		</ul>
+		<ul class="mobile-sub"><li class="floatedChildren">
+				<a id="en" class="current" href="#">English</a>
+				<a id="es" href="#">Spanish</a>
+			</li>
+			<li class="floatedChildren">
+			    <a id="aback" href="#">&lt;</a>
+				<a id="title">Tools <span>powered by bcsg</span></a>
+			</li>
+			<li><a id="loginLink" href='#'>Login</a>
+			</li><li>
+				<a href="#">Shop Tools</a>
+			</li><li>
+				<a href="#" class="disabled">My Tools</a>
+			</li><li>
+				<a class="disabled" href="#">My Account</a>
+			</li>	
+		</ul>
 	</div>
 </div>
 <div class="container">
   <div class="transformer">
 	<div class="off-canvas"></div>
 		<div class="main">
-			<header>
-				<div class="mobile-nav-toggle" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
-	<!-- 				<div class="menu">
-			          <h1 class="menu-toggle">menu</h1>
-			        </div> -->
+<!-- 			<header>
 	        	<div class="brand"></div>
 				<ul class="main-menu">
 					<li>
@@ -65,18 +87,22 @@
 					</li>		
 				</ul>
 			</header>
+ -->			<div class="menu-wrap">
+				<div id="menu">
+					<div class="logo">
+						<h1 id='toolsLogo'>Tools <span>powered <span>by BCSG</span></span></h1>
+					</div>
+
+					<div class="login-container">
+					<div class="mobile-nav-toggle white" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+						<a class='login'>Log&nbsp;in</a>
+					</div>
+				</div>
+			</div>
 			<nav id="nav">
 			  <div class="navbar">
 				<div class="abs-wrapper">
-					<div id="menu">
-						<div class="logo">
-							<h1 id='toolsLogo'>Tools <span>powered <span>by BCSG</span></span></h1>
-						</div>
-						<div class="login-container">
-							<a class='login'>Log&nbsp;in</a>
-						</div>
-					</div>
-			        <ul><li>
+			        <ul class="categoriesMenu"><li>
 			        	<a class="icon info" href="#toolBundles"><span>Tool&nbsp;bundles</span></a></li><li>
 			        	<a class="icon finances" href="#finances"><span>Finances</span></a></li><li>
 			        	<a class="icon marketing" href="#marketing"><span>Marketing</span></a></li><li>
@@ -90,25 +116,8 @@
 					<section class="content">
 						<h1>TRIED AND TESTED BUSINESS TOOLS, TO SAVE YOU TIME AND MONEY</h1>
 						<h2>MasterCard has partnered with BCSG to provide market-leading solutions like accounting software and website builder to help take care of your day-to-day business needs.</h2>
-						<p>Scroll down to find out more.</p>
-						<div id="how">
-							<a>How does it work?&nbsp;<i class="fa fa-chevron-down"></i></a>
-<!-- 							<hr/>
-							<h3>Getting the most from MasterCard Business Network</h3>
-							<div>
-								<h4>Create an account</h4>
-								<p>You can create an account with either a Personal or Business MasterCard.&nbsp;<br>
-								If you sign up with a Business&nbsp;MasterCard however, you might qualify&nbsp;for Toolbox dollars, which you can&nbsp;spend on our tried and tested tools.</p>
-							</div>
-							<div>
-								<h4>Browse &amp; buy</h4>
-								<p>Browse tools on the Shop tools page. Subscribe to individual tools, or get even better value with our Preferred bundle.</p>
-							</div>
-							<div>
-								<h4>Complete Support</h4>
-								<p>Invite people to join your account, and share licences to tools with them. Get complete support using your tools, by phone, email and webchat.</p>
-							</div> -->
-						</div>
+						<!-- <p>Scroll down to find out more.</p> -->
+						<a>How does it work?&nbsp;<i class="fa fa-chevron-down"></i></a>
 					</section>
 					<section id="sidebar">
 						<!-- <div class="extendright"></div> -->
@@ -120,6 +129,23 @@
 								<a href="/terms/tools-powered-by-bcsg.html">Terms of Use</a>.
 							</p>
 						<!-- </div> -->
+					</section>
+					<hr/>
+					<section id="how">
+						<h3>Getting the most from MasterCard Business Network</h3>
+						<div>
+							<h4>Create an account</h4>
+							<p>You can create an account with either a Personal or Business MasterCard.&nbsp;<br>
+							If you sign up with a Business&nbsp;MasterCard however, you might qualify&nbsp;for Toolbox dollars, which you can&nbsp;spend on our tried and tested tools.</p>
+						</div> 
+						<div>
+							<h4>Browse &amp; buy</h4>
+							<p>Browse tools on the Shop tools page. Subscribe to individual tools, or get even better value with our Preferred bundle.</p>
+						</div>
+						<div>
+							<h4>Complete Support</h4>
+							<p>Invite people to join your account, and share licences to tools with them. Get complete support using your tools, by phone, email and webchat.</p>
+						</div>
 					</section>
 				</div>
 			</article> 

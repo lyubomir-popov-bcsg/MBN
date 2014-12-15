@@ -8,7 +8,10 @@
     @include clearfix;
     overflow: visible;
     #sidebar {
-      position: relative;
+      @include gutterPad($medium);
+      @include breakpoint($medium) {
+        @include span(4 of 12);
+      } //breakpoint            position: relative;
       background: rgba(10,10,10,.8);
       &:after{
         z-index: 0;
@@ -17,16 +20,14 @@
         position: absolute;
         top: 0; left:0; bottom:0; right: 0;
       }
-      // margin: 2rem 0;
-      @include breakpoint($medium) {@include span(12 of 12);}
-      @include span(12 of 12 last);
-      @include breakpoint($medium) {
-        @include span(4 of 12 last);
-      } //breakpoint      
+      margin: 2rem 0;
+
       h1{
-        font-family: 'DINNextW01-CondensedBol';
-        font-size: 2.7rem;
+        font-family: 'DIN Next W01 Medium';
+        font-size: 2.2rem;
         padding-top: 1.5rem;
+        padding-bottom: 1em;
+        @include capitalise(.05em);
       }
       h2{
         font-family: 'DIN Next W01 Light';
@@ -36,13 +37,14 @@
       a{ 
         text-decoration: none;
         text-shadow: none;
-        color: $white;
+        font-size: 1.2rem;
+        color: #999;
         display: inline-block;
         background: rgba(60,60,60, .5);
-        padding: .0rem 1rem 0 0;
+        padding: .0rem 1rem;
         border-radius: .5em;
+        text-decoration: none;
         &:hover{
-          text-decoration: underline;
         }
         
         &#marketPlaceHeaderPromotion{
@@ -65,22 +67,22 @@
       }
       p{
         font-family: 'DIN Next W01 Light';
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        color: #999;
       }
     }
     .content{
       display:none;
-      @include breakpoint($medium) {display:block;}
       @include show-grid($susySmall);
       @include clearfix;      
-      // @include span(12 of 12);
       @include gutterPad($medium);
       @include breakpoint($medium) {
-        @include span(8 of 12);
-        // @include bleed(gutter());
+        @include span(8 of 12 nest);
+        display:block;
       } //breakpoint
       h1 {
-        font-family: "DIN Next W01 Bold";
+        @include span(8 of 8);
+        font-family: "DIN Next W01 Medium";
         font-size: 3.5rem;
         line-height: 1em;
         text-shadow: rgba(33, 33, 33, 0.15) 0 1px 0px;
@@ -89,62 +91,77 @@
       } //h1
 
       h2 {
+        @include span(8 of 8);
         font-family: "DIN Next W01 Light";
         margin: 1em 0 1em 0;
         font-size: 2.2rem;
         line-height: 1em;
       } //h2
      
-      // p {
-      //   font-family: "DIN Next W01 Regular";
-      //   margin: 1em 0 0em 0;
-      //   font-size: 1.4rem;
-      //   line-height: 1em;
-      // } //p
-      #how{
-        // @include span(8 of 8);
-
-        // display: table;
-        @include clearfix;
-        a{
-          color: #fff;
-          font-size: 1.8rem;
-          font-family: "DIN Next W01 Bold";
-          padding: 1.2em 0 0.5em 0;
-          font-weight: normal;
-        }
-
-        h3{
-          font-family: "DIN Next W01 Bold";
-          font-size: 2.2rem;
-          @include capitalise(.02em);
-          margin: 0;
-          padding: 22.20081512px 0 0 0;      
-        }
-        h4{
-          font-family: "DIN Next W01 Light";
-          font-weight: normal;
-          font-size: 27.74672897px;
-          padding: 22.20081512px 0 22.20081512px 0;
-          color: #fff;
-          margin: 0;
-        }
-        p{
-          font-size: 1.4rem;
-          padding: 0 0 2em 0;
-          line-height: 22px;
-          font-family: "DIN Next W01 Light";      
-        }
-        div{
-          display: table-cell;
-          @include span(8 of 8);
-          @include bleed(gutter());
-
-          @include breakpoint($medium) {
-            @include span(4 of 8);
-          } //breakpoint      
-        }
+      p {
+        @include span(8 of 8);
+        font-family: "DIN Next W01 Regular";
+        margin: 1em 0 0em 0;
+        font-size: 1.4rem;
+        line-height: 1em;
+      } //p
+      a {
+        @include span(8 of 8);
+        color: #fff;
+        font-size: 1.8rem;
+        font-family: "DIN Next W01 Bold";
+        padding-top: 4.5em;
+        padding-bottom: 0.5em;
+        font-weight: normal;
       }
-    } //hgroup
+    } //.content
+    hr{
+      margin: 0 0 0 gutter();
+      opacity: .5; 
+    }
+    #how{
+      @include span(12 of 12 nest);
+      // display: table;
+      @include clearfix;
+      a{
+        @include span(8 of 8);
+        color: #fff;
+        font-size: 1.8rem;
+        font-family: "DIN Next W01 Bold";
+        margin: 1.2em 0 0.5em 0;
+        font-weight: normal;
+      }
+      h3{
+        @include span(8 of 8);
+        font-family: "DIN Next W01 Bold";
+        font-size: 2.2rem;
+        @include capitalise(.02em);
+        margin: 0;
+        padding-top: 22.20081512px;
+      }
+      h4{
+        @include span(8 of 8);
+        font-family: "DIN Next W01 Light";
+        font-weight: normal;
+        font-size: 27.74672897px;
+        padding: 22.20081512px 0 22.20081512px 0;
+        color: #fff;
+        margin: 0;
+      }
+      p{
+        // @include span(8 of 8);          
+        font-size: 1.4rem;
+        margin-bottom: 2em;
+        line-height: 22px;
+        font-family: "DIN Next W01 Light";      
+      }
+      div{
+        display: table-cell;
+        @include span(8 of 8);
+        @include breakpoint($medium) {
+          @include span(4 of 12);
+        } //breakpoint      
+      }
+    } //how
   } //container
 } //header
