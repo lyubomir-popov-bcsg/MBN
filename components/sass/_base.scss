@@ -10,7 +10,8 @@ body {
 	p {
 		font-size: 1.5rem;
 		line-height: 1.35em;
-		margin: 0 0 1em;
+		margin:1em 0;
+	  font-family: "DIN Next W01 Regular";
 		@include breakpoint($small) {
 			font-size: 1.6rem;
 		}
@@ -19,3 +20,43 @@ body {
 #{headings()} {
 	font-weight: normal;
 }
+label{
+   font-family: "DIN Next W01 Regular";
+   font-size: 1.6rem;
+}
+a.btn{
+  @include capitalise(0.02em);
+  display: block;
+  font-size: 1.2rem;
+  margin: 1em 0 2em;
+  padding: 1em 2em .8em;
+  background:$dark;
+  color:$white;
+  text-decoration: none;
+  text-align: center;
+  font-family: "DIN Next W01 Light";
+  
+  &:hover {
+    z-index: 1000;
+    background-color: darken($dark, 50%);
+    color: $light;
+  } //hover
+
+  @include breakpoint($small) {
+    text-align: left;
+    display: inline-block;
+  }//breakpoint small
+} //a.btn
+
+a.textLink{
+  display: inline-block;
+  font-size: 1.6rem;
+  color:$dark;
+  text-decoration: underline;
+  font-family: "DIN Next W01 Regular";
+  
+  &:hover {
+	text-decoration: none;
+  } //hover
+
+} //a.btn

@@ -1,9 +1,13 @@
-#intro {
+.hero-area {
   margin: 0 auto;
-  background-color: $light;
-  background: url('../images/shop-tools.jpg');
+  background-color: $info;
+  color: #333;
+  .shoppingTools &{
+    color: $white;
+    background: url('../images/shop-tools.jpg');
+    text-shadow: rgba(33, 33, 33, 0.15) 0 1px 0px;
+  }
   .container {
-    color: #fff;
     @include container(1140px);
     @include clearfix;
     overflow: visible;
@@ -72,20 +76,24 @@
       }
     }
     .content{
-      display:none;
-      @include show-grid($susySmall);
-      @include clearfix;      
       @include gutterPad($medium);
+      .shoppingTools &{
+        @include clearfix;      
+        display:none;
+      }
       @include breakpoint($medium) {
-        @include span(8 of 12 nest);
-        display:block;
+        .shoppingTools &{
+          @include span(8 of 12 nest);
+          display:block;
+        }
       } //breakpoint
+
       h1 {
         @include span(8 of 8);
-        font-family: "DIN Next W01 Medium";
+        font-family: "DIN Next W01 Bold";
         font-size: 3.5rem;
         line-height: 1em;
-        text-shadow: rgba(33, 33, 33, 0.15) 0 1px 0px;
+        text-transform: uppercase;
         text-align: left;
         margin: 1em 0 .5em;
       } //h1
@@ -102,8 +110,9 @@
         @include span(8 of 8);
         font-family: "DIN Next W01 Regular";
         margin: 1em 0 0em 0;
-        font-size: 1.4rem;
-        line-height: 1em;
+        font-size: 1.5rem;
+        line-height: 1.5em;
+        margin-bottom: 2em;
       } //p
       a {
         @include span(8 of 8);
@@ -150,9 +159,9 @@
       }
       p{
         // @include span(8 of 8);          
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin-bottom: 2em;
-        line-height: 22px;
+        line-height: 1.5em;
         font-family: "DIN Next W01 Light";      
       }
       div{

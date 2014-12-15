@@ -6,6 +6,30 @@
     padding-right: 0; 
   }
 }
+@mixin primary-button{
+      @include capitalise(0.02em);
+    @include breakpoint($medium) {@include transitionAll;}
+    display: block;
+    font-size: 1.2rem;
+    margin: 1em 0 2em;
+    padding: 1em 2em .8em;
+    background:$dark;
+    color:$white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "DIN Next W01 Light";
+    
+    &:hover {
+      z-index: 1000;
+      background-color: darken($dark, 50%);
+      color: $light;
+    } //hover
+
+    @include breakpoint($small) {
+      text-align: left;
+      display: inline-block;
+    }//breakpoint small
+}
 @mixin backImage(
   $image,
   $grDir: to bottom,
