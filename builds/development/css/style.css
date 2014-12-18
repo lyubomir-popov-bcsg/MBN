@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
-/* line 5, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, S:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -169,7 +169,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../Fonts/din/10ea3ea4-cd5d-4305-a069-553921bb4565.eot?#iefix");
   src: url("../Fonts/din/10ea3ea4-cd5d-4305-a069-553921bb4565.eot?#iefix") format("eot"), url("../Fonts/din/d245e531-16e5-4428-904d-d6cb987d44f9.woff") format("woff"), url("../Fonts/din/b85fd97e-f10c-4dde-87fb-51dd1bdbf114.ttf") format("truetype"), url("../Fonts/din/3aed4526-cc9c-4bc4-9642-157b26400e95.svg#3aed4526-cc9c-4bc4-9642-157b26400e95") format("svg");
 }
-/* line 14, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+/* line 14, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -217,9 +217,10 @@ h1, h2, h3, h4, h5, h6 {
 label {
   font-family: "DIN Next W01 Regular";
   font-size: 1.6rem;
+  line-height: 1.5;
 }
 
-/* line 27, ../../../components/sass/_base.scss */
+/* line 28, ../../../components/sass/_base.scss */
 a.btn {
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -233,21 +234,21 @@ a.btn {
   text-align: center;
   font-family: "DIN Next W01 Light";
 }
-/* line 39, ../../../components/sass/_base.scss */
+/* line 40, ../../../components/sass/_base.scss */
 a.btn:hover {
   z-index: 1000;
   background-color: black;
   color: #f7f7f7;
 }
 @media (min-width: 540px) {
-  /* line 27, ../../../components/sass/_base.scss */
+  /* line 28, ../../../components/sass/_base.scss */
   a.btn {
     text-align: left;
     display: inline-block;
   }
 }
 
-/* line 51, ../../../components/sass/_base.scss */
+/* line 52, ../../../components/sass/_base.scss */
 a.textLink {
   display: inline-block;
   font-size: 1.6rem;
@@ -255,7 +256,7 @@ a.textLink {
   text-decoration: underline;
   font-family: "DIN Next W01 Regular";
 }
-/* line 58, ../../../components/sass/_base.scss */
+/* line 59, ../../../components/sass/_base.scss */
 a.textLink:hover {
   text-decoration: none;
 }
@@ -485,7 +486,7 @@ body {
   margin-right: auto;
   overflow: visible;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .hero-area .container:after {
   content: " ";
   display: block;
@@ -757,35 +758,17 @@ body {
 
 /* line 4, ../../../components/sass/modules/_priceless.scss */
 #priceless-hero {
-  min-height: 500px;
-  margin: 10px auto;
+  min-height: 80vh;
+  margin: 0px auto;
   background-color: #f7f7f7;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../images/herobanners/priceless-cities/lasVegas.jpg");
+  background: url("../images/herobanners/priceless-cities/priceless-bg-edited.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
-/* line 14, ../../../components/sass/modules/_priceless.scss */
-#priceless-hero.miami {
-  background: url("../images/herobanners/priceless-cities/miami.jpg");
-}
-/* line 17, ../../../components/sass/modules/_priceless.scss */
-#priceless-hero.hawaii {
-  background: url("../images/herobanners/priceless-cities/Hawaii_landing-page-background-image.jpg");
-}
-/* line 20, ../../../components/sass/modules/_priceless.scss */
-#priceless-hero.la {
-  background: url("../images/herobanners/priceless-cities/Los-Angeles_landing-page-background-image_desktop-0407.jpg");
-}
-/* line 23, ../../../components/sass/modules/_priceless.scss */
-#priceless-hero.nyc {
-  background: url("../images/herobanners/priceless-cities/NewYork_1920x596.jpg");
-}
-/* line 26, ../../../components/sass/modules/_priceless.scss */
-#priceless-hero.lasvegas {
-  background: url("../images/herobanners/priceless-cities/LasVegas_landing-page-background-image_V4.jpg");
-}
-/* line 29, ../../../components/sass/modules/_priceless.scss */
+/* line 30, ../../../components/sass/modules/_priceless.scss */
 #priceless-hero .container {
   align-self: center;
   text-align: center;
@@ -794,7 +777,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 #priceless-hero .container:after {
   content: " ";
   display: block;
@@ -809,7 +792,7 @@ body {
 #priceless-hero .container:after {
   clear: both;
 }
-/* line 35, ../../../components/sass/modules/_priceless.scss */
+/* line 36, ../../../components/sass/modules/_priceless.scss */
 #priceless-hero .container .content {
   padding-left: 1.8rem;
   padding-right: 1.8rem;
@@ -824,22 +807,23 @@ body {
   clear: both;
 }
 @media (min-width: 720px) {
-  /* line 35, ../../../components/sass/modules/_priceless.scss */
+  /* line 36, ../../../components/sass/modules/_priceless.scss */
   #priceless-hero .container .content {
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media (min-width: 720px) {
-  /* line 35, ../../../components/sass/modules/_priceless.scss */
+  /* line 36, ../../../components/sass/modules/_priceless.scss */
   #priceless-hero .container .content {
-    width: 100%;
+    margin-left: 8.33333%;
+    width: 83.33333%;
     float: left;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
   }
 }
-/* line 44, ../../../components/sass/modules/_priceless.scss */
+/* line 46, ../../../components/sass/modules/_priceless.scss */
 #priceless-hero .container .content h1 {
   text-transform: uppercase;
   letter-spacing: 0.01em;
@@ -849,22 +833,28 @@ body {
   text-shadow: rgba(33, 33, 33, 0.15) 0 1px 0px;
   margin: 1em 0 .5em;
 }
-/* line 53, ../../../components/sass/modules/_priceless.scss */
+/* line 55, ../../../components/sass/modules/_priceless.scss */
 #priceless-hero .container .content h2 {
   font-family: "DIN Next W01 Light";
   margin: 1em 0 1em 0;
   font-size: 2.2rem;
-  line-height: 1em;
+  line-height: 1.5;
 }
-/* line 59, ../../../components/sass/modules/_priceless.scss */
+/* line 61, ../../../components/sass/modules/_priceless.scss */
 #priceless-hero .container .content a {
+  transform: opacity 0.3s easeout;
   padding: .75em 2em;
-  background: #333;
+  background: #3f3f3f;
   color: white;
   text-decoration: none;
   font-size: 1.8em;
   display: inline-block;
   text-transform: uppercase;
+  margin-bottom: 3em;
+}
+/* line 69, ../../../components/sass/modules/_priceless.scss */
+#priceless-hero .container .content a:hover {
+  background: black;
 }
 
 /* line 2, ../../../components/sass/modules/_nav.scss */
@@ -895,13 +885,13 @@ header:before, header:after {
 header:after {
   clear: both;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 header:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 18, ../../../components/sass/modules/_nav.scss */
+/* line 15, ../../../components/sass/modules/_nav.scss */
 header .brand {
   transition: all 100ms ease-out;
   background: transparent url("../images/logos/mbn-cobrand.svg");
@@ -918,32 +908,32 @@ header .brand {
   font-weight: normal;
 }
 @media (min-width: 740px) {
-  /* line 18, ../../../components/sass/modules/_nav.scss */
+  /* line 15, ../../../components/sass/modules/_nav.scss */
   header .brand {
     min-height: 90px;
     min-width: 300px;
   }
 }
-/* line 46, ../../../components/sass/modules/_nav.scss */
+/* line 43, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu {
   display: none;
   height: 0;
   overflow: hidden;
 }
 @media (min-width: 740px) {
-  /* line 46, ../../../components/sass/modules/_nav.scss */
+  /* line 43, ../../../components/sass/modules/_nav.scss */
   header ul.main-menu {
     display: block;
     height: auto;
   }
 }
-/* line 56, ../../../components/sass/modules/_nav.scss */
+/* line 53, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu li {
   font-size: 0;
   display: inline-block;
   border-left: 1px solid #dadada;
 }
-/* line 67, ../../../components/sass/modules/_nav.scss */
+/* line 64, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu li a {
   transition: all 100ms ease-out;
   height: 0;
@@ -957,37 +947,37 @@ header ul.main-menu li a {
   color: #333;
 }
 @media (min-width: 740px) {
-  /* line 67, ../../../components/sass/modules/_nav.scss */
+  /* line 64, ../../../components/sass/modules/_nav.scss */
   header ul.main-menu li a {
     height: auto;
   }
 }
 @media (min-width: 1200px) {
-  /* line 67, ../../../components/sass/modules/_nav.scss */
+  /* line 64, ../../../components/sass/modules/_nav.scss */
   header ul.main-menu li a {
     font-size: 1.2rem;
     padding: 5.25rem 4rem 1.5rem 1.5rem;
   }
 }
-/* line 86, ../../../components/sass/modules/_nav.scss */
+/* line 83, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu li a:hover {
   background-color: #e4e4e4;
   color: #333;
 }
-/* line 91, ../../../components/sass/modules/_nav.scss */
+/* line 88, ../../../components/sass/modules/_nav.scss */
 header ul.main-menu li a.active {
   background-color: #f7f7f7;
   color: #333;
 }
 
-/* line 99, ../../../components/sass/modules/_nav.scss */
+/* line 96, ../../../components/sass/modules/_nav.scss */
 .menu-wrap {
   position: relative;
   width: 100%;
   z-index: 10;
   background: #333;
 }
-/* line 104, ../../../components/sass/modules/_nav.scss */
+/* line 101, ../../../components/sass/modules/_nav.scss */
 .menu-wrap #menu {
   max-width: 1140px;
   margin-left: auto;
@@ -1004,26 +994,26 @@ header ul.main-menu li a.active {
 .menu-wrap #menu:after {
   clear: both;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .menu-wrap #menu:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 110, ../../../components/sass/modules/_nav.scss */
+/* line 107, ../../../components/sass/modules/_nav.scss */
 .menu-wrap #menu .logo {
   width: 33.33333%;
   float: left;
   padding-left: 1.8rem;
   padding-right: 1.8rem;
 }
-/* line 113, ../../../components/sass/modules/_nav.scss */
+/* line 110, ../../../components/sass/modules/_nav.scss */
 .menu-wrap #menu .logo h1#toolsLogo {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 0rem 2em 1.2rem 0;
   position: relative;
-  max-width: 9rem;
+  max-width: 9.5rem;
   font-size: 1.4rem;
   margin: 2rem -2em 0 0;
   color: white;
@@ -1033,13 +1023,13 @@ header ul.main-menu li a.active {
   font-weight: normal;
 }
 @media (min-width: 540px) {
-  /* line 113, ../../../components/sass/modules/_nav.scss */
+  /* line 110, ../../../components/sass/modules/_nav.scss */
   .menu-wrap #menu .logo h1#toolsLogo {
     font-size: 1.8rem;
-    max-width: 10rem;
+    max-width: 11rem;
   }
 }
-/* line 128, ../../../components/sass/modules/_nav.scss */
+/* line 125, ../../../components/sass/modules/_nav.scss */
 .menu-wrap #menu .logo h1#toolsLogo span {
   font-family: "DIN Next W01 Light";
   display: inline-block;
@@ -1050,13 +1040,13 @@ header ul.main-menu li a.active {
   letter-spacing: 0.12em;
   line-height: 1em;
 }
-/* line 136, ../../../components/sass/modules/_nav.scss */
+/* line 133, ../../../components/sass/modules/_nav.scss */
 .menu-wrap #menu .logo h1#toolsLogo span span {
   line-height: 7px;
   top: 1em;
   right: auto;
 }
-/* line 145, ../../../components/sass/modules/_nav.scss */
+/* line 142, ../../../components/sass/modules/_nav.scss */
 .menu-wrap .login-container {
   width: 33.33333%;
   float: right;
@@ -1064,17 +1054,17 @@ header ul.main-menu li a.active {
   padding-right: 1.8rem;
   text-align: right;
 }
-/* line 146, ../../../components/sass/modules/_nav.scss */
+/* line 143, ../../../components/sass/modules/_nav.scss */
 .menu-wrap .login-container .mobile-nav-toggle {
   display: block;
 }
 @media (min-width: 720px) {
-  /* line 146, ../../../components/sass/modules/_nav.scss */
+  /* line 143, ../../../components/sass/modules/_nav.scss */
   .menu-wrap .login-container .mobile-nav-toggle {
     display: none;
   }
 }
-/* line 152, ../../../components/sass/modules/_nav.scss */
+/* line 149, ../../../components/sass/modules/_nav.scss */
 .menu-wrap .login-container a {
   background: #3f3f3f;
   color: #white;
@@ -1090,27 +1080,27 @@ header ul.main-menu li a.active {
   position: relative;
 }
 @media (min-width: 720px) {
-  /* line 152, ../../../components/sass/modules/_nav.scss */
+  /* line 149, ../../../components/sass/modules/_nav.scss */
   .menu-wrap .login-container a {
     display: inline-block;
   }
 }
-/* line 159, ../../../components/sass/modules/_nav.scss */
+/* line 156, ../../../components/sass/modules/_nav.scss */
 .menu-wrap .login-container a:hover {
   color: #3F3F3F;
   background-color: #fff;
 }
 
-/* line 174, ../../../components/sass/modules/_nav.scss */
+/* line 171, ../../../components/sass/modules/_nav.scss */
 .container {
   overflow: hidden;
 }
-/* line 177, ../../../components/sass/modules/_nav.scss */
+/* line 174, ../../../components/sass/modules/_nav.scss */
 .container .transformer.is-open {
   transform: translate3d(260px, 0, 0);
 }
 
-/* line 183, ../../../components/sass/modules/_nav.scss */
+/* line 180, ../../../components/sass/modules/_nav.scss */
 .off-canvas {
   background: #333;
   position: absolute;
@@ -1120,14 +1110,14 @@ header ul.main-menu li a.active {
   bottom: 0;
 }
 
-/* line 192, ../../../components/sass/modules/_nav.scss */
+/* line 189, ../../../components/sass/modules/_nav.scss */
 #nav {
   background: rgba(51, 51, 51, 0.9);
   width: 100%;
   z-index: 100;
   position: relative;
 }
-/* line 200, ../../../components/sass/modules/_nav.scss */
+/* line 197, ../../../components/sass/modules/_nav.scss */
 #nav .navbar {
   position: absolute;
   left: 0;
@@ -1135,7 +1125,7 @@ header ul.main-menu li a.active {
   top: 0px;
 }
 @media (min-width: 0) {
-  /* line 200, ../../../components/sass/modules/_nav.scss */
+  /* line 197, ../../../components/sass/modules/_nav.scss */
   #nav .navbar {
     overflow-y: hidden;
     overflow-x: scroll;
@@ -1143,7 +1133,7 @@ header ul.main-menu li a.active {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 218, ../../../components/sass/modules/_nav.scss */
+/* line 215, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul.categoriesMenu {
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -1154,7 +1144,7 @@ header ul.main-menu li a.active {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 #nav .navbar ul.categoriesMenu:after {
   content: " ";
   display: block;
@@ -1170,7 +1160,7 @@ header ul.main-menu li a.active {
   clear: both;
 }
 @media (min-width: 0) and (max-width: 540px) {
-  /* line 218, ../../../components/sass/modules/_nav.scss */
+  /* line 215, ../../../components/sass/modules/_nav.scss */
   #nav .navbar ul.categoriesMenu {
     display: block;
     width: 480px;
@@ -1179,18 +1169,18 @@ header ul.main-menu li a.active {
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 231, ../../../components/sass/modules/_nav.scss */
+/* line 228, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul.categoriesMenu li {
   display: inline-block;
 }
 @media (min-width: 540px) {
-  /* line 231, ../../../components/sass/modules/_nav.scss */
+  /* line 228, ../../../components/sass/modules/_nav.scss */
   #nav .navbar ul.categoriesMenu li {
     width: 25%;
     float: left;
   }
 }
-/* line 239, ../../../components/sass/modules/_nav.scss */
+/* line 236, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul.categoriesMenu li a {
   display: block;
   text-transform: uppercase;
@@ -1201,7 +1191,7 @@ header ul.main-menu li a.active {
   color: #f7f7f7;
 }
 @media (min-width: 720px) {
-  /* line 239, ../../../components/sass/modules/_nav.scss */
+  /* line 236, ../../../components/sass/modules/_nav.scss */
   #nav .navbar ul.categoriesMenu li a {
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -1211,17 +1201,17 @@ header ul.main-menu li a.active {
     font-size: 1.4rem;
   }
 }
-/* line 253, ../../../components/sass/modules/_nav.scss */
+/* line 250, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul.categoriesMenu li a:hover {
   background-color: #f7f7f7;
   color: #333;
 }
-/* line 258, ../../../components/sass/modules/_nav.scss */
+/* line 255, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul.categoriesMenu li a.active {
   background-color: #f7f7f7;
   color: #333;
 }
-/* line 262, ../../../components/sass/modules/_nav.scss */
+/* line 259, ../../../components/sass/modules/_nav.scss */
 #nav .navbar ul.categoriesMenu li a.active #toolBundles {
   background-color: #fff;
 }
@@ -1251,7 +1241,7 @@ header ul.main-menu li a.active {
   margin-right: auto;
   text-align: left;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .scene .content:after {
   content: " ";
   display: block;
@@ -1329,7 +1319,7 @@ header ul.main-menu li a.active {
     padding-left: 1.8rem;
     padding-right: 1.8rem;
   }
-  /* line 66, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
   .scene .content .gallery:nth-child(1n + 1) {
     margin-left: 0;
     margin-right: -100%;
@@ -1344,7 +1334,7 @@ header ul.main-menu li a.active {
     padding-left: 1.8rem;
     padding-right: 1.8rem;
   }
-  /* line 66, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
   .scene .content .gallery:nth-child(1n + 1) {
     margin-left: 0;
     margin-right: -100%;
@@ -1671,7 +1661,7 @@ footer {
   margin-right: auto;
   overflow: visible;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .purchase-summary .hero-area .container:after {
   content: " ";
   display: block;
@@ -1686,6 +1676,12 @@ footer {
 .purchase-summary .hero-area .container:after {
   clear: both;
 }
+/* line 11, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .hero-area .container .content {
+  padding: 0;
+  width: 100%;
+  float: left;
+}
 /* line 54, ../../../components/sass/_mixins.scss */
 .purchase-summary .hero-area .container .content:before, .purchase-summary .hero-area .container .content:after {
   content: '';
@@ -1695,11 +1691,9 @@ footer {
 .purchase-summary .hero-area .container .content:after {
   clear: both;
 }
-@media (min-width: 1200px) {
+@media (min-width: 720px) {
   /* line 11, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .hero-area .container .content {
-    width: 100%;
-    float: left;
     display: block;
   }
 }
@@ -1712,11 +1706,11 @@ footer {
   text-align: left;
   margin: 2.2rem 0 .0em;
 }
-@media (min-width: 1200px) {
+@media (min-width: 720px) {
   /* line 19, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .hero-area .container .content h1 {
     margin-left: 16.66667%;
-    width: 50%;
+    width: 66.66667%;
     float: left;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
@@ -1729,47 +1723,49 @@ footer {
   font-size: 2.2rem;
   line-height: 1em;
 }
-@media (min-width: 1200px) {
+@media (min-width: 720px) {
   /* line 32, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .hero-area .container .content h2 {
+    clear: both;
     margin-left: 16.66667%;
-    width: 50%;
+    width: 66.66667%;
     float: left;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
   }
 }
-/* line 43, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 44, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .hero-area .container .content p {
+  clear: both;
   font-family: "DIN Next W01 Regular";
   margin: 1em 0 0em 0;
   font-size: 1.5rem;
   line-height: 1.5em;
   margin-bottom: 2em;
 }
-@media (min-width: 1200px) {
-  /* line 43, ../../../components/sass/modules/_purchase-summary.scss */
+@media (min-width: 720px) {
+  /* line 44, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .hero-area .container .content p {
     margin-left: 16.66667%;
-    width: 50%;
+    width: 66.66667%;
     float: left;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
   }
 }
-/* line 56, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 58, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .hero-area .container hr {
   margin: 0 0 0 1.8rem;
   opacity: .5;
 }
-/* line 62, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 64, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .purchase-summary .content:after {
   content: " ";
   display: block;
@@ -1786,34 +1782,61 @@ footer {
     clear: both;
   }
 }
-/* line 69, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 71, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .headings {
-  border-bottom: 1px solid #e4e4e4;
   padding-left: 1.8rem;
   padding-right: 1.8rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+/* line 54, ../../../components/sass/_mixins.scss */
+.purchase-summary .content .headings:before, .purchase-summary .content .headings:after {
+  content: '';
+  display: table;
+}
+/* line 59, ../../../components/sass/_mixins.scss */
+.purchase-summary .content .headings:after {
+  clear: both;
 }
 @media (min-width: 540px) {
-  /* line 69, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 71, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .headings {
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 73, ../../../components/sass/modules/_purchase-summary.scss */
+@media (min-width: 720px) {
+  /* line 71, ../../../components/sass/modules/_purchase-summary.scss */
+  .purchase-summary .content .headings {
+    border-top: none;
+    margin-left: 16.66667%;
+    width: 66.66667%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 71, ../../../components/sass/modules/_purchase-summary.scss */
+  .purchase-summary .content .headings {
+    border-top: none;
+    margin-left: 16.66667%;
+    width: 66.66667%;
+    float: left;
+  }
+}
+/* line 92, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .headings h1 {
   font-family: "DIN Next W01 Light";
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: normal;
-  padding-top: 6rem;
+  padding-top: 3.5rem;
   padding-bottom: .25em;
 }
 @media (min-width: 540px) {
-  /* line 73, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 92, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .headings h1 {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
   }
 }
-/* line 83, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 102, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .headings h2 {
   font-family: "DIN Next W01 Light";
   font-size: 1.8rem;
@@ -1822,7 +1845,7 @@ footer {
   margin: 0 0 .5em;
 }
 @media (min-width: 540px) {
-  /* line 83, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 102, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .headings h2 {
     font-size: 1.8rem;
     line-height: 1.2;
@@ -1840,14 +1863,14 @@ footer {
   clear: both;
 }
 @media (min-width: 540px) {
-  /* line 99, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 118, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery {
     width: 100%;
     float: left;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
   }
-  /* line 66, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
   .purchase-summary .content .gallery:nth-child(1n + 1) {
     margin-left: 0;
     margin-right: -100%;
@@ -1855,107 +1878,104 @@ footer {
   }
 }
 @media (min-width: 1200px) {
-  /* line 99, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 118, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery {
     width: 100%;
     float: left;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
   }
-  /* line 66, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
   .purchase-summary .content .gallery:nth-child(1n + 1) {
     margin-left: 0;
     margin-right: -100%;
     clear: none;
   }
 }
-/* line 109, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 128, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module {
   padding-left: 1.8rem;
   padding-right: 1.8rem;
   font-size: 1rem;
 }
 @media (min-width: 540px) {
-  /* line 109, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 128, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery .module {
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media (min-width: 720px) {
-  /* line 109, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 128, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery .module {
     border-top: none;
     margin-left: 16.66667%;
     width: 66.66667%;
     float: left;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
   }
 }
 @media (min-width: 1200px) {
-  /* line 109, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 128, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery .module {
     border-top: none;
     margin-left: 16.66667%;
     width: 66.66667%;
     float: left;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
   }
 }
 @media (min-width: 540px) {
-  /* line 109, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 128, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery .module {
     font-size: 1.15rem;
   }
 }
-/* line 126, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 146, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h2, .purchase-summary .content .gallery .module h3 {
   font-size: 1.15em;
 }
 @media (min-width: 540px) {
-  /* line 109, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 128, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery .module {
     border-top: none;
   }
-  /* line 130, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 150, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery .module:hover {
-    single-box-shadow: none;
+    box-shadow: none;
   }
 }
 @media (min-width: 720px) {
-  /* line 109, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 128, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery .module {
     font-size: 1.8rem;
     margin-bottom: 2.2rem;
   }
 }
-/* line 141, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 160, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h1 {
   text-align: left;
   font-family: "DIN Next W01 Medium";
   font-size: 1.4rem;
   line-height: 1em;
   position: relative;
-  margin: 1.45em -9rem 1.14em 0;
-  padding-right: 9rem;
+  margin: 1em -8rem 1.14em 0;
+  padding-right: 8rem;
+  padding-top: 1em;
   margin-bottom: 1.3rem;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
-/* line 152, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 172, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h1 span {
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 0rem;
-  width: 9rem;
+  top: 1em;
+  width: 8rem;
 }
-/* line 158, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 178, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h1 span span {
-  font-family: "DIN Next W01 Bold";
+  font-family: "DIN Next W01 Medium";
   font-size: .66em;
   line-height: 1em;
   text-transform: uppercase;
@@ -1968,52 +1988,69 @@ footer {
   top: 0;
   width: 100%;
 }
-/* line 173, ../../../components/sass/modules/_purchase-summary.scss */
-.purchase-summary .content .gallery .module h4 {
-  margin-top: 1em;
-  margin-bottom: 1.5em;
-  position: relative;
-  width: 100%;
-  font-size: 2.2rem;
-  font-family: "DIN Next W01 Light";
-  line-height: 1.2 !important;
-}
-/* line 182, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 194, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h2 {
   position: relative;
   width: 100%;
   font-size: 2.2rem;
   font-family: "DIN Next W01 Light";
   line-height: 1.2 !important;
-  padding-right: 9rem;
-  margin: 1em -9rem .5em 0;
+  padding-right: 8rem;
+  margin: 0 -8rem .5em 0;
 }
-/* line 192, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 195, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h2.existing-tool {
+  color: #999;
+}
+/* line 205, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h2.bundle-title {
   text-transform: uppercase;
 }
-/* line 196, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 209, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h2 span {
   display: inline-block;
   position: absolute;
   right: 0;
   top: 0rem;
-  width: 9rem;
+  width: 8rem;
   text-align: right;
+  font-family: "DIN Next W01 Light";
+}
+/* line 217, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h2 span.licences {
+  color: #666;
+  text-align: left;
+  display: inline;
+  position: relative;
+  font-size: .75em;
+}
+/* line 225, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h2.flush-right {
+  padding-top: 1em;
+  text-align: right;
+  font-family: "DIN Next W01 Light";
+}
+/* line 226, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h2.flush-right.bordered {
+  border-top: 1px solid #dadada;
+}
+/* line 232, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h2.flush-right.bold {
   font-family: "DIN Next W01 Medium";
 }
-/* line 206, ../../../components/sass/modules/_purchase-summary.scss */
-.purchase-summary .content .gallery .module h2.flush-right {
-  text-align: right;
-  font-family: "DIN Next W01 Regular";
+/* line 235, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h2.flush-right span {
+  padding-top: 1em;
 }
-/* line 209, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 238, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h2.flush-right.final-price {
   border-top: 1px solid #dadada;
+  margin-top: 1.5em;
+  margin-bottom: 0;
   padding-top: 1em;
-  margin-top: 2em;
+  padding-bottom: .75em;
 }
-/* line 213, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 244, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h2.flush-right.final-price span {
   padding-top: 1em;
 }
@@ -2026,80 +2063,140 @@ footer {
 .purchase-summary .content .gallery .module h2.flush-right:after {
   clear: both;
 }
-/* line 220, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 253, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h2.flush-right span {
   text-align: right;
-  font-family: "DIN Next W01 Medium";
+  font-family: "DIN Next W01 Light";
 }
-/* line 224, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 256, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h2.flush-right span.secondline {
   right: 0;
   font-size: .65em;
   width: 100%;
-  margin-top: 2em;
-  margin-right: 10rem;
-  font-family: "DIN Next W01 Regular";
+  margin-top: 2.2em;
+  margin-right: 8rem;
+  font-family: "DIN Next W01 Regular"  !important;
   color: #666;
 }
-/* line 237, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 266, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h2.flush-right.bold span {
+  font-family: "DIN Next W01 Medium";
+}
+/* line 272, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h3 {
   font-family: "DIN Next W01 Regular";
   width: 100%;
   font-size: 1.6rem;
   margin-top: 0.5em;
-  padding-left: 1.8rem;
   position: relative;
-  margin-right: -9rem;
-  padding-right: 9rem;
+  margin-right: -8rem;
+  padding-right: 8rem;
 }
-/* line 246, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 281, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h3 span {
   display: inline-block;
   position: absolute;
   right: 0;
   top: 0rem;
-  width: 9rem;
+  width: 8rem;
   text-align: right;
   font-family: "DIN Next W01 Medium";
 }
-/* line 256, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 289, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h3 span.licences {
+  color: #666;
+  text-align: left;
+  display: inline;
+  position: relative;
+  font-size: .75em;
+}
+/* line 299, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h4 {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  position: relative;
+  width: 100%;
+  font-size: 2.2rem;
+  font-family: "DIN Next W01 Light";
+  line-height: 1.2 !important;
+}
+/* line 309, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .module h5 {
   border-top: 1px solid #dadada;
   padding: 1em 0;
 }
-/* line 262, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 314, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .module h6 {
+  border-top: 1px solid #dadada;
+  text-align: center;
+  display: block;
+  font-family: "DIN Next W01 Regular";
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  padding: 1em;
+  background: rgba(228, 228, 228, 0.33);
+}
+/* line 326, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .payment-plan {
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
   margin-top: 0;
-  margin-bottom: 1.8rem;
-  margin-left: 0;
-  border: none;
-  background: white;
-  min-height: 13em;
+  min-height: 14em;
 }
 @media (min-width: 720px) {
-  /* line 262, ../../../components/sass/modules/_purchase-summary.scss */
+  /* line 326, ../../../components/sass/modules/_purchase-summary.scss */
   .purchase-summary .content .gallery .payment-plan {
+    width: 66.66667%;
+    float: left;
+  }
+  /* line 332, ../../../components/sass/modules/_purchase-summary.scss */
+  .purchase-summary .content .gallery .payment-plan:nth-child(odd) {
+    margin-left: 16.66667%;
+  }
+}
+/* line 338, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .payment-plan div {
+  border: 1px solid #dadada;
+  background: white;
+  padding-bottom: 1.8rem;
+  margin-bottom: 1.8rem;
+  min-height: 14em;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+@media (min-width: 720px) {
+  /* line 338, ../../../components/sass/modules/_purchase-summary.scss */
+  .purchase-summary .content .gallery .payment-plan div {
     padding-left: 0;
     padding-right: 0;
   }
 }
+@media (min-width: 360px) {
+  /* line 338, ../../../components/sass/modules/_purchase-summary.scss */
+  .purchase-summary .content .gallery .payment-plan div {
+    min-height: 1.8rem;
+  }
+}
 @media (min-width: 720px) {
-  /* line 262, ../../../components/sass/modules/_purchase-summary.scss */
-  .purchase-summary .content .gallery .payment-plan {
-    width: 33.33333%;
+  /* line 338, ../../../components/sass/modules/_purchase-summary.scss */
+  .purchase-summary .content .gallery .payment-plan div {
+    min-height: 33rem;
+  }
+}
+@media (min-width: 720px) {
+  /* line 338, ../../../components/sass/modules/_purchase-summary.scss */
+  .purchase-summary .content .gallery .payment-plan div {
+    width: 50%;
     float: left;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
+    margin-bottom: 0rem;
+    min-height: 26rem;
   }
-  /* line 272, ../../../components/sass/modules/_purchase-summary.scss */
-  .purchase-summary .content .gallery .payment-plan:nth-child(odd) {
-    margin-left: 16.66667%;
-    border-right: 1px solid #dadada;
+  /* line 355, ../../../components/sass/modules/_purchase-summary.scss */
+  .purchase-summary .content .gallery .payment-plan div:nth-child(odd) {
+    margin-right: -1px;
   }
 }
-/* line 278, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 362, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .payment-plan h3 {
   width: 100%;
   font-size: 1.6rem;
@@ -2111,7 +2208,7 @@ footer {
   margin-right: -12rem;
   padding-right: 12rem;
 }
-/* line 290, ../../../components/sass/modules/_purchase-summary.scss */
+/* line 374, ../../../components/sass/modules/_purchase-summary.scss */
 .purchase-summary .content .gallery .payment-plan h3 span {
   font-family: "DIN Next W01 Regular";
   display: inline-block;
@@ -2120,6 +2217,14 @@ footer {
   top: 0rem;
   width: 12rem;
   text-align: right;
+}
+/* line 385, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .payment-plan p {
+  font-family: "DIN Next W01 Light";
+}
+/* line 387, ../../../components/sass/modules/_purchase-summary.scss */
+.purchase-summary .content .gallery .payment-plan p.bold {
+  font-family: "DIN Next W01 Medium";
 }
 
 /* line 1, ../../../components/sass/modules/_footer.scss */
@@ -2130,7 +2235,7 @@ footer {
   background: #666666;
   padding: 30px 0;
 }
-/* line 12, S:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 footer:after {
   content: " ";
   display: block;

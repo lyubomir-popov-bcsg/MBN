@@ -2,30 +2,31 @@
 	border-top: 1px solid #dadada;
 }
 #priceless-hero {
-	min-height: 500px;
-	margin: 10px auto;
+	min-height: 80vh;
+	margin: 0px auto;
 	background-color: $light;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	background: url('../images/herobanners/priceless-cities/lasVegas.jpg');
-
-	&.miami{
-		 background: url('../images/herobanners/priceless-cities/miami.jpg');
-	}
-	&.hawaii{
-		 background: url('../images/herobanners/priceless-cities/Hawaii_landing-page-background-image.jpg');
-	}
-	&.la{
-		 background: url('../images/herobanners/priceless-cities/Los-Angeles_landing-page-background-image_desktop-0407.jpg');
-	}	
-	&.nyc{
-		 background: url('../images/herobanners/priceless-cities/NewYork_1920x596.jpg');
-	}
-	&.lasvegas{
-		 background: url('../images/herobanners/priceless-cities/LasVegas_landing-page-background-image_V4.jpg');
-	}
+	background: url('../images/herobanners/priceless-cities/priceless-bg-edited.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	// &.miami{
+	// 	 background: url('../images/herobanners/priceless-cities/miami.jpg');
+	// }
+	// &.hawaii{
+	// 	 background: url('../images/herobanners/priceless-cities/Hawaii_landing-page-background-image.jpg');
+	// }
+	// &.la{
+	// 	 background: url('../images/herobanners/priceless-cities/Los-Angeles_landing-page-background-image_desktop-0407.jpg');
+	// }	
+	// &.nyc{
+	// 	 background: url('../images/herobanners/priceless-cities/NewYork_1920x596.jpg');
+	// }
+	// &.lasvegas{
+	// 	 background: url('../images/herobanners/priceless-cities/LasVegas_landing-page-background-image_V4.jpg');
+	// }
 	.container {
 		align-self: center;
 		text-align: center;
@@ -38,7 +39,8 @@
 			// @include span(12 of 12);
 			@include gutterPad($medium);
 			@include breakpoint($medium) {
-			@include span(12 of 12);
+			@include push(1);
+			@include span(10 of 12);
 		// @include bleed(gutter());
 		} //breakpoint
 		h1 {
@@ -54,16 +56,20 @@
 			font-family: "DIN Next W01 Light";
 			margin: 1em 0 1em 0;
 			font-size: 2.2rem;
-			line-height: 1em;
+			line-height: 1.5;
 		} //h2
-		a{
+		a{	transform:opacity 0.3s easeout;
 			padding: .75em 2em;
-			background: #333;
+			background: #3f3f3f;
 			color: white;
 			text-decoration: none;
 			font-size: 1.8em;
 			display: inline-block;
 			text-transform: uppercase;
+			&:hover{
+				background:black;
+			}
+			margin-bottom: 3em;
 		}
     } //hgroup
   } //container

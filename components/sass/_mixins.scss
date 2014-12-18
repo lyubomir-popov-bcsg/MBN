@@ -3,7 +3,7 @@
   padding-right: gutter();
   @include breakpoint($breakpoint) {
     padding-left: 0;
-    padding-right: 0; 
+    padding-right: 0;  
   }
 }
 @mixin primary-button{

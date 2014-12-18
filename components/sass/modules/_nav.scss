@@ -9,9 +9,6 @@
 
 header{
   transition: all 100ms ease-out;
-  @include breakpoint($medium) {
-    // height:90px;
-  }
   background: $light;
     @include clearfix;
     @include container(1140px);
@@ -114,7 +111,7 @@ header{
         @include capitalise(.05em);
         padding: 0rem 2em 1.2rem 0;
         position: relative;
-        max-width: 9rem;
+        max-width: 9.5rem;
         font-size: 1.4rem;
         margin: 2rem -2em 0 0;
         color: white;
@@ -123,7 +120,7 @@ header{
         font-weight: normal;
         @include breakpoint($small) {
           font-size: 1.8rem;
-          max-width: 10rem;
+          max-width: 11rem;
         }
         span{
           font-family: "DIN Next W01 Light";

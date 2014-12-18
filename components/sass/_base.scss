@@ -23,6 +23,7 @@ body {
 label{
    font-family: "DIN Next W01 Regular";
    font-size: 1.6rem;
+   line-height: 1.5;
 }
 a.btn{
   @include capitalise(0.02em);

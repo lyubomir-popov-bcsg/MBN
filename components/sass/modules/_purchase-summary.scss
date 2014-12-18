@@ -10,16 +10,16 @@
       overflow: visible;
       .content{
         // @include gutterPad($medium);
-        @include clearfix;      
-        // @include span(12 of 12 nest);
-        @include breakpoint($wide) {
-          @include span(12 of 12 nest);
+        @include clearfix;
+        padding:0;
+        @include span(12 of 12 nest);
+        @include breakpoint($medium) {
           display:block;
         } //breakpoint
         h1 {
-          @include breakpoint($wide) {
+          @include breakpoint($medium) {
             @include push(2);
-            @include span(6 of 12);
+            @include span(8 of 12);
           }
           font-family: "DIN Next W01 Bold";
           font-size: 2.8rem;
@@ -30,9 +30,10 @@
         } //h1
 
         h2 {
-          @include breakpoint($wide){ 
+          @include breakpoint($medium) {
+          clear:both; 
           @include push(2);
-          @include span(6 of 12);
+          @include span(8 of 12);
         }
           font-family: "DIN Next W01 Light";
           margin: 1em 0 0em 0;
@@ -41,9 +42,10 @@
         } //h2
        
         p {
-          @include breakpoint($wide) {
+          clear:both;
+          @include breakpoint($medium) {
             @include push(2);
-            @include span(6 of 12);
+            @include span(8 of 12);
           }
           font-family: "DIN Next W01 Regular";
           margin: 1em 0 0em 0;
@@ -67,17 +69,34 @@
       @include clearfix;
     }
     .headings{
+      // color: red;
+      // margin-left:1.8rem;//patch
+      // margin-right:1.8rem;
+      @include clearfix;
+      @include gutterPad();
+      @include breakpoint($medium) {
+        border-top: none;
+        @include push(2);
+        @include span(8 of 12 nest);
+      } //breakpoint
+      @include breakpoint($wide) {
+        border-top: none;
+        @include push(2);
+        @include span(8 of 12 nest);
+      } //breakpoint
+
+
+
       // padding-bottom: 1.25em;
       border-bottom: 1px solid #e4e4e4;
-      @include gutterPad();
       h1 {
         font-family: "DIN Next W01 Light";
-        font-size: 1.8rem;
+        font-size: 2.8rem;
         font-weight: normal;
-        padding-top: 6rem;
+        padding-top: 3.5rem;
         padding-bottom: .25em;
         @include breakpoint($small) {
-          font-size: 2.8rem;
+          font-size: 3.5rem;
         }
       } //h1
       h2 {
@@ -111,14 +130,15 @@
         @include breakpoint($medium) {
           border-top: none;
           @include push(2);
-          @include span(8 of 12);
+          @include span(8 of 12 nest);
         } //breakpoint
         @include breakpoint($wide) {
           border-top: none;
           @include push(2);
-          @include span(8 of 12);
+          @include span(8 of 12 nest);
         } //breakpoint
-        // &:nth-of-type(2){ border-top: none; }
+
+
         font-size: 1rem;
         @include breakpoint($small) {
           font-size: 1.15rem;
@@ -129,8 +149,7 @@
           border-top: none; 
           &:hover{
             // background-color: $white;
-            // @include single-box-shadow(0, 0, $mc9, 0, #dadada, false);
-            single-box-shadow:none;
+            box-shadow:none;
           }
         }
 
@@ -144,8 +163,9 @@
           font-size: 1.4rem;
           line-height:1em;
           position:relative;
-          margin: 1.45em -9rem 1.14em 0;
-          padding-right: 9rem;
+          margin: 1em -8rem 1.14em 0;
+          padding-right: 8rem;
+          padding-top: 1em;
           margin-bottom: 1.3rem;
           width: 100%;
           @include capitalise(.02em);
@@ -153,10 +173,10 @@
             display: inline-block;
             position: absolute;
             right: 0;
-            top: 0rem;
-            width: 9rem;
+            top: 1em;
+            width: 8rem;
             span{
-              font-family: "DIN Next W01 Bold";              
+              font-family: "DIN Next W01 Medium";              
               font-size: .66em;
               line-height: 1em;
               @include capitalise(.02em);
@@ -170,25 +190,18 @@
             }
           }
         }
-        h4{
-          margin-top: 1em;
-          margin-bottom: 1.5em;
-          position:relative;
-          width: 100%;
-          font-size: 2.2rem;
-          font-family: "DIN Next W01 Light";
-          line-height:1.2 !important;
-        }
+
         h2{
+          &.existing-tool{
+            color: #999;
+          }
           position:relative;
           width: 100%;
           font-size: 2.2rem;
           font-family: "DIN Next W01 Light";
           line-height:1.2 !important;
-          
-          padding-right:9rem;
-          margin: 1em -9rem .5em 0;
-          
+          padding-right:8rem;
+          margin: 0 -8rem .5em 0;
           &.bundle-title{
             text-transform: uppercase;
           }
@@ -198,38 +211,60 @@
             position: absolute;
             right: 0;
             top: 0rem;
-            width: 9rem;
+            width: 8rem;
             text-align: right;
-            font-family: "DIN Next W01 Medium";
+            font-family: "DIN Next W01 Light";
+            &.licences{
+              color:#666;
+              text-align:left;
+              display:inline;
+              position:relative;
+              font-size:.75em;
+            }
           }
-
           &.flush-right{
+            &.bordered{
+                border-top: 1px solid #dadada;
+              }
+            padding-top: 1em;
             text-align: right;
-            font-family: "DIN Next W01 Regular";
+            font-family: "DIN Next W01 Light";
+            &.bold{
+              font-family: "DIN Next W01 Medium";            
+            }
+            span{
+              padding-top: 1em;
+            }
             &.final-price{
               border-top: 1px solid #dadada;
+              margin-top: 1.5em;
+              margin-bottom: 0;
               padding-top: 1em;
-              margin-top: 2em;
+              padding-bottom: .75em;
               span{
                 padding-top: 1em;
               }
             }
+
             // margin-right: 10rem;
             // padding-right: 10rem;
             @include clearfix;
+            
             span{
               text-align: right;
-              font-family: "DIN Next W01 Medium";
-
+              font-family: "DIN Next W01 Light";
               &.secondline{
                 right: 0;
                 font-size: .65em;
                 width: 100%;
-                margin-top: 2em;
-                margin-right: 10rem;
-                font-family: "DIN Next W01 Regular";  
+                margin-top: 2.2em;
+                margin-right: 8rem;
+                font-family: "DIN Next W01 Regular"  !important;  
                 color:#666;
               }
+            }
+            &.bold span{
+              font-family: "DIN Next W01 Medium";
             }
           }
         }
@@ -239,42 +274,91 @@
           width:100%;
           font-size: 1.6rem;
           margin-top: 0.5em;
-          padding-left: 1.8rem;
+          // padding-left: 1.8rem;
           position: relative;
-          margin-right: -9rem;
-          padding-right: 9rem;
+          margin-right: -8rem;
+          padding-right: 8rem;
           span{
             display: inline-block;
             position: absolute;
             right: 0;
             top: 0rem;
-            width: 9rem;
+            width: 8rem;
             text-align: right;
             font-family: "DIN Next W01 Medium";
+           &.licences{
+              color:#666;
+              text-align:left;
+              display:inline;
+              position:relative;
+              font-size:.75em;
+              }
           }
         }
+
+        h4{
+          margin-top: 1em;
+          margin-bottom: 1.5em;
+          position:relative;
+          width: 100%;
+          font-size: 2.2rem;
+          font-family: "DIN Next W01 Light";
+          line-height:1.2 !important;
+        }
+        
         h5{
           border-top: 1px solid #dadada;
           padding: 1em 0;
         }
+
+        h6{
+          border-top: 1px solid #dadada;       
+          text-align: center;
+          display: block;
+          font-family: "DIN Next W01 Regular";
+          font-size: 1.4rem;
+          margin-bottom: 0;
+          padding: 1em;
+          background: rgba(228, 228, 228, 0.33);
+        }
       }
 
       .payment-plan{
-        @include gutterPad($medium);
         margin-top: 0;
-        margin-bottom: 1.8rem;
-        margin-left:0;
-        border: none;
-        background: white;
-        min-height:13em;
-
+        // margin-left:0;
+        // border: none;
+        min-height:14em;
         @include breakpoint($medium) {
           &:nth-child(odd){
             @include push(2);
-            border-right: 1px solid #dadada;
           }
-          @include span(4 of 12);
+          @include span(8 of 12 nest);
         } //breakpoint
+
+        div{
+          border: 1px solid #dadada;
+          background: white;
+          padding-bottom: 1.8rem;
+          margin-bottom: 1.8rem;
+          min-height:14em;
+          @include gutterPad($medium);
+          @include breakpoint($narrow) {
+            min-height: 1.8rem;
+          }
+          @include breakpoint($medium) {
+            min-height: 33rem;           
+          }
+          @include breakpoint($medium) {
+            @include span(4 of 8);
+            margin-bottom: 0rem;
+            min-height: 26rem;
+            &:nth-child(odd){
+              margin-right:-1px;
+            }
+          }
+        }
+
+
         h3{
           // font-family: "DINNextW01-LightItalic";
           width:100%;
@@ -297,10 +381,13 @@
             text-align: right;
           }
         } //h3
-        // p{
-        //   @include push(1)
-        //   @include span(5 of 6);
-        // }
+
+        p{
+          font-family: "DIN Next W01 Light";
+          &.bold{
+            font-family: "DIN Next W01 Medium";
+          }
+        }
       } //.payment-plan
     } //gallery
   } //.content
