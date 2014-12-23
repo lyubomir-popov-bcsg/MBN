@@ -1,16 +1,25 @@
 .hero-area {
   margin: 0 auto;
   background-color: $info;
-  color: #333;
-  .shoppingTools &{
-    color: $white;
+  .shoppingTools & {
     background: url('../images/shop-tools.jpg');
     text-shadow: rgba(33, 33, 33, 0.15) 0 1px 0px;
   }
+
   .container {
-    @include container(1140px);
+    .shoppingTools &{
+      padding-top: 60px;
+      margin-top: -50px;
+    }//overlap categories nav
+    @include container(1140px);    
     @include clearfix;
+    
+    .purchase-summary &{
+      color: #333;
+    }
+    color: #fff;
     overflow: visible;
+
     #sidebar {
       @include gutterPad($medium);
       @include breakpoint($medium) {
@@ -36,6 +45,7 @@
       h2{
         font-family: 'DIN Next W01 Light';
         font-size: 1.8rem;
+        line-height: 1.5;
         margin: 1em 0 1em;
       }
       a{ 
@@ -50,7 +60,6 @@
         text-decoration: none;
         &:hover{
         }
-        
         &#marketPlaceHeaderPromotion{
           text-decoration: none;
           transition: all 100ms ease-out;
@@ -68,6 +77,18 @@
           font-family: 'DIN Next W01 Regular';
           background: #ddd;
         }
+        &#dollarsLearnMoreLink{
+          text-decoration: none;
+          text-shadow: none;
+          font-size: 1.6rem;
+          color: #dadada;
+          display: inline-block;
+          background: rgba(60, 60, 60, 0.5);
+          padding: .0rem 1rem;
+          border-radius: 0;
+          /* text-decoration: underline; */
+          border-bottom: 1px solid #666;
+        }
       }
       p{
         font-family: 'DIN Next W01 Light';
@@ -77,8 +98,8 @@
     }
     .content{
       @include gutterPad($medium);
+      @include clearfix;      
       .shoppingTools &{
-        @include clearfix;      
         display:none;
       }
       @include breakpoint($medium) {
@@ -103,7 +124,7 @@
         font-family: "DIN Next W01 Light";
         margin: 1em 0 1em 0;
         font-size: 2.2rem;
-        line-height: 1em;
+        line-height: 1.5em;
       } //h2
      
       p {
@@ -119,7 +140,7 @@
         color: #fff;
         font-size: 1.8rem;
         font-family: "DIN Next W01 Bold";
-        padding-top: 4.5em;
+        padding-top: 4em;
         padding-bottom: 0.5em;
         font-weight: normal;
       }
@@ -132,6 +153,13 @@
       @include span(12 of 12 nest);
       // display: table;
       @include clearfix;
+      display: none;
+      @include breakpoint($medium) {
+        .shoppingTools &{
+          display:block;
+        }
+      } //breakpoint
+
       a{
         @include span(8 of 8);
         color: #fff;

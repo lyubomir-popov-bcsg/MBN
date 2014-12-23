@@ -16,14 +16,7 @@
 	width: 36px;
 	z-index: 1001;
 }
-@mixin dark-button{
-	background: #333;
-	color: #ddd;
-	&:hover, &.current{
-		background: #3f3f3f;
-		color: #f7f7f7;
-	}
-}
+
 .mobile-nav {
 	@include breakpoint(min-width 740px) {
 		display:none;
@@ -42,92 +35,98 @@
 		transform: translateX($offset240);
 		transition-duration: 0.3s;
 	}
-
 	$offset : 0px;
 	-webkit-transform: translateX($offset);
 	-ms-transform: translateX($offset);
 	transform: translateX($offset);
 	overflow: hidden;
 	@include clearfix;
+	ul{ 
+		// margin-top: 3.2em;//for the languages selector
+		position: absolute;
+		display: block;
+		width: 240px;
+		@include clearfix;
+		li{
+			a{  
+				@include primary-button;
+				border-bottom: 1px solid #dadada;
+				background:$light;
+				color: #333;
+				text-align: left;
+				margin:0;
+				display: block !important;
+				&:hover{
+					color: #333;
+					background: #e4e4e4;
+				}
+				&#loginLink{
+					font-family:"DIN Next W01 Medium";
+				}
+				&#en{
+					width: 50%;
+					@include dark-button;
+					float: left;					
+				}
+				&#es {
+					width: 50%;
+					@include dark-button;
+					float: right;
+				}
+				&.current{
+		        	cursor: text;
+		        	background: #dadada;
+				}
+				span{
+					text-transform: uppercase;
+					font-size: 0.9rem;
+					display: block;
+				}
+				&#aback{
+					float: left;
+					width: 44px;
+					display: inline-block;
+					background: #dadada;
+					padding-top: 16px;
+					padding-bottom: 15px;
+		        }
+		        &#title{
+		        	display: block;
+					float: left;
+					margin-left: 48px;
+					padding-left: 1em;
+					position: absolute;
+					width: 100%;
+
+					&:hover{background:transparent;}
+		        }
+		        &.home{
+		        	line-height: 2;
+		        	height:44px;
+		        	background:#dadada;
+		        }
+		        &.disabled{
+		        	opacity:.5;
+		        	cursor: text;
+		        }
+			}
+		}
+		float:left;
+		&.mobile-sub{
+			margin-left: 50%;
+			background:#f7f7f7;
+		}
+		&.languages{
+			margin-top: -1px;
+		}
+	}
 	.clipped{
 		transition-duration: 0.3s;		
 		transform: translateX(240px);
 		width: 480px;
+	}
 		position: relative;
 		display:block;
-		ul{ 
-			position: absolute;
-			display: inline;
-			display: block;
-			width: 240px;
-			@include clearfix;
-			li{
-				a{
-					font-size: 1.2rem;
-					padding: 1em 2em .8em;
-					display: block;
-					text-transform: uppercase;
-					color: #333;
-					text-decoration: none;
-					border-top: 1px solid #dadada;
-					background:$light;
-					&:hover{
-						background: #e4e4e4;
-					}
-					&#loginLink{
-						font-family:"DIN Next W01 Medium";
-
-
-						// @include dark-button;
-						// float: right;
-					}
-					&#en{
-						width: 50%;
-						@include dark-button;
-						float: left;					
-					}
-					&#es {
-						width: 50%;
-						@include dark-button;
-						float: right;
-					}
-					&.current{
-			        	cursor: text;
-					}
-					span{
-						text-transform: uppercase;
-						font-size: 0.9rem;
-						display: block;
-					}
-
-					&#aback{
-						float: left;
-						width: 44px;
-						display: inline-block;
-						background: #dadada;
-						padding-top: 16px;
-						padding-bottom: 15px;
-
-			        }
-			        &#title{
-			        	display: block;
-						float: left;
-
-						&:hover{background:transparent;}
-			        }
-			        &.disabled{
-			        	opacity:.5;
-			        	cursor: text;
-			        }
-				}
-			}
-			float:left;
-			&.mobile-sub{
-				margin-left: 50%;
-				background:#f7f7f7;
-			}
-		}
-	}
 }
 .floatedChildren{
 	@include clearfix;

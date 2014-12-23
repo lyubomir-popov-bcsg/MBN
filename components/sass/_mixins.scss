@@ -6,8 +6,16 @@
     padding-right: 0;  
   }
 }
+@mixin dark-button {
+  background: #333;
+  color: #ddd;
+  &:hover, &.current{
+    background: #3f3f3f;
+    color: #f7f7f7;
+  }
+}
 @mixin primary-button{
-      @include capitalise(0.02em);
+    @include capitalise(0.02em);
     @include breakpoint($medium) {@include transitionAll;}
     display: block;
     font-size: 1.2rem;
@@ -21,7 +29,7 @@
     
     &:hover {
       z-index: 1000;
-      background-color: darken($dark, 50%);
+      background-color: #3f3f3f;
       color: $light;
     } //hover
 
@@ -30,6 +38,28 @@
       display: inline-block;
     }//breakpoint small
 }
+@mixin secondary-button{
+    @include primary-button;
+    margin: 1em 0 1em;
+    padding: .5em 1em .4em;
+    background:rgba(50,50,50, .1);
+    color:$white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "DIN Next W01 Light";
+    
+    &:hover {
+      z-index: 1000;
+      background-color: rgba(50,50,50, .2);
+      color: $light;
+    } //hover
+
+    @include breakpoint($small) {
+      text-align: left;
+      display: inline-block;
+    }//breakpoint small
+}
+
 @mixin backImage(
   $image,
   $grDir: to bottom,

@@ -7,8 +7,14 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body class='shoppingTools'>
+<div class="languages-strip hidden">
+    <ul class="languages-desktop"><li class="floatedChildren">
+		<a id="en" class="current" href="#">English</a><a id="es" href="#">Spanish</a></li>
+	</ul>
+</div>
 <header>
-	<div class="mobile-nav-toggle" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+	<div class="container">
+		<div class="mobile-nav-toggle"  style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
 <!-- 				<div class="menu">
           <h1 class="menu-toggle">menu</h1>
         </div> -->
@@ -26,12 +32,17 @@
 			<a href="#">Help &amp;<br>support</a>
 		</li><li>
 			<a href="#"><br>About</a>
-		</li>		
+		</li>	
 	</ul>
 </header>
 <div class="mobile-nav mobile-is-visible js-mobile-nav active">
+	<ul class="languages hidden"><li class="floatedChildren">
+			<a id="en" class="current" href="#">English</a>
+			<a id="es" href="#">Spanish</a>
+		</li>
+	</ul>
 	<div class="clipped"><ul class="mobile-main"><li>
-				<a class="current" href="#">Business network home</a>
+				<a class="current home" href="#">Business network home</a>
 			</li><li>
 				<a id="atools" href="#">Tools <span>powered by bcsg</span></a>
 			</li><li>
@@ -47,10 +58,6 @@
 			</li>		
 		</ul>
 		<ul class="mobile-sub"><li class="floatedChildren">
-				<a id="en" class="current" href="#">English</a>
-				<a id="es" href="#">Spanish</a>
-			</li>
-			<li class="floatedChildren">
 			    <a id="aback" href="#">&lt;</a>
 				<a id="title">Tools <span>powered by bcsg</span></a>
 			</li>
@@ -123,7 +130,9 @@
 						<!-- <div class="extendright"></div> -->
 						<!-- <div class ="sidebar-content"> -->
 			 				<h1>CLAIM $150 TOOLBOX DOLLARS WHILE THEY LAST!</h1>
-							<h2>Get $150 Toolbox dollars to cover the cost of any of our preferred tools or bundle for up to 6 months.</h2>
+							<h2>Get $150 Toolbox dollars to cover the cost of any of our preferred tools or bundle for up to 6 months.
+							<a id="dollarsLearnMoreLink" href="">Learn more</a>
+							 </h2>
 							<a href="/tools/create-account" id="marketPlaceHeaderPromotion" class="btn btn-primary">Claim yours now</a>
 							<p>Toolbox Dollars are available to the first 1,000 eligible&nbsp;business MasterCard cardholders, to be claimed between&nbsp;October 15 and December 31, 2014. Toolbox dollars have no retail value.&nbsp;For full offer details see the 
 								<a href="/terms/tools-powered-by-bcsg.html">Terms of Use</a>.
