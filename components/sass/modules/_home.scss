@@ -1,0 +1,199 @@
+ .home{
+
+ 	.hero-area {
+ 		display: flex;
+ 		align-items: center;
+		margin: 0 auto;
+		background: url('../images/shop-tools1.jpg');
+		text-shadow: rgba(33, 33, 33, 0.15) 0 1px 0px;
+
+		background-position: 56% 0% !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background: url('../images/herobanners/homepage/home-hero-bg.jpg');
+		min-height: 320px;
+		color: white !important;
+
+		.container {
+			@include container(1140px);    
+			@include clearfix;
+			color: #fff;
+			h1{
+				margin: 0em 0 .25em;			
+				width: 100%;
+				float: left;
+				padding-left: 1.8rem;
+				padding-right: 1.8rem;
+				font-family: "DIN Next W01 Bold";
+				font-size: 3rem;
+	
+		        @include breakpoint($medium) {
+					font-size: 5rem;
+				}
+				line-height: 1em;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			h2{
+				width: 100%;
+				float: left;
+				padding-left: 1.8rem;
+				padding-right: 1.8rem;
+				font-family: "DIN Next W01 Light";
+				/* margin: 1em 0 1em 0; */
+				font-size: 2.45rem;
+				line-height: 1em;
+				text-align: center;		
+			}
+		} //container
+	} //header
+
+	section{
+		&:nth-child(odd){
+			background-color: #light;
+		}
+		h1 {// based on shop tools benefits
+			font-family:"DIN Next W01 Medium";
+			font-size: 1.8rem; 
+			@include breakpoint($small) {
+				font-size: 2.2rem; 
+			}
+			line-height: 1em;
+			margin: 1.5em 0 .5em 0;
+		} //h2
+		h2 {// based on shop tools benefits
+			font-family: 'DIN Next W01 Light';
+			font-size: 1.8rem; 
+			@include breakpoint($small) {
+				font-size: 2.2rem; 
+			}
+			line-height: 1em;
+			margin: 1.5em 0 .5em 0;
+		} //h2	
+		p {
+			margin: 0 0 1em;
+			font-family: "DIN Next W01 Light";
+		}
+		a {	
+			display: inline-block;
+			margin: 0 0 1em;
+			font-family: "DIN Next W01 Light";
+			font-size: 1.6rem;
+			text-decoration: none;
+			color: #333;
+			margin-bottom: 1em;
+			.btn {
+				width: 50%;
+				@include primary-button;
+				@include secondary-button;
+				@include dark-button;
+				font-size: 1.2rem !important;
+				margin:0 0 1em 0;
+				padding-bottom: 1em;
+			}
+			&#login{
+				float: left;
+			}
+			&#shop{
+				float: right;
+			}
+		}	
+
+		ul{	
+			@include clearfix;
+			@include container(1140px);
+			li{
+			    @include gutterPad($medium);
+		        @include breakpoint($small) {
+					&:nth-child(odd){
+			            @include span(6 of 12);
+					}
+					&:nth-child(even){
+			            @include span(6 of 12 );
+			        }
+		        } //breakpoint
+		        @include breakpoint($medium) {
+					&:nth-child(odd){
+			            @include span(3 of 12);
+					}
+					&:nth-child(even){
+			            @include span(3 of 12 );
+			        }
+		        } //breakpoint
+			}
+		}
+		&.yellow-strip{
+			background: $mc-yellow;
+		}
+		&.promo-strip{
+			background: url("../images/herobanners/priceless-cities/priceless-bg-edited.jpg") 50% 59%;
+			color: white;
+			padding-top: 5em;
+			padding-bottom: 12em; 
+			ul {
+				li{
+				    @include gutterPad($medium);
+			        @include breakpoint($small) {
+						&:nth-child(odd){
+				            @include span(6 of 12);
+						}
+						&:nth-child(even){
+				            @include span(6 of 12 last);
+				        }
+			        } //breakpoint
+			        @include breakpoint($medium) {
+						&:nth-child(odd){
+				            @include span(4 of 12);
+						}
+						&:nth-child(even){
+				            @include span(4 of 12 last);
+				        }
+			        } //breakpoint
+			    
+					h1{
+						font-family: 'DINNextLTW01-UltraLight 706122';
+						font-size: 2.8rem;
+						padding-bottom: 1em;
+					}
+					a{
+						color:white
+					}
+			    }
+			}
+		}
+		&.expanded-info{
+			article{
+				@include clearfix;
+				@include container(1140px);
+
+				h1, img, ul{
+				    @include gutterPad($medium);
+  			        @include breakpoint($small) {
+						@include span(12 of 12);
+					} //breakpoint
+			        @include breakpoint($medium) {
+						@include span(3 of 12);
+					} //breakpoint
+				}
+
+				div {
+				    @include gutterPad($medium);
+  			        @include breakpoint($small) {
+						@include span(12 of 12);
+					} //breakpoint
+			        @include breakpoint($medium) {
+						@include span(6 of 12);
+					} //breakpoint
+				}
+
+				h2{
+					margin: 0em 0 2em 0;
+					@include breakpoint($small) {
+						margin: 1.5em 0 2em 0;
+					}
+
+				}
+			}
+		}
+	}
+}
