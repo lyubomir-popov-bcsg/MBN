@@ -1,5 +1,16 @@
  .home{
+	@mixin btn-primary{
+		color:#f7f7f7;
+		background: #333;
+		&:hover{ background: darken(#333, 10%); }
+		padding: .75em 1em .7em;
+	}
+	@mixin btn-secondary{
+		background: darken(#f7f7f7, 5%);
+		&:hover{ background: darken(#f7f7f7, 10%); }
+		padding: .75em 1em .7em;
 
+	}
  	.hero-area {
  		display: flex;
  		align-items: center;
@@ -19,7 +30,7 @@
 			@include clearfix;
 			color: #fff;
 			h1{
-				margin: 0em 0 .25em;			
+				margin: 0;			
 				width: 100%;
 				float: left;
 				padding-left: 1.8rem;
@@ -41,17 +52,23 @@
 				padding-right: 1.8rem;
 				font-family: "DIN Next W01 Light";
 				/* margin: 1em 0 1em 0; */
-				font-size: 2.45rem;
-				line-height: 1em;
-				text-align: center;		
+				font-size: 1.8rem;
+				br{display:none;}
+				@include breakpoint($small) {
+					font-size: 2.45rem;
+					br{display:block;}
+				}
+				line-height: 1.2;
+				text-align: center;
 			}
 		} //container
 	} //header
 
 	section{
-		&:nth-child(odd){
-			background-color: #light;
+		&:nth-child(even){
+			background-color: #fff;
 		}
+		padding: 3.5em 0 3.5em 0;
 		h1 {// based on shop tools benefits
 			font-family:"DIN Next W01 Medium";
 			font-size: 1.8rem; 
@@ -59,7 +76,6 @@
 				font-size: 2.2rem; 
 			}
 			line-height: 1em;
-			margin: 1.5em 0 .5em 0;
 		} //h2
 		h2 {// based on shop tools benefits
 			font-family: 'DIN Next W01 Light';
@@ -68,7 +84,7 @@
 				font-size: 2.2rem; 
 			}
 			line-height: 1em;
-			margin: 1.5em 0 .5em 0;
+			margin: 0em 0 .5em 0;
 		} //h2	
 		p {
 			margin: 0 0 1em;
@@ -81,82 +97,128 @@
 			font-size: 1.6rem;
 			text-decoration: none;
 			color: #333;
-			margin-bottom: 1em;
-			.btn {
-				width: 50%;
-				@include primary-button;
-				@include secondary-button;
-				@include dark-button;
-				font-size: 1.2rem !important;
-				margin:0 0 1em 0;
-				padding-bottom: 1em;
+			#login &, #shop &{
+				@include clearfix;
 			}
-			&#login{
+			&#login {
+				@include btn-primary;
+				margin-bottom:0;
 				float: left;
+				// color: $mc-yellow;
 			}
-			&#shop{
-				float: right;
+			&#shop {
+				@include btn-secondary;
+				float: left;
+				margin-bottom:0;
 			}
-		}	
+			
+			&.primary-cta {
+				@include btn-secondary;
+				float: left;
+				margin-bottom:0;
+				color: #333;
+				background: $mc-yellow;
 
+				&:hover{
+					background: $mc-orange;
+				}
+			}
+
+			transition: all 0.3s ease-out;
+			&:hover{
+				span{
+					transform: translateX(2px);
+				}
+		   	}
+		}	
+	ul{	
+		@include clearfix;
+		@include container(1140px);
+	}
+	&.yellow-strip{
+		padding:0;
+		h1{
+			padding: 2.5rem 0 .5em 0;
+		}
+		background: $mc-yellow;
 		ul{	
 			@include clearfix;
 			@include container(1140px);
 			li{
+				border-top: 1px solid rgb(255, 154, 2);
+				padding: 0em 1.8rem 1.8rem 1.8rem;
+
 			    @include gutterPad($medium);
 		        @include breakpoint($small) {
+		        	border: none;
+					padding: 0em 1.8rem 0em 1.8rem;
+
 					&:nth-child(odd){
-			            @include span(6 of 12);
+			            @include gallery(6 of 12);
 					}
 					&:nth-child(even){
-			            @include span(6 of 12 );
+			            @include gallery(6 of 12 );
 			        }
 		        } //breakpoint
 		        @include breakpoint($medium) {
 					&:nth-child(odd){
-			            @include span(3 of 12);
+			            @include gallery(3 of 12);
 					}
 					&:nth-child(even){
-			            @include span(3 of 12 );
+			            @include gallery(3 of 12 );
 			        }
 		        } //breakpoint
-			}
-		}
-		&.yellow-strip{
-			background: $mc-yellow;
-		}
+			} //li
+		} //ul
+	}
 		&.promo-strip{
 			background: url("../images/herobanners/priceless-cities/priceless-bg-edited.jpg") 50% 59%;
 			color: white;
-			padding-top: 5em;
-			padding-bottom: 12em; 
+			padding-top:0;
+			padding-bottom: 0;
+	        @include breakpoint($small) {
+				padding-top: 3em;
+				padding-bottom: 8em; 
+			}
 			ul {
 				li{
 				    @include gutterPad($medium);
 			        @include breakpoint($small) {
 						&:nth-child(odd){
-				            @include span(6 of 12);
+				            @include gallery(6 of 12);
 						}
 						&:nth-child(even){
-				            @include span(6 of 12 last);
+				            @include gallery(6 of 12 last);
 				        }
 			        } //breakpoint
 			        @include breakpoint($medium) {
 						&:nth-child(odd){
-				            @include span(4 of 12);
+				            @include gallery(4 of 12);
 						}
 						&:nth-child(even){
-				            @include span(4 of 12 last);
+				            @include gallery(4 of 12 last);
 				        }
 			        } //breakpoint
 			    
 					h1{
 						font-family: 'DINNextLTW01-UltraLight 706122';
 						font-size: 2.8rem;
-						padding-bottom: 1em;
+						padding: 3.5rem 0 1em 0;
+						margin-top:1em;
+						&.bordered{
+							border-top: 1px solid #666;
+							@include breakpoint($small) {
+								border:none;
+							}
+						}
 					}
 					a{
-						color:white
+						color: $mc-yellow;
+						&#dollars{
+							color:#333;
+							@include btn-secondary;
+							padding: .75em 1em .65em;
+						}
 					}
 			    }
 			}
@@ -185,11 +247,40 @@
 						@include span(6 of 12);
 					} //breakpoint
 				}
+				p.image-container{
+				    @include gutterPad($medium);
+  			        @include breakpoint($small) {
+						@include span(12 of 12);
+					} //breakpoint
+			        @include breakpoint($medium) {
+						@include span(3 of 12);
+					} //breakpoint
 
+					text-align: center;
+
+					img {
+						padding-top: 3.5rem;
+						float: none;
+						max-width:100%;
+						width:auto;
+						height:auto;
+					}
+				}
+				ul.sidebar{
+					li{
+						background: darken(#f7f7f7, 0%);
+						&:hover{ background: darken(#f7f7f7, 5%); }
+						border-bottom: 1px solid #e4e4e4;
+						padding: 1em 2em 1em;
+						a{margin:0;}
+					}
+				}
 				h2{
-					margin: 0em 0 2em 0;
-					@include breakpoint($small) {
-						margin: 1.5em 0 2em 0;
+					margin: 0em 0 1em 0;
+					font-size: 2.2rem;
+					@include breakpoint($medium) {
+						margin: 0em 0 1em 0;
+						font-size: 2.2rem;
 					}
 
 				}
