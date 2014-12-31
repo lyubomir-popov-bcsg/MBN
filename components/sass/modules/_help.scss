@@ -1,0 +1,36 @@
+
+.help{
+	.container{
+		@include container(1140px);
+		@include clearfix;
+		.content{
+		    @include gutterPad();
+	        @include breakpoint($medium) {
+	          border-top: none;
+	          // @include push(2);
+	          @include span(8 of 12);
+	        } //breakpoint
+	        @include breakpoint($wide) {
+	          border-top: none;
+	          // @include push(2);
+	          @include span(8 of 12);
+	        } //breakpoint
+
+			padding: 3.5rem 0;
+
+			h1{
+				font-size: 35.20544227px;
+				font-family: "DIN Next W01 Light";
+				color: #333333;
+				padding: 1.2rem 0;
+				border-bottom: 1px solid #dadada;
+			}
+			h2{
+				font-family: "DIN Next W01 Regular";
+				font-size: 28px;
+				line-height: 1;
+			}
+		}
+	}	
+
+}
