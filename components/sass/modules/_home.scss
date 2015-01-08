@@ -248,6 +248,7 @@
 					} //breakpoint
 				}
 				p.image-container{
+					
 				    @include gutterPad($medium);
   			        @include breakpoint($small) {
 						@include span(12 of 12);
