@@ -97,16 +97,17 @@
           @include capitalise(.02em);
           span{
             font-family: "DIN Next W01 Bold";
-            font-family: "DINNextW01-CondensedMed";
-
+            // font-family: "DINNextW01-CondensedMed";
+            font-size:1.6rem;
             display: inline-block;
             position: absolute;
             right: 0;
-            top: 0rem;
+            top: -0.8rem;
             span{
-              font-family: "DINNextW01-CondensedMed";
-              font-size: .8em;
-              line-height: 3.8em;
+              // font-family: "DINNextW01-CondensedMed";
+              font-family: "DIN Next W01 Regular";
+              font-size: .65em;
+              line-height: 6em;
               @include capitalise(.02em);
               margin-right: -0.05em;
             }
