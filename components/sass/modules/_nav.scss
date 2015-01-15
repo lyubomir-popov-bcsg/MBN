@@ -249,7 +249,7 @@ header{
       @include clearfix;
       @include breakpoint(0 $small) {
         display: block;
-        width: 480px; //patch, should be child width sum
+        width: 555px; //patch, should be child width sum
         min-width: 100%;
         // overflow-y: hidden; 
         // overflow-x: scroll; //cause a horizontal scrollbar
@@ -259,16 +259,21 @@ header{
       li {
         // float: left;
         display: inline-block;
-        @include breakpoint($small) {
+        @include breakpoint($medium) {
           @include with-layout(4 .0) {
             @include span(1 of 4);
           }
+
         } //breakpoint
         a {
           display: block;
           @include capitalise(0.065em);
           font-size: 1.3rem;
-          padding: 1.4em 1.25em 1.2em;
+
+          padding: 1.4em 1.35em 1.2em;
+          // @include breakpoint($small) {
+          //   padding: 1.4em 1.25em 1.2em;
+          // }
           text-decoration: none;
           color: $navForeground;
           
